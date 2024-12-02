@@ -1,0 +1,450 @@
+WARNING: Makefile 'package/feeds/packages/gst1-plugins-base/Makefile' has a dependency on 'libmesa', which does not exist
+WARNING: Makefile 'package/feeds/packages/gst1-plugins-base/Makefile' has a dependency on 'libwayland', which does not exist
+WARNING: Makefile 'package/feeds/packages/gst1-plugins-base/Makefile' has a dependency on 'libgraphene', which does not exist
+WARNING: Makefile 'package/luci-app-argon-config/Makefile' has a dependency on 'luci-theme-argon', which does not exist
+tmp/.config-package.in:7127:warning: choice value used outside its choice group
+tmp/.config-package.in:7129:warning: choice value used outside its choice group
+tmp/.config-package.in:7131:warning: choice value used outside its choice group
+tmp/.config-package.in:7125:warning: choice default symbol 'PACKAGE_XRAY_RLIMIT_DATA_UNLIMITED' is not contained in the choice
+tmp/.config-package.in:116936:error: recursive dependency detected!
+tmp/.config-package.in:116936:	symbol PACKAGE_natmapt is selected by PACKAGE_natmapt
+For a resolution refer to Documentation/kbuild/kconfig-language.rst
+subsection "Kconfig recursive dependency limitations"
+
+tmp/.config-package.in:117048:error: recursive dependency detected!
+tmp/.config-package.in:117048:	symbol PACKAGE_natter is selected by PACKAGE_natter-ddns-script-cloudflare
+tmp/.config-package.in:117064:	symbol PACKAGE_natter-ddns-script-cloudflare is selected by PACKAGE_natter
+For a resolution refer to Documentation/kbuild/kconfig-language.rst
+subsection "Kconfig recursive dependency limitations"
+
+tmp/.config-package.in:118869:error: recursive dependency detected!
+tmp/.config-package.in:118869:	symbol PACKAGE_rgmac is selected by PACKAGE_uci-alwaysonline
+tmp/.config-package.in:112761:	symbol PACKAGE_uci-alwaysonline depends on PACKAGE_rgmac
+For a resolution refer to Documentation/kbuild/kconfig-language.rst
+subsection "Kconfig recursive dependency limitations"
+
+tmp/.config-package.in:119497:error: recursive dependency detected!
+tmp/.config-package.in:119497:	symbol PACKAGE_stuntman-client is selected by PACKAGE_stuntman-client
+For a resolution refer to Documentation/kbuild/kconfig-language.rst
+subsection "Kconfig recursive dependency limitations"
+
+tmp/.config-package.in:119519:error: recursive dependency detected!
+tmp/.config-package.in:119519:	symbol PACKAGE_stuntman-server is selected by PACKAGE_stuntman-server
+For a resolution refer to Documentation/kbuild/kconfig-language.rst
+subsection "Kconfig recursive dependency limitations"
+
+tmp/.config-package.in:119541:error: recursive dependency detected!
+tmp/.config-package.in:119541:	symbol PACKAGE_stuntman-testcode is selected by PACKAGE_stuntman-testcode
+For a resolution refer to Documentation/kbuild/kconfig-language.rst
+subsection "Kconfig recursive dependency limitations"
+
+tmp/.config-package.in:111120:error: recursive dependency detected!
+tmp/.config-package.in:111120:	symbol PACKAGE_alwaysonline is selected by PACKAGE_alwaysonline
+For a resolution refer to Documentation/kbuild/kconfig-language.rst
+subsection "Kconfig recursive dependency limitations"
+
+tmp/.config-package.in:112642:error: recursive dependency detected!
+tmp/.config-package.in:112642:	symbol PACKAGE_shadowsocks-rust-ssservice is selected by PACKAGE_shadowsocks-rust-ssservice
+For a resolution refer to Documentation/kbuild/kconfig-language.rst
+subsection "Kconfig recursive dependency limitations"
+
+#
+# No change to .config
+#
+WARNING: Makefile 'package/feeds/packages/gst1-plugins-base/Makefile' has a dependency on 'libmesa', which does not exist
+WARNING: Makefile 'package/feeds/packages/gst1-plugins-base/Makefile' has a dependency on 'libwayland', which does not exist
+WARNING: Makefile 'package/feeds/packages/gst1-plugins-base/Makefile' has a dependency on 'libgraphene', which does not exist
+WARNING: Makefile 'package/luci-app-argon-config/Makefile' has a dependency on 'luci-theme-argon', which does not exist
+make[2]: Entering directory '/home/hbenaissa/openwrt/scripts/config'
+make[2]: 'conf' is up to date.
+make[2]: Leaving directory '/home/hbenaissa/openwrt/scripts/config'
+Checking 'python3-dev'... ok.
+Checking 'python3-setuptools'... ok.
+Checking 'swig'... ok.
+Checking 'rsync'... ok.
+time: target/linux/prereq#0.19#0.07#0.26
+ make[1] tools/flock/compile
+ make[2] -C tools/flock compile
+ make[1] tools/download
+ make[2] -C tools/autoconf-archive download
+ make[2] -C tools/cmake download
+ make[2] -C tools/automake download
+ make[2] -C tools/autoconf download
+ make[2] -C tools/bison download
+ make[2] -C tools/elfutils download
+ make[2] -C tools/cpio download
+ make[2] -C tools/dosfstools download
+ make[2] -C tools/bc download
+ make[2] -C tools/e2fsprogs download
+ make[2] -C tools/expat download
+ make[2] -C tools/fakeroot download
+ make[2] -C tools/findutils download
+ make[2] -C tools/firmware-utils download
+ make[2] -C tools/flex download
+ make[2] -C tools/gengetopt download
+ make[2] -C tools/gnulib download
+ make[2] -C tools/libressl download
+ make[2] -C tools/libtool download
+ make[2] -C tools/lzma download
+ make[2] -C tools/m4 download
+ make[2] -C tools/make-ext4fs download
+ make[2] -C tools/meson download
+ make[2] -C tools/missing-macros download
+ make[2] -C tools/mkimage download
+ make[2] -C tools/mklibs download
+ make[2] -C tools/mtd-utils download
+ make[2] -C tools/mtools download
+ make[2] -C tools/ninja download
+ make[2] -C tools/padjffs2 download
+ make[2] -C tools/patch-image download
+ make[2] -C tools/patchelf download
+ make[2] -C tools/pkgconf download
+ make[2] -C tools/quilt download
+ make[2] -C tools/squashfs4 download
+ make[2] -C tools/sstrip download
+ make[2] -C tools/util-linux download
+ make[2] -C tools/xz download
+ make[2] -C tools/zip download
+ make[2] -C tools/zlib download
+ make[2] -C tools/gmp download
+ make[2] -C tools/mpc download
+ make[2] -C tools/mpfr download
+ make[2] -C tools/llvm-bpf download
+ make[2] -C tools/libdeflate download
+ make[2] -C tools/patch download
+ make[2] -C tools/tar download
+ make[2] -C tools/zstd download
+ make[2] -C tools/flock download
+ make[2] -C tools/sed download
+ make[1] toolchain/download
+ make[2] -C toolchain/gcc/initial download
+ make[2] -C toolchain/gdb download
+ make[2] -C toolchain/kernel-headers download
+ make[2] -C toolchain/binutils download
+ make[2] -C toolchain/musl download
+ make[2] -C toolchain/gcc/final download
+ make[2] -C toolchain/fortify-headers download
+ make[1] package/download
+ make[2] -C package/devel/strace download
+ make[2] -C package/base-files download
+ make[2] -C package/devel/trace-cmd download
+ make[2] -C package/boot/uboot-envtools download
+ make[2] -C package/boot/arm-trusted-firmware-mediatek download
+ make[2] -C package/boot/uboot-mediatek download
+ make[2] -C feeds/luci/applications/luci-app-statistics download
+ make[2] -C feeds/luci/libs/luci-lib-ip download
+ make[2] -C feeds/luci/modules/luci-base download
+ make[2] -C feeds/luci/libs/luci-lib-base download
+ make[2] -C feeds/luci/applications/luci-app-package-manager download
+ make[2] -C feeds/luci/applications/luci-app-firewall download
+ make[2] -C feeds/luci/libs/luci-lib-jsonc download
+ make[2] -C feeds/luci/libs/luci-lib-nixio download
+ make[2] -C feeds/luci/libs/luci-lib-uqr download
+ make[2] -C feeds/luci/collections/luci-light download
+ make[2] -C feeds/luci/modules/luci-lua-runtime download
+ make[2] -C feeds/luci/modules/luci-mod-network download
+ make[2] -C feeds/luci/modules/luci-mod-dashboard download
+ make[2] -C feeds/luci/modules/luci-mod-admin-full download
+ make[2] -C feeds/luci/modules/luci-mod-status download
+ make[2] -C feeds/luci/modules/luci-mod-system download
+ make[2] -C feeds/luci/protocols/luci-proto-ipv6 download
+ make[2] -C feeds/luci/protocols/luci-proto-ppp download
+ make[2] -C feeds/luci/protocols/luci-proto-wireguard download
+ make[2] -C feeds/luci/collections/luci-ssl-openssl download
+ make[2] -C package/boot/arm-trusted-firmware-mediatek download
+ make[2] -C feeds/luci/themes/luci-theme-bootstrap download
+ make[2] -C feeds/luci/themes/luci-theme-material download
+ make[2] -C feeds/luci/contrib/package/lucihttp download
+ make[2] -C feeds/luci/libs/rpcd-mod-luci download
+ make[2] -C feeds/luci/libs/rpcd-mod-rrdns download
+ make[2] -C feeds/luci/contrib/package/ucode-mod-html download
+ make[2] -C feeds/luci/contrib/package/ucode-mod-lua download
+ make[2] -C feeds/packages/libs/afalg_engine download
+ make[2] -C feeds/packages/utils/attr download
+ make[2] -C package/boot/arm-trusted-firmware-mediatek download
+ make[2] -C feeds/packages/utils/bash download
+ make[2] -C feeds/packages/admin/btop download
+ make[2] -C feeds/packages/net/cgi-io download
+ make[2] -C feeds/packages/net/curl download
+ make[2] -C feeds/packages/utils/collectd download
+ make[2] -C feeds/packages/devel/diffutils download
+ make[2] -C feeds/packages/utils/findutils download
+ make[2] -C feeds/packages/libs/getdns download
+ make[2] -C package/boot/arm-trusted-firmware-mediatek download
+ make[2] -C feeds/packages/libs/glib2 download
+ make[2] -C feeds/packages/utils/gptfdisk download
+ make[2] -C package/boot/arm-trusted-firmware-mediatek download
+ make[2] -C feeds/packages/utils/grep download
+ make[2] -C feeds/packages/admin/htop download
+ make[2] -C package/boot/arm-trusted-firmware-mediatek download
+ make[2] -C package/boot/uboot-mediatek download
+ make[2] -C feeds/packages/utils/hwdata download
+ make[2] -C package/boot/arm-trusted-firmware-mediatek download
+ make[2] -C feeds/packages/utils/i2c-tools download
+ make[2] -C package/boot/arm-trusted-firmware-mediatek download
+ make[2] -C package/boot/uboot-mediatek download
+ make[2] -C feeds/packages/utils/i2csfp download
+ make[2] -C feeds/packages/net/iftop download
+ make[2] -C feeds/packages/net/iperf3 download
+ make[2] -C feeds/packages/utils/irqbalance download
+ make[2] -C feeds/packages/utils/kmod download
+ make[2] -C feeds/packages/libs/libcbor download
+ make[2] -C feeds/packages/libs/libevdev download
+ make[2] -C feeds/packages/libs/libffi download
+ make[2] -C feeds/packages/libs/libfido2 download
+ make[2] -C feeds/packages/libs/libgcrypt download
+ make[2] -C feeds/packages/libs/libgpg-error download
+ make[2] -C feeds/packages/libs/libmbim download
+ make[2] -C feeds/packages/libs/libmicrohttpd download
+ make[2] -C feeds/packages/libs/liboping download
+ make[2] -C feeds/packages/net/iperf3 download
+ make[2] -C feeds/packages/libs/libqmi download
+ make[2] -C feeds/packages/libs/libqrtr-glib download
+ make[2] -C feeds/packages/net/librespeed-go download
+ make[2] -C feeds/packages/libs/libtirpc download
+ make[2] -C feeds/packages/libs/libudev-zero download
+ make[2] -C feeds/packages/utils/lm-sensors download
+ make[2] -C feeds/packages/utils/lsof download
+ make[2] -C feeds/packages/kernel/mdio-netlink download
+ make[2] -C feeds/packages/net/mdio-tools download
+ make[2] -C feeds/packages/utils/mmc-utils download
+ make[2] -C feeds/packages/net/net-tools download
+ make[2] -C feeds/packages/libs/nghttp2 download
+ make[2] -C feeds/packages/admin/netatop download
+ make[2] -C feeds/packages/net/nlbwmon download
+ make[2] -C feeds/packages/net/openssh download
+ make[2] -C feeds/packages/utils/parted download
+ make[2] -C feeds/packages/utils/pciutils download
+ make[2] -C feeds/packages/lang/perl download
+ make[2] -C feeds/packages/utils/procps-ng download
+ make[2] -C feeds/packages/utils/procs download
+ make[2] -C feeds/packages/libs/protobuf-c download
+ make[2] -C feeds/packages/lang/python/python-setuptools download
+ make[2] -C feeds/packages/lang/python/python3 download
+ make[2] -C feeds/packages/lang/python/python3-speedtest-cli download
+ make[2] -C feeds/packages/libs/qrencode download
+ make[2] -C feeds/packages/utils/rrdtool1 download
+ make[2] -C feeds/packages/net/speedtestcpp download
+ make[2] -C feeds/packages/net/stubby download
+ make[2] -C feeds/packages/utils/usbutils download
+ make[2] -C feeds/packages/utils/uvol download
+ make[2] -C feeds/packages/utils/vim download
+ make[2] -C feeds/packages/net/wget download
+ make[2] -C feeds/packages/utils/whois download
+ make[2] -C feeds/packages/net/xtables-addons download
+ make[2] -C feeds/packages/libs/yaml download
+ make[2] -C package/firmware/linux-firmware download
+ make[2] -C package/firmware/wireless-regdb download
+ make[2] -C package/kernel/cryptodev-linux download
+ make[2] -C package/kernel/gpio-button-hotplug download
+ make[2] -C package/kernel/linux download
+ make[2] -C package/kernel/mac80211 download
+ make[2] -C package/kernel/mt76 download
+ make[2] -C package/libs/elfutils download
+ make[2] -C package/libs/gmp download
+ make[2] -C package/libs/jansson download
+ make[2] -C package/libs/libbpf download
+ make[2] -C package/libs/libjson-c download
+ make[2] -C package/libs/libmnl download
+ make[2] -C package/libs/libnetfilter-conntrack download
+ make[2] -C package/libs/libnfnetlink download
+ make[2] -C package/libs/libnftnl download
+ make[2] -C package/libs/libnl-tiny download
+ make[2] -C package/libs/libpcap download
+ make[2] -C package/libs/libtool download
+ make[2] -C package/libs/libtraceevent download
+ make[2] -C package/libs/libtracefs download
+ make[2] -C package/libs/libubox download
+ make[2] -C package/libs/libusb download
+ make[2] -C package/libs/mbedtls download
+ make[2] -C package/libs/musl-fts download
+ make[2] -C package/libs/ncurses download
+ make[2] -C package/libs/nettle download
+ make[2] -C package/libs/openssl download
+ make[2] -C package/libs/pcre2 download
+ make[2] -C package/libs/readline download
+ make[2] -C package/libs/sysfsutils download
+ make[2] -C package/libs/toolchain download
+ make[2] -C package/libs/uclient download
+ make[2] -C package/libs/udebug download
+ make[2] -C package/libs/ustream-ssl download
+ make[2] -C package/libs/zlib download
+ make[2] -C package/network/config/firewall4 download
+ make[2] -C package/network/config/netifd download
+ make[2] -C package/network/config/wifi-scripts download
+ make[2] -C package/network/ipv6/odhcp6c download
+ make[2] -C package/network/services/bridger download
+ make[2] -C package/network/services/dnsmasq download
+ make[2] -C package/network/services/dropbear download
+ make[2] -C package/network/services/hostapd download
+ make[2] -C package/network/services/odhcpd download
+ make[2] -C package/network/services/ppp download
+ make[2] -C package/network/services/uhttpd download
+ make[2] -C package/network/utils/ethtool download
+ make[2] -C package/network/utils/iproute2 download
+ make[2] -C package/network/utils/ipset download
+ make[2] -C package/network/utils/iptables download
+ make[2] -C package/network/utils/iw download
+ make[2] -C package/network/utils/iwinfo download
+ make[2] -C package/network/utils/iproute2 download
+ make[2] -C package/network/utils/nftables download
+ make[2] -C package/network/utils/resolveip download
+ make[2] -C package/network/utils/tcpdump download
+ make[2] -C package/network/utils/wireguard-tools download
+ make[2] -C package/network/utils/wireless-tools download
+ make[2] -C package/system/apk download
+ make[2] -C package/system/ca-certificates download
+ make[2] -C package/system/fstools download
+ make[2] -C package/system/mtd download
+ make[2] -C package/system/fwtool download
+ make[2] -C package/system/openwrt-keyring download
+ make[2] -C package/system/opkg download
+ make[2] -C package/system/procd download
+ make[2] -C package/system/rpcd download
+ make[2] -C package/system/ubox download
+ make[2] -C package/system/ubus download
+ make[2] -C package/system/uci download
+ make[2] -C package/system/urandom-seed download
+ make[2] -C package/system/urngd download
+ make[2] -C package/system/usign download
+ make[2] -C package/utils/busybox download
+ make[2] -C package/utils/bzip2 download
+ make[2] -C package/utils/e2fsprogs download
+ make[2] -C package/utils/f2fs-tools download
+ make[2] -C package/utils/fitblk download
+ make[2] -C package/utils/jsonfilter download
+ make[2] -C package/utils/mtd-utils download
+ make[2] -C package/utils/lua download
+ make[2] -C package/utils/ucode download
+ make[2] -C package/utils/util-linux download
+ make[2] -C package/utils/f2fs-tools download
+ make[2] -C package/utils/f2fs-tools download
+ make[2] -C package/utils/f2fs-tools download
+ make[1] target/download
+ make[2] -C target/linux download
+ make[1] clean
+WARNING: Makefile 'package/feeds/packages/gst1-plugins-base/Makefile' has a dependency on 'libmesa', which does not exist
+WARNING: Makefile 'package/feeds/packages/gst1-plugins-base/Makefile' has a dependency on 'libwayland', which does not exist
+WARNING: Makefile 'package/feeds/packages/gst1-plugins-base/Makefile' has a dependency on 'libgraphene', which does not exist
+WARNING: Makefile 'package/luci-app-argon-config/Makefile' has a dependency on 'luci-theme-argon', which does not exist
+make[2]: Entering directory '/home/hbenaissa/openwrt/scripts/config'
+make[2]: 'conf' is up to date.
+make[2]: Leaving directory '/home/hbenaissa/openwrt/scripts/config'
+time: target/linux/prereq#0.19#0.06#0.25
+ make[1] world
+ make[2] tools/compile
+ make[2] package/cleanup
+ make[3] -C tools/flock compile
+ make[3] -C tools/libdeflate compile
+ make[3] -C tools/zstd compile
+ make[3] -C tools/sed compile
+ make[3] -C tools/tar compile
+ make[3] -C tools/patch compile
+ make[3] -C tools/xz compile
+ make[3] -C tools/m4 compile
+ make[3] -C tools/autoconf-archive compile
+ make[3] -C tools/zlib compile
+ make[3] -C tools/ninja compile
+ make[3] -C tools/mtools compile
+ make[3] -C tools/gnulib compile
+ make[3] -C tools/expat compile
+ make[3] -C tools/lzma compile
+ make[3] -C tools/cpio compile
+ make[3] -C tools/sstrip compile
+ make[3] -C tools/patch-image compile
+ make[3] -C tools/zip compile
+ make[3] -C tools/make-ext4fs compile
+ make[3] -C tools/squashfs4 compile
+ make[3] -C tools/meson compile
+ make[3] -C tools/pkgconf compile
+ make[3] -C tools/autoconf compile
+ make[3] -C tools/libressl compile
+ make[3] -C tools/automake compile
+ make[3] -C tools/missing-macros compile
+ make[3] -C tools/libtool compile
+ make[3] -C tools/dosfstools compile
+ make[3] -C tools/cmake compile
+ make[3] -C tools/flex compile
+ make[3] -C tools/elfutils compile
+ make[3] -C tools/fakeroot compile
+ make[3] -C tools/gengetopt compile
+ make[3] -C tools/mklibs compile
+ make[3] -C tools/patchelf compile
+ make[3] -C tools/gmp compile
+ make[3] -C tools/bison compile
+ make[3] -C tools/mpfr compile
+ make[3] -C tools/bc compile
+ make[3] -C tools/mkimage compile
+ make[3] -C tools/util-linux compile
+ make[3] -C tools/findutils compile
+ make[3] -C tools/llvm-bpf compile
+ make[3] -C tools/firmware-utils compile
+ make[3] -C tools/padjffs2 compile
+ make[3] -C tools/quilt compile
+ make[3] -C tools/mpc compile
+ make[3] -C tools/e2fsprogs compile
+ make[3] -C tools/mtd-utils compile
+ make[2] toolchain/compile
+ make[3] -C toolchain/gdb compile
+ make[3] -C toolchain/binutils compile
+ make[3] -C toolchain/fortify-headers compile
+ make[3] -C toolchain/gcc/initial compile
+ make[3] -C toolchain/kernel-headers compile
+ make[3] -C toolchain/musl compile
+ make[3] -C toolchain/gcc/final compile
+ make[2] target/compile
+ make[3] -C target/linux compile
+ make[2] buildinfo
+ make[2] package/compile
+ make[3] diffconfig buildversion feedsversion
+ make[3] -C package/utils/lua host-compile
+ make[3] -C package/system/usign host-compile
+ make[3] -C package/system/fwtool host-compile
+ make[3] -C package/libs/ncurses host-compile
+ make[3] -C feeds/luci/modules/luci-base host-compile
+ make[3] -C package/libs/libjson-c host-compile
+ make[3] -C feeds/packages/libs/protobuf host-compile
+ make[3] -C feeds/luci/contrib/package/csstidy host-compile
+ make[3] -C feeds/packages/lang/perl host-compile
+ make[3] -C package/boot/arm-trusted-firmware-tools host-compile
+ make[3] -C package/devel/gperf host-compile
+ make[3] -C package/libs/libiconv-full host-compile
+ make[3] -C package/libs/libunistring host-compile
+ make[4] scripts/config/conf
+ make[3] -C feeds/packages/libs/libffi host-compile
+ make[3] -C package/utils/bzip2 host-compile
+ make[3] -C feeds/packages/lang/golang/golang host-compile
+ make[3] -C feeds/packages/lang/rust host-compile
+ make[3] -C package/system/apk host-compile
+ make[3] -C package/libs/libubox host-compile
+ make[3] -C package/libs/toolchain compile
+ make[3] -C package/kernel/gpio-button-hotplug compile
+ make[3] -C package/system/ucert host-compile
+ make[3] -C package/libs/libsepol compile
+ make[3] -C package/libs/musl-fts compile
+ make[3] -C package/system/openwrt-keyring compile
+ make[3] -C package/boot/arm-trusted-firmware-mediatek compile
+ make[3] -C package/utils/bzip2 compile
+ make[3] -C package/libs/argp-standalone compile
+ make[3] -C package/libs/libtraceevent compile
+ make[3] -C package/libs/jansson compile
+ make[3] -C package/libs/libmnl compile
+ make[3] -C package/libs/libtool compile
+ make[3] -C package/boot/arm-trusted-firmware-mediatek compile
+ make[3] -C feeds/packages/libs/libgpg-error compile
+ make[3] -C package/libs/libpcap compile
+ make[3] -C package/boot/arm-trusted-firmware-mediatek compile
+ make[3] -C package/libs/sysfsutils compile
+ make[3] -C package/boot/arm-trusted-firmware-mediatek compile
+ make[3] -C package/boot/arm-trusted-firmware-mediatek compile
+ make[3] -C feeds/packages/libs/gdbm compile
+ make[3] -C package/system/ca-certificates compile
+ make[3] -C package/libs/mbedtls compile
+ make[3] -C package/boot/arm-trusted-firmware-mediatek compile
+ make[3] -C feeds/packages/libs/nghttp2 compile
+ make[3] -C feeds/packages/libs/protobuf-c host-compile
+ make[3] -C package/libs/libxml2 host-compile
+ make[3] -C package/boot/arm-trusted-firmware-mediatek compile
+ make[3] -C package/libs/gmp compile
+ make[3] -C package/boot/arm-trusted-firmware-mediatek compile
+ make[3] -C feeds/luci/libs/luci-lib-uqr compile
