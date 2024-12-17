@@ -176,6 +176,7 @@ CONFIG_TARGET_mediatek_filogic_DEVICE_bananapi_bpi-r4=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_TARGET_mediatek_filogic_DEVICE_nradio_c8-668gl is not set
 =======
 >>>>>>> 22b1a68274 (add .config)
@@ -189,6 +190,9 @@ CONFIG_TARGET_mediatek_filogic_DEVICE_bananapi_bpi-r4=y
 >>>>>>> b55b48469a (add .config)
 =======
 >>>>>>> b4faf21b37 (add .config)
+=======
+# CONFIG_TARGET_mediatek_filogic_DEVICE_nradio_c8-668gl is not set
+>>>>>>> 09b6e0ad61 (update .config)
 # CONFIG_TARGET_mediatek_filogic_DEVICE_openembed_som7981 is not set
 # CONFIG_TARGET_mediatek_filogic_DEVICE_openwrt_one is not set
 # CONFIG_TARGET_mediatek_filogic_DEVICE_qihoo_360t7 is not set
@@ -4148,9 +4152,12 @@ CONFIG_DROPBEAR_MODERN_ONLY=y
 >>>>>>> 2056cea222 (update .config)
 =======
 # CONFIG_PACKAGE_ead is not set
+<<<<<<< HEAD
 # CONFIG_PACKAGE_fantastic-keyring is not set
 # CONFIG_PACKAGE_fantastic-packages-feeds is not set
 >>>>>>> b4faf21b37 (add .config)
+=======
+>>>>>>> 09b6e0ad61 (update .config)
 # CONFIG_PACKAGE_firewall is not set
 CONFIG_PACKAGE_firewall4=y
 CONFIG_PACKAGE_fitblk=y
@@ -4437,8 +4444,11 @@ CONFIG_PACKAGE_netatop=y
 =======
 CONFIG_PACKAGE_netatop=y
 # CONFIG_PACKAGE_netdata is not set
+<<<<<<< HEAD
 # CONFIG_PACKAGE_netdata-ssl is not set
 >>>>>>> b4faf21b37 (add .config)
+=======
+>>>>>>> 09b6e0ad61 (update .config)
 # CONFIG_PACKAGE_nload is not set
 # CONFIG_PACKAGE_nyx is not set
 # CONFIG_PACKAGE_qbee-agent is not set
@@ -4598,6 +4608,7 @@ CONFIG_PACKAGE_libiwinfo-data=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # CONFIG_PACKAGE_luci-app-xray is not set
 >>>>>>> 22b1a68274 (add .config)
@@ -4606,6 +4617,8 @@ CONFIG_PACKAGE_libiwinfo-data=y
 =======
 # CONFIG_PACKAGE_luci-app-xray is not set
 >>>>>>> b4faf21b37 (add .config)
+=======
+>>>>>>> 09b6e0ad61 (update .config)
 # CONFIG_PACKAGE_tang is not set
 # end of Extra packages
 
@@ -8795,6 +8808,7 @@ CONFIG_PACKAGE_libunbound_libpthread=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> b4faf21b37 (add .config)
@@ -8846,6 +8860,8 @@ CONFIG_GNUTLS_ANON=y
 # end of Configuration
 
 =======
+=======
+>>>>>>> 09b6e0ad61 (update .config)
 # SSL
 #
 # CONFIG_PACKAGE_libgnutls is not set
@@ -9232,6 +9248,7 @@ CONFIG_HAVE_MESA=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_libopencl-nouveau is not set
 =======
 =======
@@ -9256,6 +9273,9 @@ CONFIG_HAVE_MESA=y
 >>>>>>> b55b48469a (add .config)
 =======
 >>>>>>> b4faf21b37 (add .config)
+=======
+# CONFIG_PACKAGE_libopencl-nouveau is not set
+>>>>>>> 09b6e0ad61 (update .config)
 # CONFIG_PACKAGE_libosmesa-llvmpipe is not set
 # CONFIG_PACKAGE_libosmesa-softpipe is not set
 # CONFIG_PACKAGE_libpango is not set
@@ -9292,10 +9312,13 @@ CONFIG_HAVE_MESA=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2056cea222 (update .config)
 =======
 >>>>>>> b55b48469a (add .config)
+=======
+>>>>>>> 09b6e0ad61 (update .config)
 # CONFIG_PACKAGE_libtatsu is not set
 # CONFIG_PACKAGE_libusbmuxd is not set
 # end of libimobiledevice
@@ -10687,6 +10710,7 @@ CONFIG_PACKAGE_musl-fts=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # CONFIG_PACKAGE_rblibtorrent is not set
 >>>>>>> 22b1a68274 (add .config)
@@ -10695,6 +10719,8 @@ CONFIG_PACKAGE_musl-fts=y
 =======
 # CONFIG_PACKAGE_rblibtorrent is not set
 >>>>>>> b4faf21b37 (add .config)
+=======
+>>>>>>> 09b6e0ad61 (update .config)
 # CONFIG_PACKAGE_re2 is not set
 CONFIG_PACKAGE_rpcd-mod-luci=y
 # CONFIG_PACKAGE_rpcd-mod-rad2-enc is not set
@@ -11019,6 +11045,7 @@ CONFIG_PACKAGE_luci-app-firewall=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> e6dc7eff24 (update .config)
@@ -11026,6 +11053,8 @@ CONFIG_PACKAGE_luci-app-firewall=y
 >>>>>>> 11dc9639ce (add .config)
 =======
 >>>>>>> 832e8b7f4f (add .config)
+=======
+>>>>>>> f8ad14e1ac (update .config)
 <<<<<<< HEAD
 CONFIG_PACKAGE_luci-app-netspeedtest=y
 =======
@@ -11046,7 +11075,13 @@ CONFIG_PACKAGE_luci-app-netspeedtest=y
 =======
 =======
 >>>>>>> b4faf21b37 (add .config)
+<<<<<<< HEAD
 >>>>>>> 832e8b7f4f (add .config)
+=======
+=======
+CONFIG_PACKAGE_luci-app-netspeedtest=y
+>>>>>>> 09b6e0ad61 (update .config)
+>>>>>>> f8ad14e1ac (update .config)
 # CONFIG_PACKAGE_luci-app-nextdns is not set
 # CONFIG_PACKAGE_luci-app-nft-qos is not set
 # CONFIG_PACKAGE_luci-app-nlbwmon is not set
@@ -11828,6 +11863,7 @@ CONFIG_PACKAGE_luci-lib-uqr=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # CONFIG_PACKAGE_qbittorrent is not set
 >>>>>>> 22b1a68274 (add .config)
@@ -11836,6 +11872,8 @@ CONFIG_PACKAGE_luci-lib-uqr=y
 =======
 # CONFIG_PACKAGE_qbittorrent is not set
 >>>>>>> b4faf21b37 (add .config)
+=======
+>>>>>>> 09b6e0ad61 (update .config)
 # CONFIG_PACKAGE_rtorrent is not set
 # CONFIG_PACKAGE_rtorrent-rpc is not set
 # CONFIG_PACKAGE_transmission-cli is not set
@@ -12564,6 +12602,7 @@ CONFIG_PACKAGE_stubby=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # CONFIG_PACKAGE_einat-ebpf is not set
 >>>>>>> 22b1a68274 (add .config)
@@ -12572,6 +12611,8 @@ CONFIG_PACKAGE_stubby=y
 =======
 # CONFIG_PACKAGE_einat-ebpf is not set
 >>>>>>> b4faf21b37 (add .config)
+=======
+>>>>>>> 09b6e0ad61 (update .config)
 # CONFIG_PACKAGE_frr is not set
 # CONFIG_PACKAGE_genl is not set
 # CONFIG_PACKAGE_igmpproxy is not set
@@ -13116,6 +13157,7 @@ CONFIG_PACKAGE_wireguard-tools=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # CONFIG_PACKAGE_alwaysonline is not set
 >>>>>>> 22b1a68274 (add .config)
@@ -13124,6 +13166,8 @@ CONFIG_PACKAGE_wireguard-tools=y
 =======
 # CONFIG_PACKAGE_alwaysonline is not set
 >>>>>>> b4faf21b37 (add .config)
+=======
+>>>>>>> 09b6e0ad61 (update .config)
 # CONFIG_PACKAGE_apache is not set
 CONFIG_PACKAGE_cgi-io=y
 # CONFIG_PACKAGE_clamav is not set
@@ -13246,6 +13290,7 @@ CONFIG_PACKAGE_nginx-ssl-util=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> b4faf21b37 (add .config)
@@ -13261,6 +13306,8 @@ CONFIG_PACKAGE_nginx-ssl-util=y
 >>>>>>> 2056cea222 (update .config)
 =======
 >>>>>>> b4faf21b37 (add .config)
+=======
+>>>>>>> 09b6e0ad61 (update .config)
 # CONFIG_PACKAGE_sockd is not set
 # CONFIG_PACKAGE_socksify is not set
 # CONFIG_PACKAGE_spawn-fcgi is not set
@@ -13309,7 +13356,6 @@ CONFIG_PACKAGE_uhttpd-mod-lua=y
 >>>>>>> c8721daa0d (add .config)
 =======
 # CONFIG_PACKAGE_trojan-go is not set
-# CONFIG_PACKAGE_uci-alwaysonline is not set
 CONFIG_PACKAGE_uhttpd=y
 # CONFIG_PACKAGE_uhttpd-mod-lua is not set
 >>>>>>> b4faf21b37 (add .config)
@@ -13336,6 +13382,7 @@ CONFIG_PACKAGE_uhttpd-mod-ubus=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_wfb-ng is not set
 =======
 >>>>>>> 22b1a68274 (add .config)
@@ -13344,6 +13391,9 @@ CONFIG_PACKAGE_uhttpd-mod-ubus=y
 >>>>>>> 2056cea222 (update .config)
 =======
 >>>>>>> b4faf21b37 (add .config)
+=======
+# CONFIG_PACKAGE_wfb-ng is not set
+>>>>>>> 09b6e0ad61 (update .config)
 # CONFIG_PACKAGE_wifischedule is not set
 # end of Wireless
 
@@ -13451,6 +13501,7 @@ CONFIG_PACKAGE_wpad-basic-mbedtls=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_wpad-openssl is not set
 =======
 # CONFIG_PACKAGE_wpad-openssl=y
@@ -13467,6 +13518,9 @@ CONFIG_PACKAGE_wpad-openssl=y
 =======
 # CONFIG_PACKAGE_wpad-openssl=y
 >>>>>>> b4faf21b37 (add .config)
+=======
+# CONFIG_PACKAGE_wpad-openssl is not set
+>>>>>>> 09b6e0ad61 (update .config)
 # CONFIG_PACKAGE_wpad-wolfssl is not set
 # end of WirelessAPD
 
@@ -13481,6 +13535,7 @@ CONFIG_PACKAGE_wpad-openssl=y
 # CONFIG_PACKAGE_6in4 is not set
 # CONFIG_PACKAGE_6rd is not set
 # CONFIG_PACKAGE_6to4 is not set
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -13499,6 +13554,8 @@ CONFIG_PACKAGE_acme-common=y
 <<<<<<< HEAD
 =======
 # CONFIG_PACKAGE_Toolkit is not set
+=======
+>>>>>>> 09b6e0ad61 (update .config)
 # CONFIG_PACKAGE_UDPspeeder is not set
 # CONFIG_PACKAGE_aardvark-dns is not set
 >>>>>>> b4faf21b37 (add .config)
@@ -13527,6 +13584,7 @@ CONFIG_PACKAGE_acme-common=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_adguardhome=y
 =======
 # CONFIG_PACKAGE_adguardhome is not set
@@ -13546,6 +13604,9 @@ CONFIG_PACKAGE_adguardhome=y
 # CONFIG_PACKAGE_antiblock is not set
 =======
 # CONFIG_PACKAGE_adguardhome is not set
+=======
+CONFIG_PACKAGE_adguardhome=y
+>>>>>>> 09b6e0ad61 (update .config)
 # CONFIG_PACKAGE_ahcpd is not set
 # CONFIG_PACKAGE_alfred is not set
 # CONFIG_PACKAGE_alist is not set
@@ -13689,6 +13750,7 @@ CONFIG_PACKAGE_ethtool-full=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # CONFIG_PACKAGE_go-stun is not set
 >>>>>>> 22b1a68274 (add .config)
@@ -13697,6 +13759,8 @@ CONFIG_PACKAGE_ethtool-full=y
 =======
 # CONFIG_PACKAGE_go-stun is not set
 >>>>>>> b4faf21b37 (add .config)
+=======
+>>>>>>> 09b6e0ad61 (update .config)
 # CONFIG_PACKAGE_gping is not set
 # CONFIG_PACKAGE_gre is not set
 # CONFIG_PACKAGE_gsocket is not set
@@ -13804,9 +13868,6 @@ CONFIG_PACKAGE_ifstat=y
 CONFIG_IFSTAT_SNMP=y
 CONFIG_PACKAGE_iftop=y
 # CONFIG_PACKAGE_iiod is not set
-# CONFIG_PACKAGE_internet-detector is not set
-# CONFIG_PACKAGE_internet-detector-mod-email is not set
-# CONFIG_PACKAGE_internet-detector-mod-modem-restart is not set
 # CONFIG_PACKAGE_iperf is not set
 # CONFIG_PACKAGE_iperf3 is not set
 CONFIG_PACKAGE_iperf3-ssl=y
@@ -13894,6 +13955,7 @@ CONFIG_PACKAGE_libipset=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_mii-tool is not set
 =======
 # CONFIG_PACKAGE_mihomo is not set
@@ -13912,6 +13974,8 @@ CONFIG_PACKAGE_mii-tool=y
 >>>>>>> a487289ae3 (add .config)
 =======
 # CONFIG_PACKAGE_mihomo is not set
+=======
+>>>>>>> 09b6e0ad61 (update .config)
 CONFIG_PACKAGE_mii-tool=y
 >>>>>>> b4faf21b37 (add .config)
 # CONFIG_PACKAGE_mikrotik-btest is not set
@@ -13930,6 +13994,7 @@ CONFIG_PACKAGE_mii-tool=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> b4faf21b37 (add .config)
@@ -13945,6 +14010,8 @@ CONFIG_PACKAGE_mii-tool=y
 >>>>>>> 2056cea222 (update .config)
 =======
 >>>>>>> b4faf21b37 (add .config)
+=======
+>>>>>>> 09b6e0ad61 (update .config)
 # CONFIG_PACKAGE_nbd is not set
 # CONFIG_PACKAGE_nbd-server is not set
 # CONFIG_PACKAGE_ncp is not set
@@ -14048,6 +14115,7 @@ CONFIG_PACKAGE_odhcpd_ipv6only_ext_cer_id=0
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_pcapplusplus is not set
 # CONFIG_PACKAGE_pen is not set
 # CONFIG_PACKAGE_phantap is not set
@@ -14070,14 +14138,18 @@ CONFIG_PACKAGE_odhcpd_ipv6only_ext_cer_id=0
 >>>>>>> 2056cea222 (update .config)
 =======
 # CONFIG_PACKAGE_pcap-dnsproxy is not set
+=======
+>>>>>>> 09b6e0ad61 (update .config)
 # CONFIG_PACKAGE_pcapplusplus is not set
 # CONFIG_PACKAGE_pen is not set
 # CONFIG_PACKAGE_phantap is not set
-# CONFIG_PACKAGE_php-nginx is not set
 # CONFIG_PACKAGE_pimbd is not set
 # CONFIG_PACKAGE_pingcheck is not set
+<<<<<<< HEAD
 # CONFIG_PACKAGE_plain-nginx is not set
 >>>>>>> b4faf21b37 (add .config)
+=======
+>>>>>>> 09b6e0ad61 (update .config)
 # CONFIG_PACKAGE_port-mirroring is not set
 CONFIG_PACKAGE_ppp=y
 # CONFIG_PACKAGE_ppp-mod-passwordfd is not set
@@ -14220,6 +14292,7 @@ CONFIG_PACKAGE_speedtestcpp=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> b4faf21b37 (add .config)
@@ -14233,6 +14306,8 @@ CONFIG_PACKAGE_speedtestcpp=y
 >>>>>>> 2056cea222 (update .config)
 =======
 >>>>>>> b4faf21b37 (add .config)
+=======
+>>>>>>> 09b6e0ad61 (update .config)
 # CONFIG_PACKAGE_switchdev-poller is not set
 # CONFIG_PACKAGE_tac_plus is not set
 # CONFIG_PACKAGE_tac_plus-pam is not set
@@ -15478,6 +15553,7 @@ CONFIG_PACKAGE_dmesg=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_fdt-utils is not set
 # CONFIG_PACKAGE_file is not set
 <<<<<<< HEAD
@@ -15513,6 +15589,8 @@ CONFIG_PACKAGE_dmesg=y
 # CONFIG_PACKAGE_fantastic-packages is not set
 # CONFIG_PACKAGE_fantastic-packages-luci is not set
 # CONFIG_PACKAGE_fantastic-packages-packages is not set
+=======
+>>>>>>> 09b6e0ad61 (update .config)
 # CONFIG_PACKAGE_fdt-utils is not set
 # CONFIG_PACKAGE_file is not set
 >>>>>>> b4faf21b37 (add .config)
@@ -16441,6 +16519,7 @@ CONFIG_PACKAGE_whois=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 CONFIG_OVERRIDE_PKGS="speedtest-go"
@@ -16451,3 +16530,5 @@ CONFIG_OVERRIDE_PKGS="speedtest-go"
 
 CONFIG_OVERRIDE_PKGS="speedtest-go"
 >>>>>>> b4faf21b37 (add .config)
+=======
+>>>>>>> 09b6e0ad61 (update .config)
