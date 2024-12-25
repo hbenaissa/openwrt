@@ -9,6 +9,7 @@ CONFIG_HAVE_DOT_CONFIG=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_HOST_OS_LINUX is not set
 CONFIG_HOST_OS_MACOS=y
 =======
@@ -31,6 +32,10 @@ CONFIG_HOST_OS_MACOS=y
 CONFIG_HOST_OS_LINUX=y
 # CONFIG_HOST_OS_MACOS is not set
 >>>>>>> 9d3f0ec048 (add .config)
+=======
+# CONFIG_HOST_OS_LINUX is not set
+CONFIG_HOST_OS_MACOS=y
+>>>>>>> 0d5bec7cfe (add .config)
 # CONFIG_TARGET_airoha is not set
 # CONFIG_TARGET_d1 is not set
 # CONFIG_TARGET_sunxi is not set
@@ -80,6 +85,7 @@ CONFIG_TARGET_mediatek=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # CONFIG_TARGET_uml is not set
 >>>>>>> 22b1a68274 (add .config)
@@ -93,6 +99,8 @@ CONFIG_TARGET_mediatek=y
 =======
 # CONFIG_TARGET_uml is not set
 >>>>>>> 9d3f0ec048 (add .config)
+=======
+>>>>>>> 0d5bec7cfe (add .config)
 # CONFIG_TARGET_zynq is not set
 # CONFIG_TARGET_x86 is not set
 CONFIG_TARGET_mediatek_filogic=y
@@ -1008,6 +1016,7 @@ CONFIG_EXTRA_BINUTILS_CONFIG_OPTIONS=""
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # CONFIG_DWARVES is not set
 >>>>>>> 22b1a68274 (add .config)
@@ -1021,6 +1030,8 @@ CONFIG_EXTRA_BINUTILS_CONFIG_OPTIONS=""
 =======
 # CONFIG_DWARVES is not set
 >>>>>>> 9d3f0ec048 (add .config)
+=======
+>>>>>>> 0d5bec7cfe (add .config)
 
 #
 # Compiler
@@ -1197,7 +1208,7 @@ CONFIG_VERSION_CODE=""
 =======
 CONFIG_VERSIONOPT=y
 CONFIG_VERSION_DIST="mda-bananapi4-main-openwrt"
-CONFIG_VERSION_NUMBER="6.6.63-14"
+CONFIG_VERSION_NUMBER="6.6.65"
 CONFIG_VERSION_CODE=""
 >>>>>>> 9d3f0ec048 (add .config)
 CONFIG_VERSION_REPO="https://downloads.openwrt.org/snapshots"
@@ -4264,8 +4275,12 @@ CONFIG_PACKAGE_ca-certificates=y
 =======
 # CONFIG_PACKAGE_busybox-selinux is not set
 CONFIG_PACKAGE_ca-bundle=y
+<<<<<<< HEAD
 # CONFIG_PACKAGE_ca-certificates is not set
 >>>>>>> 9d3f0ec048 (add .config)
+=======
+CONFIG_PACKAGE_ca-certificates=y
+>>>>>>> 0d5bec7cfe (add .config)
 # CONFIG_PACKAGE_dnsmasq is not set
 # CONFIG_PACKAGE_dnsmasq-dhcpv6 is not set
 CONFIG_PACKAGE_dnsmasq-full=y
@@ -5048,6 +5063,7 @@ CONFIG_PACKAGE_libiwinfo-data=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_ath11k-firmware-qca2066 is not set
 =======
 >>>>>>> 22b1a68274 (add .config)
@@ -5068,6 +5084,9 @@ CONFIG_PACKAGE_libiwinfo-data=y
 >>>>>>> 465d7a0a9f (add .config)
 =======
 >>>>>>> 9d3f0ec048 (add .config)
+=======
+# CONFIG_PACKAGE_ath11k-firmware-qca2066 is not set
+>>>>>>> 0d5bec7cfe (add .config)
 # CONFIG_PACKAGE_ath11k-firmware-qca6390 is not set
 # CONFIG_PACKAGE_ath11k-firmware-qcn9074 is not set
 # CONFIG_PACKAGE_ath11k-firmware-wcn6750 is not set
@@ -7652,6 +7671,7 @@ CONFIG_PACKAGE_kmod-mt7996e=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_GOLANG_EXTERNAL_BOOTSTRAP_ROOT="/opt/homebrew/opt/go/libexec"
 =======
 CONFIG_GOLANG_EXTERNAL_BOOTSTRAP_ROOT=""
@@ -7674,6 +7694,9 @@ CONFIG_GOLANG_EXTERNAL_BOOTSTRAP_ROOT="/opt/homebrew/opt/go/libexec"
 =======
 CONFIG_GOLANG_EXTERNAL_BOOTSTRAP_ROOT=""
 >>>>>>> 9d3f0ec048 (add .config)
+=======
+CONFIG_GOLANG_EXTERNAL_BOOTSTRAP_ROOT="/opt/homebrew/Cellar/go/1.23.4"
+>>>>>>> 0d5bec7cfe (add .config)
 CONFIG_GOLANG_BUILD_CACHE_DIR=""
 # CONFIG_GOLANG_MOD_CACHE_WORLD_READABLE is not set
 # end of Configuration
@@ -8209,6 +8232,7 @@ CONFIG_PACKAGE_perlbase-xsloader=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_libpython3=y
 =======
 # CONFIG_PACKAGE_libpython3 is not set
@@ -8231,6 +8255,9 @@ CONFIG_PACKAGE_libpython3=y
 =======
 # CONFIG_PACKAGE_libpython3 is not set
 >>>>>>> 9d3f0ec048 (add .config)
+=======
+CONFIG_PACKAGE_libpython3=y
+>>>>>>> 0d5bec7cfe (add .config)
 # CONFIG_PACKAGE_micropython-lib is not set
 # CONFIG_PACKAGE_micropython-lib-src is not set
 # CONFIG_PACKAGE_micropython-lib-unix is not set
@@ -8275,6 +8302,7 @@ CONFIG_PACKAGE_python3-asyncio=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_python3-base=y
 # CONFIG_PACKAGE_python3-base-src is not set
 =======
@@ -8301,6 +8329,10 @@ CONFIG_PACKAGE_python3-base=y
 =======
 # CONFIG_PACKAGE_python3-base is not set
 >>>>>>> 9d3f0ec048 (add .config)
+=======
+CONFIG_PACKAGE_python3-base=y
+# CONFIG_PACKAGE_python3-base-src is not set
+>>>>>>> 0d5bec7cfe (add .config)
 # CONFIG_PACKAGE_python3-bcrypt is not set
 # CONFIG_PACKAGE_python3-bidict is not set
 # CONFIG_PACKAGE_python3-ble2mqtt is not set
@@ -8334,6 +8366,7 @@ CONFIG_PACKAGE_python3-cgitb=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_python3-codecs=y
 # CONFIG_PACKAGE_python3-codecs-src is not set
 =======
@@ -8360,6 +8393,10 @@ CONFIG_PACKAGE_python3-codecs=y
 =======
 # CONFIG_PACKAGE_python3-codecs is not set
 >>>>>>> 9d3f0ec048 (add .config)
+=======
+CONFIG_PACKAGE_python3-codecs=y
+# CONFIG_PACKAGE_python3-codecs-src is not set
+>>>>>>> 0d5bec7cfe (add .config)
 # CONFIG_PACKAGE_python3-colorama is not set
 # CONFIG_PACKAGE_python3-constantly is not set
 # CONFIG_PACKAGE_python3-contextlib2 is not set
@@ -8412,6 +8449,7 @@ CONFIG_PACKAGE_python3-distutils=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_python3-email=y
 # CONFIG_PACKAGE_python3-email-src is not set
 =======
@@ -8438,6 +8476,10 @@ CONFIG_PACKAGE_python3-email=y
 =======
 # CONFIG_PACKAGE_python3-email is not set
 >>>>>>> 9d3f0ec048 (add .config)
+=======
+CONFIG_PACKAGE_python3-email=y
+# CONFIG_PACKAGE_python3-email-src is not set
+>>>>>>> 0d5bec7cfe (add .config)
 # CONFIG_PACKAGE_python3-engineio is not set
 # CONFIG_PACKAGE_python3-et_xmlfile is not set
 # CONFIG_PACKAGE_python3-evdev is not set
@@ -8484,6 +8526,7 @@ CONFIG_PACKAGE_python3-email=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_python3-light=y
 =======
 # CONFIG_PACKAGE_python3-light is not set
@@ -8506,6 +8549,9 @@ CONFIG_PACKAGE_python3-light=y
 =======
 # CONFIG_PACKAGE_python3-light is not set
 >>>>>>> 9d3f0ec048 (add .config)
+=======
+CONFIG_PACKAGE_python3-light=y
+>>>>>>> 0d5bec7cfe (add .config)
 
 #
 # Configuration
@@ -8513,6 +8559,7 @@ CONFIG_PACKAGE_python3-light=y
 # CONFIG_PYTHON3_HOST_PIP_CACHE_WORLD_READABLE is not set
 # end of Configuration
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -8553,6 +8600,11 @@ CONFIG_PACKAGE_python3-logging=y
 =======
 # CONFIG_PACKAGE_python3-logging is not set
 >>>>>>> 9d3f0ec048 (add .config)
+=======
+# CONFIG_PACKAGE_python3-light-src is not set
+CONFIG_PACKAGE_python3-logging=y
+# CONFIG_PACKAGE_python3-logging-src is not set
+>>>>>>> 0d5bec7cfe (add .config)
 # CONFIG_PACKAGE_python3-lru-dict is not set
 # CONFIG_PACKAGE_python3-lxml is not set
 # CONFIG_PACKAGE_python3-lzma is not set
@@ -8592,6 +8644,7 @@ CONFIG_PACKAGE_python3-ncurses=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_python3-openssl=y
 # CONFIG_PACKAGE_python3-openssl-src is not set
 =======
@@ -8618,6 +8671,10 @@ CONFIG_PACKAGE_python3-openssl=y
 =======
 # CONFIG_PACKAGE_python3-openssl is not set
 >>>>>>> 9d3f0ec048 (add .config)
+=======
+CONFIG_PACKAGE_python3-openssl=y
+# CONFIG_PACKAGE_python3-openssl-src is not set
+>>>>>>> 0d5bec7cfe (add .config)
 # CONFIG_PACKAGE_python3-orjson is not set
 # CONFIG_PACKAGE_python3-outcome is not set
 # CONFIG_PACKAGE_python3-packages is not set
@@ -8635,6 +8692,7 @@ CONFIG_PACKAGE_python3-openssl=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_python3-pkg-resources=y
 # CONFIG_PACKAGE_python3-pkg-resources-src is not set
 =======
@@ -8661,6 +8719,10 @@ CONFIG_PACKAGE_python3-pkg-resources=y
 =======
 # CONFIG_PACKAGE_python3-pkg-resources is not set
 >>>>>>> 9d3f0ec048 (add .config)
+=======
+CONFIG_PACKAGE_python3-pkg-resources=y
+# CONFIG_PACKAGE_python3-pkg-resources-src is not set
+>>>>>>> 0d5bec7cfe (add .config)
 # CONFIG_PACKAGE_python3-platformdirs is not set
 # CONFIG_PACKAGE_python3-pluggy is not set
 # CONFIG_PACKAGE_python3-ply is not set
@@ -8808,6 +8870,7 @@ CONFIG_PACKAGE_python3-readline=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_python3-speedtest-cli=y
 # CONFIG_PACKAGE_python3-speedtest-cli-src is not set
 =======
@@ -8853,6 +8916,10 @@ CONFIG_PACKAGE_python3-speedtest-cli=y
 =======
 # CONFIG_PACKAGE_python3-speedtest-cli is not set
 >>>>>>> 9d3f0ec048 (add .config)
+=======
+CONFIG_PACKAGE_python3-speedtest-cli=y
+# CONFIG_PACKAGE_python3-speedtest-cli-src is not set
+>>>>>>> 0d5bec7cfe (add .config)
 # CONFIG_PACKAGE_python3-sqlalchemy is not set
 # CONFIG_PACKAGE_python3-sqlite3 is not set
 # CONFIG_PACKAGE_python3-sqlparse is not set
@@ -8930,7 +8997,8 @@ CONFIG_PACKAGE_python3-uuid=y
 # CONFIG_PACKAGE_python3-uuid-src is not set
 =======
 # CONFIG_PACKAGE_python3-unittest is not set
-# CONFIG_PACKAGE_python3-urllib is not set
+CONFIG_PACKAGE_python3-urllib=y
+# CONFIG_PACKAGE_python3-urllib-src is not set
 # CONFIG_PACKAGE_python3-urllib3 is not set
 # CONFIG_PACKAGE_python3-userpath is not set
 # CONFIG_PACKAGE_python3-uuid is not set
@@ -8943,6 +9011,7 @@ CONFIG_PACKAGE_python3-uuid=y
 # CONFIG_PACKAGE_python3-websocket-client is not set
 # CONFIG_PACKAGE_python3-websockets is not set
 # CONFIG_PACKAGE_python3-werkzeug is not set
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -8976,6 +9045,10 @@ CONFIG_PACKAGE_python3-xml=y
 =======
 # CONFIG_PACKAGE_python3-xml is not set
 >>>>>>> 9d3f0ec048 (add .config)
+=======
+CONFIG_PACKAGE_python3-xml=y
+# CONFIG_PACKAGE_python3-xml-src is not set
+>>>>>>> 0d5bec7cfe (add .config)
 # CONFIG_PACKAGE_python3-xmltodict is not set
 # CONFIG_PACKAGE_python3-yaml is not set
 # CONFIG_PACKAGE_python3-yarl is not set
@@ -10955,6 +11028,7 @@ CONFIG_PACKAGE_libhwloc=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_libiperf3=y
 =======
 # CONFIG_PACKAGE_libiperf3 is not set
@@ -10977,6 +11051,9 @@ CONFIG_PACKAGE_libiperf3=y
 =======
 # CONFIG_PACKAGE_libiperf3 is not set
 >>>>>>> 9d3f0ec048 (add .config)
+=======
+CONFIG_PACKAGE_libiperf3=y
+>>>>>>> 0d5bec7cfe (add .config)
 # CONFIG_PACKAGE_libiw is not set
 CONFIG_PACKAGE_libiwinfo=y
 # CONFIG_PACKAGE_libjaylink is not set
@@ -12370,7 +12447,6 @@ CONFIG_PACKAGE_luci-app-banip=y
 >>>>>>> a487289ae3 (add .config)
 =======
 # CONFIG_PACKAGE_luci-app-apinger is not set
-CONFIG_PACKAGE_luci-app-argon-config=y
 # CONFIG_PACKAGE_luci-app-aria2 is not set
 # CONFIG_PACKAGE_luci-app-attendedsysupgrade is not set
 # CONFIG_PACKAGE_luci-app-babeld is not set
@@ -12820,6 +12896,7 @@ CONFIG_PACKAGE_luci-lib-uqr=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d9bf330100 (add .config)
 =======
@@ -12940,6 +13017,8 @@ CONFIG_PACKAGE_luci-lib-uqr=y
 # CONFIG_PACKAGE_luci-i18n-argon-config-zh-cn is not set
 # CONFIG_PACKAGE_luci-i18n-argon-config-zh-tw is not set
 >>>>>>> 9d3f0ec048 (add .config)
+=======
+>>>>>>> 0d5bec7cfe (add .config)
 # CONFIG_PACKAGE_luci-i18n-base-ar is not set
 # CONFIG_PACKAGE_luci-i18n-base-bg is not set
 # CONFIG_PACKAGE_luci-i18n-base-bn is not set
@@ -13067,6 +13146,7 @@ CONFIG_PACKAGE_luci-lib-uqr=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 44928d2561 (add .config)
@@ -13076,6 +13156,8 @@ CONFIG_PACKAGE_luci-lib-uqr=y
 >>>>>>> 74187c2b60 (add .config)
 =======
 >>>>>>> e9881a60b4 (add .config)
+=======
+>>>>>>> d1cb175bd7 (add .config)
 <<<<<<< HEAD
 # CONFIG_PACKAGE_luci-i18n-netspeedtest-zh-cn is not set
 # CONFIG_PACKAGE_luci-i18n-netspeedtest-zh-tw is not set
@@ -13112,7 +13194,14 @@ CONFIG_PACKAGE_luci-lib-uqr=y
 =======
 =======
 >>>>>>> 9d3f0ec048 (add .config)
+<<<<<<< HEAD
 >>>>>>> e9881a60b4 (add .config)
+=======
+=======
+# CONFIG_PACKAGE_luci-i18n-netspeedtest-zh-cn is not set
+# CONFIG_PACKAGE_luci-i18n-netspeedtest-zh-tw is not set
+>>>>>>> 0d5bec7cfe (add .config)
+>>>>>>> d1cb175bd7 (add .config)
 # CONFIG_PACKAGE_luci-i18n-package-manager-ar is not set
 # CONFIG_PACKAGE_luci-i18n-package-manager-bg is not set
 # CONFIG_PACKAGE_luci-i18n-package-manager-bn is not set
@@ -14921,6 +15010,7 @@ CONFIG_PACKAGE_cgi-io=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_librespeed-go=y
 =======
 # CONFIG_PACKAGE_librespeed-go is not set
@@ -14943,6 +15033,9 @@ CONFIG_PACKAGE_librespeed-go=y
 =======
 # CONFIG_PACKAGE_librespeed-go is not set
 >>>>>>> 9d3f0ec048 (add .config)
+=======
+CONFIG_PACKAGE_librespeed-go=y
+>>>>>>> 0d5bec7cfe (add .config)
 # CONFIG_PACKAGE_lighttpd is not set
 # CONFIG_PACKAGE_microsocks is not set
 # CONFIG_PACKAGE_nginx-full is not set
@@ -15667,8 +15760,8 @@ CONFIG_PACKAGE_iftop=y
 >>>>>>> 9d3f0ec048 (add .config)
 # CONFIG_PACKAGE_iiod is not set
 # CONFIG_PACKAGE_iperf is not set
-# CONFIG_PACKAGE_iperf3 is not set
-CONFIG_PACKAGE_iperf3-ssl=y
+CONFIG_PACKAGE_iperf3=y
+CONFIG_PACKAGE_iperf3-ssl=m
 # CONFIG_PACKAGE_ipip is not set
 <<<<<<< HEAD
 <<<<<<< HEAD
