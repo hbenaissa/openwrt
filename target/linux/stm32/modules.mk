@@ -128,6 +128,96 @@ endef
 $(eval $(call KernelPackage,spi-stm32))
 
 
+define KernelPackage/scmi-hwmon
+  TITLE:=ARM SCMI Sensors
+  KCONFIG:=CONFIG_SENSORS_ARM_SCMI
+  FILES:=$(LINUX_DIR)/drivers/hwmon/scmi-hwmon.ko
+  AUTOLOAD:=$(call AutoProbe,scmi-hwmon)
+  $(call AddDepends/hwmon,@TARGET_stm32 +kmod-thermal)
+endef
+
+$(eval $(call KernelPackage,scmi-hwmon))
+
+
+define KernelPackage/stm32-dcmi
+  TITLE:=STM32 Digital Camera Memory Interface support
+  KCONFIG:=CONFIG_VIDEO_STM32_DCMI
+  FILES:=$(LINUX_DIR)/drivers/media/platform/st/stm32/stm32-dcmi.ko
+  AUTOLOAD:=$(call AutoProbe,stm32-dcmi)
+  $(call AddDepends/video,@TARGET_stm32 +kmod-video-videobuf2 +kmod-video-dma-contig +kmod-video-async +kmod-video-fwnode)
+endef
+
+$(eval $(call KernelPackage,stm32-dcmi))
+
+
+define KernelPackage/sound-soc-stm32-sai
+  TITLE:=STM32 SAI interface (Serial Audio Interface) support
+  KCONFIG:=CONFIG_SND_SOC_STM32_SAI
+  FILES:=$(LINUX_DIR)/sound/soc/stm/snd-soc-stm32-sai-sub.ko \
+	 $(LINUX_DIR)/sound/soc/stm/snd-soc-stm32-sai.ko
+  AUTOLOAD:=$(call AutoProbe,snd-soc-stm32-sai-sub snd-soc-stm32-sai)
+  $(call AddDepends/sound,@TARGET_stm32 +kmod-sound-soc-core)
+endef
+
+$(eval $(call KernelPackage,sound-soc-stm32-sai))
+
+
+define KernelPackage/sound-soc-stm32-i2s
+  TITLE:=STM32 I2S interface (SPI/I2S block) support
+  KCONFIG:=CONFIG_SND_SOC_STM32_I2S
+  FILES:=$(LINUX_DIR)/sound/soc/stm/snd-soc-stm32-i2s.ko
+  AUTOLOAD:=$(call AutoProbe,snd-soc-stm32-i2s)
+  $(call AddDepends/sound,@TARGET_stm32 +kmod-sound-soc-core)
+endef
+
+$(eval $(call KernelPackage,sound-soc-stm32-i2s))
+
+
+define KernelPackage/sound-soc-stm32-spdifrx
+  TITLE:=STM32 S/PDIF receiver (SPDIFRX) support
+  KCONFIG:=CONFIG_SND_SOC_STM32_SPDIFRX
+  FILES:=$(LINUX_DIR)/sound/soc/stm/snd-soc-stm32-spdifrx.ko
+  AUTOLOAD:=$(call AutoProbe,snd-soc-stm32-spdifrx)
+  $(call AddDepends/sound,@TARGET_stm32 +kmod-sound-soc-core)
+endef
+
+$(eval $(call KernelPackage,sound-soc-stm32-spdifrx))
+
+
+define KernelPackage/sound-soc-stm32-dfsdm
+  TITLE:=SoC Audio support for STM32 DFSDM
+  KCONFIG:=CONFIG_SND_SOC_STM32_DFSDM
+  FILES:=$(LINUX_DIR)/sound/soc/stm/stm32_adfsdm.ko
+  AUTOLOAD:=$(call AutoProbe,stm32_adfsdm)
+  $(call AddDepends/sound,@TARGET_stm32 +kmod-sound-soc-core +kmod-stm32-dfsdm-adc +kmod-industrialio-buffer-cb)
+endef
+
+$(eval $(call KernelPackage,sound-soc-stm32-dfsdm))
+
+
+define KernelPackage/stm32-timers
+  TITLE:=STM32 Timers
+  DEPENDS:=@TARGET_stm32 +kmod-mfd
+  SUBMENU:=$(OTHER_MENU)
+  KCONFIG:=CONFIG_MFD_STM32_TIMERS
+  FILES:=$(LINUX_DIR)/drivers/mfd/stm32-timers.ko
+  AUTOLOAD:=$(call AutoProbe,stm32-timers)
+endef
+
+$(eval $(call KernelPackage,stm32-timers))
+
+
+define KernelPackage/stm32-timer-trigger
+  TITLE:=STM32 Timer Trigger
+  KCONFIG:=CONFIG_IIO_STM32_TIMER_TRIGGER
+  FILES:=$(LINUX_DIR)/drivers/iio/trigger/stm32-timer-trigger.ko
+  AUTOLOAD:=$(call AutoProbe,stm32-timer-trigger)
+  $(call AddDepends/iio,@TARGET_stm32 +kmod-stm32-timers)
+endef
+
+$(eval $(call KernelPackage,stm32-timer-trigger))
+
+
 define KernelPackage/stm32-adc
   TITLE:=STM32 ADC
   KCONFIG:=CONFIG_STM32_ADC_CORE \
