@@ -5308,6 +5308,9 @@ CONFIG_PACKAGE_libiwinfo-data=y
 # CONFIG_PACKAGE_ath10k-firmware-qca99x0-ct-full-htt is not set
 # CONFIG_PACKAGE_ath10k-firmware-qca99x0-ct-htt is not set
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 91d2f4161a (add .config)
 # CONFIG_PACKAGE_ath11k-firmware-ipq5018 is not set
 # CONFIG_PACKAGE_ath11k-firmware-ipq6018 is not set
 # CONFIG_PACKAGE_ath11k-firmware-ipq8074 is not set
@@ -7017,6 +7020,7 @@ CONFIG_PACKAGE_kmod-nft-xfrm=y
 # CONFIG_PACKAGE_kmod-dsa-realtek is not set
 # CONFIG_PACKAGE_kmod-dsa-rtl8365mb is not set
 # CONFIG_PACKAGE_kmod-dsa-rtl8366rb is not set
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 11dc9639ce (add .config)
@@ -7038,7 +7042,12 @@ CONFIG_PACKAGE_kmod-nft-xfrm=y
 # CONFIG_PACKAGE_kmod-dsa-mv88e6xxx is not set
 # CONFIG_PACKAGE_kmod-dsa-qca8k is not set
 >>>>>>> bbad1cbb94 (add .config)
+<<<<<<< HEAD
 >>>>>>> 543866fcb0 (add .config)
+=======
+=======
+>>>>>>> 91d2f4161a (add .config)
+>>>>>>> e66041992e (add .config)
 # CONFIG_PACKAGE_kmod-dummy is not set
 # CONFIG_PACKAGE_kmod-e100 is not set
 # CONFIG_PACKAGE_kmod-e1000 is not set
@@ -8298,6 +8307,7 @@ CONFIG_PACKAGE_lua-bit32=y
 >>>>>>> 7122b6b35b (add .config)
 # CONFIG_PACKAGE_lua-cjson is not set
 # CONFIG_PACKAGE_lua-cjson-lua5.3 is not set
+<<<<<<< HEAD
 =======
 # CONFIG_PACKAGE_lua-bit32 is not set
 =======
@@ -8305,6 +8315,8 @@ CONFIG_PACKAGE_lua-bit32=y
 >>>>>>> 052ad0b245 (add .config)
 # CONFIG_PACKAGE_lua-cjson is not set
 >>>>>>> b4faf21b37 (add .config)
+=======
+>>>>>>> 91d2f4161a (add .config)
 # CONFIG_PACKAGE_lua-copas is not set
 # CONFIG_PACKAGE_lua-coxpcall is not set
 # CONFIG_PACKAGE_lua-cs-bouncer is not set
@@ -13564,6 +13576,7 @@ CONFIG_PACKAGE_luci-app-banip=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_luci-app-crowdsec-firewall-bouncer=y
 =======
 # CONFIG_PACKAGE_luci-app-crowdsec-firewall-bouncer is not set
@@ -13574,6 +13587,9 @@ CONFIG_PACKAGE_luci-app-crowdsec-firewall-bouncer=y
 =======
 # CONFIG_PACKAGE_luci-app-crowdsec-firewall-bouncer=y
 >>>>>>> bc8d72efaf (add .config)
+=======
+# CONFIG_PACKAGE_luci-app-crowdsec-firewall-bouncer is not set
+>>>>>>> e66041992e (add .config)
 # CONFIG_PACKAGE_luci-app-cshark is not set
 # CONFIG_PACKAGE_luci-app-dawn is not set
 # CONFIG_PACKAGE_luci-app-dcwapd is not set
@@ -14249,32 +14265,6 @@ CONFIG_PACKAGE_luci-lib-uqr=y
 >>>>>>> bbad1cbb94 (add .config)
 # CONFIG_PACKAGE_luci-i18n-base-zh-cn is not set
 # CONFIG_PACKAGE_luci-i18n-base-zh-tw is not set
-# CONFIG_PACKAGE_luci-i18n-crowdsec-firewall-bouncer-ar is not set
-# CONFIG_PACKAGE_luci-i18n-crowdsec-firewall-bouncer-bn is not set
-# CONFIG_PACKAGE_luci-i18n-crowdsec-firewall-bouncer-cs is not set
-# CONFIG_PACKAGE_luci-i18n-crowdsec-firewall-bouncer-da is not set
-# CONFIG_PACKAGE_luci-i18n-crowdsec-firewall-bouncer-de is not set
-# CONFIG_PACKAGE_luci-i18n-crowdsec-firewall-bouncer-es is not set
-# CONFIG_PACKAGE_luci-i18n-crowdsec-firewall-bouncer-fi is not set
-# CONFIG_PACKAGE_luci-i18n-crowdsec-firewall-bouncer-fr is not set
-# CONFIG_PACKAGE_luci-i18n-crowdsec-firewall-bouncer-hu is not set
-# CONFIG_PACKAGE_luci-i18n-crowdsec-firewall-bouncer-it is not set
-# CONFIG_PACKAGE_luci-i18n-crowdsec-firewall-bouncer-ja is not set
-# CONFIG_PACKAGE_luci-i18n-crowdsec-firewall-bouncer-lt is not set
-# CONFIG_PACKAGE_luci-i18n-crowdsec-firewall-bouncer-nl is not set
-# CONFIG_PACKAGE_luci-i18n-crowdsec-firewall-bouncer-no is not set
-# CONFIG_PACKAGE_luci-i18n-crowdsec-firewall-bouncer-pl is not set
-# CONFIG_PACKAGE_luci-i18n-crowdsec-firewall-bouncer-pt is not set
-# CONFIG_PACKAGE_luci-i18n-crowdsec-firewall-bouncer-pt-br is not set
-# CONFIG_PACKAGE_luci-i18n-crowdsec-firewall-bouncer-ro is not set
-# CONFIG_PACKAGE_luci-i18n-crowdsec-firewall-bouncer-ru is not set
-# CONFIG_PACKAGE_luci-i18n-crowdsec-firewall-bouncer-sv is not set
-# CONFIG_PACKAGE_luci-i18n-crowdsec-firewall-bouncer-tr is not set
-# CONFIG_PACKAGE_luci-i18n-crowdsec-firewall-bouncer-uk is not set
-# CONFIG_PACKAGE_luci-i18n-crowdsec-firewall-bouncer-vi is not set
-# CONFIG_PACKAGE_luci-i18n-crowdsec-firewall-bouncer-yua is not set
-# CONFIG_PACKAGE_luci-i18n-crowdsec-firewall-bouncer-zh-cn is not set
-# CONFIG_PACKAGE_luci-i18n-crowdsec-firewall-bouncer-zh-tw is not set
 # CONFIG_PACKAGE_luci-i18n-dashboard-ar is not set
 # CONFIG_PACKAGE_luci-i18n-dashboard-bg is not set
 # CONFIG_PACKAGE_luci-i18n-dashboard-bn is not set
@@ -17086,6 +17076,7 @@ CONFIG_PACKAGE_crowdsec=y
 # CONFIG_PACKAGE_conserver-ipmi is not set
 CONFIG_PACKAGE_crowdsec=y
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # CONFIG_PACKAGE_crowdsec is not set
 <<<<<<< HEAD
@@ -17116,7 +17107,13 @@ CONFIG_PACKAGE_crowdsec-firewall-bouncer=y
 =======
 # CONFIG_PACKAGE_crowdsec-firewall-bouncer=y
 >>>>>>> d1c87e9571 (add .config)
+<<<<<<< HEAD
 >>>>>>> bc8d72efaf (add .config)
+=======
+=======
+# CONFIG_PACKAGE_crowdsec-firewall-bouncer is not set
+>>>>>>> 91d2f4161a (add .config)
+>>>>>>> e66041992e (add .config)
 # CONFIG_PACKAGE_cshark is not set
 # CONFIG_PACKAGE_darkstat is not set
 # CONFIG_PACKAGE_dhcpcd is not set
