@@ -676,6 +676,16 @@ CONFIG_TARGET_IMAGES_GZIP=y
 =======
 >>>>>>> 1402406a45 (add .config)
 
+CONFIG_CPU_FREQ_DEFAULT_GOV_ONDEMAND=y
+CONFIG_CPU_FREQ_GOV_ATTR_SET=y
+CONFIG_CPU_FREQ_GOV_COMMON=y
+CONFIG_CPU_FREQ_GOV_CONSERVATIVE=y
+CONFIG_CPU_FREQ_GOV_ONDEMAND=y
+CONFIG_CPU_FREQ_GOV_PERFORMANCE=y
+CONFIG_CPU_FREQ_GOV_POWERSAVE=y
+CONFIG_CPU_FREQ_GOV_SCHEDUTIL=y
+CONFIG_CPU_FREQ_GOV_USERSPACE=y
+
 #
 # Image Options
 #
@@ -22098,6 +22108,7 @@ CONFIG_PACKAGE_catatonit=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4547d39886 (add .config)
 # CONFIG_PACKAGE_cli is not set
@@ -22111,6 +22122,9 @@ CONFIG_PACKAGE_catatonit=y
 >>>>>>> 055f889c01 (add .config)
 =======
 >>>>>>> a44d51ee7c (add .config)
+=======
+# CONFIG_PACKAGE_cli is not set
+>>>>>>> 9d9e22e531 (add .config)
 # CONFIG_PACKAGE_cligen is not set
 # CONFIG_PACKAGE_clixon is not set
 =======
@@ -24169,6 +24183,7 @@ CONFIG_PACKAGE_ucode-mod-lua=y
 # CONFIG_PACKAGE_ucode-mod-udebug is not set
 # CONFIG_PACKAGE_ucode-mod-uline is not set
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # CONFIG_PACKAGE_ucode-mod-uclient is not set
 # CONFIG_PACKAGE_ucode-mod-udebug is not set
@@ -24179,6 +24194,8 @@ CONFIG_PACKAGE_ucode-mod-lua=y
 # CONFIG_PACKAGE_ucode-mod-uclient is not set
 # CONFIG_PACKAGE_ucode-mod-udebug is not set
 >>>>>>> 1402406a45 (add .config)
+=======
+>>>>>>> 9d9e22e531 (add .config)
 # CONFIG_PACKAGE_udebug-cli is not set
 # CONFIG_PACKAGE_udebugd is not set
 # CONFIG_PACKAGE_udns-dnsget is not set
