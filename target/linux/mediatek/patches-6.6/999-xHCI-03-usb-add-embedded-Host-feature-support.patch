@@ -11,7 +11,7 @@ Subject: [PATCH 3/3] 999-xHCI-03-usb-add-embedded-Host-feature-support.patch
 
 --- a/drivers/usb/core/hub.c
 +++ b/drivers/usb/core/hub.c
-@@ -2480,6 +2480,8 @@ static int usb_enumerate_device(struct u
+@@ -2491,6 +2491,8 @@ static int usb_enumerate_device(struct u
  			if (err < 0)
  				dev_dbg(&udev->dev, "HNP fail, %d\n", err);
  		}
@@ -20,7 +20,7 @@ Subject: [PATCH 3/3] 999-xHCI-03-usb-add-embedded-Host-feature-support.patch
  		return -ENOTSUPP;
  	}
  
-@@ -4987,9 +4989,11 @@ hub_port_init(struct usb_hub *hub, struc
+@@ -4997,9 +4999,11 @@ hub_port_init(struct usb_hub *hub, struc
  				goto fail;
  			}
  			if (maxp0 < 0) {
