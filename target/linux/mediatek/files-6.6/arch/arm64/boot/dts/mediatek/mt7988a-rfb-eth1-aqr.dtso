@@ -17,6 +17,7 @@
 		__overlay__ {
 			#address-cells = <1>;
 			#size-cells = <0>;
+			clock-frequency = <10500000>;
 
 			/* external Aquantia AQR113C */
 			phy0: ethernet-phy@0 {
