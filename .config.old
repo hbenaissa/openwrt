@@ -1419,7 +1419,7 @@ CONFIG_VERSION_CODE=""
 =======
 CONFIG_VERSIONOPT=y
 CONFIG_VERSION_DIST="mda-bananapi4"
-CONFIG_VERSION_NUMBER="6.6.77  "
+CONFIG_VERSION_NUMBER="6.6.66"
 CONFIG_VERSION_CODE="0"
 >>>>>>> ae92c3ffc7 (add .config)
 CONFIG_VERSION_REPO="https://downloads.openwrt.org/snapshots"
@@ -2698,6 +2698,7 @@ CONFIG_BUSYBOX_CONFIG_HAVE_DOT_CONFIG=y
 # Settings
 #
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_BUSYBOX_CONFIG_DESKTOP=y
 CONFIG_BUSYBOX_CONFIG_EXTRA_COMPAT=y
 CONFIG_BUSYBOX_CONFIG_FEDORA_COMPAT=y
@@ -2706,6 +2707,11 @@ CONFIG_BUSYBOX_CONFIG_FEDORA_COMPAT=y
 # CONFIG_BUSYBOX_CONFIG_EXTRA_COMPAT is not set
 # CONFIG_BUSYBOX_CONFIG_FEDORA_COMPAT is not set
 >>>>>>> 6820e5511b (add .config)
+=======
+CONFIG_BUSYBOX_CONFIG_DESKTOP=y
+CONFIG_BUSYBOX_CONFIG_EXTRA_COMPAT=y
+CONFIG_BUSYBOX_CONFIG_FEDORA_COMPAT=y
+>>>>>>> 6c4b73ab37 (add .config)
 CONFIG_BUSYBOX_CONFIG_INCLUDE_SUSv2=y
 CONFIG_BUSYBOX_CONFIG_LONG_OPTS=y
 CONFIG_BUSYBOX_CONFIG_SHOW_USAGE=y
@@ -2715,6 +2721,7 @@ CONFIG_BUSYBOX_CONFIG_LFS=y
 # CONFIG_BUSYBOX_CONFIG_TIME64 is not set
 # CONFIG_BUSYBOX_CONFIG_PAM is not set
 CONFIG_BUSYBOX_CONFIG_FEATURE_DEVPTS=y
+<<<<<<< HEAD
 <<<<<<< HEAD
 CONFIG_BUSYBOX_CONFIG_FEATURE_UTMP=y
 CONFIG_BUSYBOX_CONFIG_FEATURE_WTMP=y
@@ -2729,6 +2736,15 @@ CONFIG_BUSYBOX_CONFIG_FEATURE_PIDFILE=y
 CONFIG_BUSYBOX_CONFIG_PID_FILE_PATH="/var/run"
 # CONFIG_BUSYBOX_CONFIG_BUSYBOX is not set
 >>>>>>> 6820e5511b (add .config)
+=======
+CONFIG_BUSYBOX_CONFIG_FEATURE_UTMP=y
+CONFIG_BUSYBOX_CONFIG_FEATURE_WTMP=y
+CONFIG_BUSYBOX_CONFIG_FEATURE_PIDFILE=y
+CONFIG_BUSYBOX_CONFIG_PID_FILE_PATH="/var/run"
+CONFIG_BUSYBOX_CONFIG_BUSYBOX=y
+CONFIG_BUSYBOX_CONFIG_FEATURE_SHOW_SCRIPT=y
+CONFIG_BUSYBOX_CONFIG_FEATURE_INSTALLER=y
+>>>>>>> 6c4b73ab37 (add .config)
 # CONFIG_BUSYBOX_CONFIG_INSTALL_NO_USR is not set
 # CONFIG_BUSYBOX_CONFIG_FEATURE_SUID is not set
 CONFIG_BUSYBOX_CONFIG_FEATURE_PREFER_APPLETS=y
@@ -2791,16 +2807,21 @@ CONFIG_BUSYBOX_CONFIG_SHA256_HWACCEL=y
 CONFIG_BUSYBOX_CONFIG_SHA3_SMALL=1
 CONFIG_BUSYBOX_CONFIG_FEATURE_NON_POSIX_CP=y
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_BUSYBOX_CONFIG_FEATURE_VERBOSE_CP_MESSAGE=y
 =======
 # CONFIG_BUSYBOX_CONFIG_FEATURE_VERBOSE_CP_MESSAGE is not set
 >>>>>>> 6820e5511b (add .config)
+=======
+CONFIG_BUSYBOX_CONFIG_FEATURE_VERBOSE_CP_MESSAGE=y
+>>>>>>> 6c4b73ab37 (add .config)
 CONFIG_BUSYBOX_CONFIG_FEATURE_USE_SENDFILE=y
 CONFIG_BUSYBOX_CONFIG_FEATURE_COPYBUF_KB=4
 CONFIG_BUSYBOX_CONFIG_MONOTONIC_SYSCALL=y
 CONFIG_BUSYBOX_CONFIG_IOCTL_HEX2STR_ERROR=y
 CONFIG_BUSYBOX_CONFIG_FEATURE_EDITING=y
 CONFIG_BUSYBOX_CONFIG_FEATURE_EDITING_MAX_LEN=512
+<<<<<<< HEAD
 <<<<<<< HEAD
 CONFIG_BUSYBOX_CONFIG_FEATURE_EDITING_VI=y
 CONFIG_BUSYBOX_CONFIG_FEATURE_EDITING_HISTORY=9999
@@ -2812,12 +2833,20 @@ CONFIG_BUSYBOX_CONFIG_FEATURE_USERNAME_COMPLETION=y
 =======
 # CONFIG_BUSYBOX_CONFIG_FEATURE_EDITING_VI is not set
 CONFIG_BUSYBOX_CONFIG_FEATURE_EDITING_HISTORY=256
+=======
+CONFIG_BUSYBOX_CONFIG_FEATURE_EDITING_VI=y
+CONFIG_BUSYBOX_CONFIG_FEATURE_EDITING_HISTORY=9999
+>>>>>>> 6c4b73ab37 (add .config)
 CONFIG_BUSYBOX_CONFIG_FEATURE_EDITING_SAVEHISTORY=y
-CONFIG_BUSYBOX_CONFIG_FEATURE_EDITING_SAVE_ON_EXIT=y
+# CONFIG_BUSYBOX_CONFIG_FEATURE_EDITING_SAVE_ON_EXIT is not set
 # CONFIG_BUSYBOX_CONFIG_FEATURE_REVERSE_SEARCH is not set
 CONFIG_BUSYBOX_CONFIG_FEATURE_TAB_COMPLETION=y
+<<<<<<< HEAD
 # CONFIG_BUSYBOX_CONFIG_FEATURE_USERNAME_COMPLETION is not set
 >>>>>>> 6820e5511b (add .config)
+=======
+CONFIG_BUSYBOX_CONFIG_FEATURE_USERNAME_COMPLETION=y
+>>>>>>> 6c4b73ab37 (add .config)
 CONFIG_BUSYBOX_CONFIG_FEATURE_EDITING_FANCY_PROMPT=y
 # CONFIG_BUSYBOX_CONFIG_FEATURE_EDITING_WINCH is not set
 # CONFIG_BUSYBOX_CONFIG_FEATURE_EDITING_ASK_TERMINAL is not set
@@ -2884,18 +2913,26 @@ CONFIG_BUSYBOX_CONFIG_FEATURE_TAR_GNU_EXTENSIONS=y
 # Coreutils
 #
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_BUSYBOX_CONFIG_FEATURE_VERBOSE=y
 =======
 # CONFIG_BUSYBOX_CONFIG_FEATURE_VERBOSE is not set
 >>>>>>> 6820e5511b (add .config)
+=======
+CONFIG_BUSYBOX_CONFIG_FEATURE_VERBOSE=y
+>>>>>>> 6c4b73ab37 (add .config)
 
 #
 # Common options for date and touch
 #
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_BUSYBOX_CONFIG_FEATURE_TIMEZONE is not set
 =======
 >>>>>>> 6820e5511b (add .config)
+=======
+# CONFIG_BUSYBOX_CONFIG_FEATURE_TIMEZONE is not set
+>>>>>>> 6c4b73ab37 (add .config)
 
 #
 # Common options for cp and mv
@@ -2931,10 +2968,14 @@ CONFIG_BUSYBOX_CONFIG_FEATURE_DD_SIGNAL_HANDLING=y
 # CONFIG_BUSYBOX_CONFIG_FEATURE_DD_THIRD_STATUS_LINE is not set
 CONFIG_BUSYBOX_CONFIG_FEATURE_DD_IBS_OBS=y
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_BUSYBOX_CONFIG_FEATURE_DD_STATUS=y
 =======
 # CONFIG_BUSYBOX_CONFIG_FEATURE_DD_STATUS is not set
 >>>>>>> 6820e5511b (add .config)
+=======
+CONFIG_BUSYBOX_CONFIG_FEATURE_DD_STATUS=y
+>>>>>>> 6c4b73ab37 (add .config)
 CONFIG_BUSYBOX_CONFIG_DF=y
 # CONFIG_BUSYBOX_CONFIG_FEATURE_DF_FANCY is not set
 # CONFIG_BUSYBOX_CONFIG_FEATURE_SKIP_ROOTFS is not set
@@ -3048,11 +3089,17 @@ CONFIG_BUSYBOX_CONFIG_UNIQ=y
 CONFIG_BUSYBOX_CONFIG_WC=y
 # CONFIG_BUSYBOX_CONFIG_FEATURE_WC_LARGE is not set
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_BUSYBOX_CONFIG_WHO is not set
 # CONFIG_BUSYBOX_CONFIG_W is not set
 # CONFIG_BUSYBOX_CONFIG_USERS is not set
 =======
 >>>>>>> 6820e5511b (add .config)
+=======
+# CONFIG_BUSYBOX_CONFIG_WHO is not set
+# CONFIG_BUSYBOX_CONFIG_W is not set
+# CONFIG_BUSYBOX_CONFIG_USERS is not set
+>>>>>>> 6c4b73ab37 (add .config)
 # CONFIG_BUSYBOX_CONFIG_WHOAMI is not set
 CONFIG_BUSYBOX_CONFIG_YES=y
 # end of Coreutils
@@ -3133,10 +3180,14 @@ CONFIG_BUSYBOX_CONFIG_FEATURE_ALLOW_EXEC=y
 # Finding Utilities
 #
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6c4b73ab37 (add .config)
 # CONFIG_BUSYBOX_CONFIG_FIND is not set
 # CONFIG_BUSYBOX_CONFIG_GREP is not set
 # CONFIG_BUSYBOX_CONFIG_EGREP is not set
 # CONFIG_BUSYBOX_CONFIG_FGREP is not set
+<<<<<<< HEAD
 =======
 CONFIG_BUSYBOX_CONFIG_FIND=y
 CONFIG_BUSYBOX_CONFIG_FEATURE_FIND_PRINT0=y
@@ -3175,11 +3226,14 @@ CONFIG_BUSYBOX_CONFIG_EGREP=y
 CONFIG_BUSYBOX_CONFIG_FGREP=y
 CONFIG_BUSYBOX_CONFIG_FEATURE_GREP_CONTEXT=y
 >>>>>>> 6820e5511b (add .config)
+=======
+>>>>>>> 6c4b73ab37 (add .config)
 CONFIG_BUSYBOX_CONFIG_XARGS=y
 CONFIG_BUSYBOX_CONFIG_FEATURE_XARGS_SUPPORT_CONFIRMATION=y
 CONFIG_BUSYBOX_CONFIG_FEATURE_XARGS_SUPPORT_QUOTES=y
 CONFIG_BUSYBOX_CONFIG_FEATURE_XARGS_SUPPORT_TERMOPT=y
 CONFIG_BUSYBOX_CONFIG_FEATURE_XARGS_SUPPORT_ZERO_TERM=y
+<<<<<<< HEAD
 <<<<<<< HEAD
 CONFIG_BUSYBOX_CONFIG_FEATURE_XARGS_SUPPORT_REPL_STR=y
 CONFIG_BUSYBOX_CONFIG_FEATURE_XARGS_SUPPORT_PARALLEL=y
@@ -3189,6 +3243,11 @@ CONFIG_BUSYBOX_CONFIG_FEATURE_XARGS_SUPPORT_ARGS_FILE=y
 # CONFIG_BUSYBOX_CONFIG_FEATURE_XARGS_SUPPORT_PARALLEL is not set
 # CONFIG_BUSYBOX_CONFIG_FEATURE_XARGS_SUPPORT_ARGS_FILE is not set
 >>>>>>> 6820e5511b (add .config)
+=======
+CONFIG_BUSYBOX_CONFIG_FEATURE_XARGS_SUPPORT_REPL_STR=y
+CONFIG_BUSYBOX_CONFIG_FEATURE_XARGS_SUPPORT_PARALLEL=y
+CONFIG_BUSYBOX_CONFIG_FEATURE_XARGS_SUPPORT_ARGS_FILE=y
+>>>>>>> 6c4b73ab37 (add .config)
 # end of Finding Utilities
 
 #
@@ -3292,9 +3351,13 @@ CONFIG_BUSYBOX_CONFIG_HWCLOCK=y
 # CONFIG_BUSYBOX_CONFIG_IPCRM is not set
 # CONFIG_BUSYBOX_CONFIG_IPCS is not set
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_BUSYBOX_CONFIG_LAST is not set
 =======
 >>>>>>> 6820e5511b (add .config)
+=======
+# CONFIG_BUSYBOX_CONFIG_LAST is not set
+>>>>>>> 6c4b73ab37 (add .config)
 # CONFIG_BUSYBOX_CONFIG_LOSETUP is not set
 # CONFIG_BUSYBOX_CONFIG_LSPCI is not set
 # CONFIG_BUSYBOX_CONFIG_LSUSB is not set
@@ -3349,9 +3412,13 @@ CONFIG_BUSYBOX_CONFIG_UMOUNT=y
 CONFIG_BUSYBOX_CONFIG_FEATURE_UMOUNT_ALL=y
 # CONFIG_BUSYBOX_CONFIG_UNSHARE is not set
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_BUSYBOX_CONFIG_WALL is not set
 =======
 >>>>>>> 6820e5511b (add .config)
+=======
+# CONFIG_BUSYBOX_CONFIG_WALL is not set
+>>>>>>> 6c4b73ab37 (add .config)
 
 #
 # Common options for mount/umount
@@ -3418,9 +3485,13 @@ CONFIG_BUSYBOX_CONFIG_LOCK=y
 # CONFIG_BUSYBOX_CONFIG_READAHEAD is not set
 # CONFIG_BUSYBOX_CONFIG_RFKILL is not set
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_BUSYBOX_CONFIG_RUNLEVEL is not set
 =======
 >>>>>>> 6820e5511b (add .config)
+=======
+# CONFIG_BUSYBOX_CONFIG_RUNLEVEL is not set
+>>>>>>> 6c4b73ab37 (add .config)
 # CONFIG_BUSYBOX_CONFIG_RX is not set
 # CONFIG_BUSYBOX_CONFIG_SEEDRNG is not set
 # CONFIG_BUSYBOX_CONFIG_SETFATTR is not set
@@ -3594,12 +3665,16 @@ CONFIG_BUSYBOX_CONFIG_PIDOF=y
 # CONFIG_BUSYBOX_CONFIG_PMAP is not set
 # CONFIG_BUSYBOX_CONFIG_POWERTOP is not set
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_BUSYBOX_CONFIG_PS is not set
 =======
 CONFIG_BUSYBOX_CONFIG_PS=y
 CONFIG_BUSYBOX_CONFIG_FEATURE_PS_WIDE=y
 # CONFIG_BUSYBOX_CONFIG_FEATURE_PS_LONG is not set
 >>>>>>> 6820e5511b (add .config)
+=======
+# CONFIG_BUSYBOX_CONFIG_PS is not set
+>>>>>>> 6c4b73ab37 (add .config)
 # CONFIG_BUSYBOX_CONFIG_PSTREE is not set
 # CONFIG_BUSYBOX_CONFIG_PWDX is not set
 # CONFIG_BUSYBOX_CONFIG_SMEMCAP is not set
@@ -3614,9 +3689,13 @@ CONFIG_BUSYBOX_CONFIG_FEATURE_TOP_CPU_GLOBAL_PERCENTS=y
 # CONFIG_BUSYBOX_CONFIG_FEATURE_TOPMEM is not set
 CONFIG_BUSYBOX_CONFIG_UPTIME=y
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_BUSYBOX_CONFIG_FEATURE_UPTIME_UTMP_SUPPORT is not set
 =======
 >>>>>>> 6820e5511b (add .config)
+=======
+# CONFIG_BUSYBOX_CONFIG_FEATURE_UPTIME_UTMP_SUPPORT is not set
+>>>>>>> 6c4b73ab37 (add .config)
 # CONFIG_BUSYBOX_CONFIG_WATCH is not set
 # end of Process Utilities
 
@@ -3679,10 +3758,14 @@ CONFIG_BUSYBOX_CONFIG_FEATURE_SH_MATH_64=y
 CONFIG_BUSYBOX_CONFIG_FEATURE_SH_NOFORK=y
 # CONFIG_BUSYBOX_CONFIG_FEATURE_SH_READ_FRAC is not set
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_BUSYBOX_CONFIG_FEATURE_SH_HISTFILESIZE=y
 =======
 # CONFIG_BUSYBOX_CONFIG_FEATURE_SH_HISTFILESIZE is not set
 >>>>>>> 6820e5511b (add .config)
+=======
+CONFIG_BUSYBOX_CONFIG_FEATURE_SH_HISTFILESIZE=y
+>>>>>>> 6c4b73ab37 (add .config)
 # CONFIG_BUSYBOX_CONFIG_FEATURE_SH_EMBEDDED_SCRIPTS is not set
 # end of Shells
 
@@ -4761,6 +4844,9 @@ CONFIG_DROPBEAR_U2F=y
 CONFIG_DROPBEAR_ED25519_SK=y
 CONFIG_DROPBEAR_ZLIB=y
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6c4b73ab37 (add .config)
 CONFIG_DROPBEAR_UTMP=y
 CONFIG_DROPBEAR_PUTUTLINE=y
 CONFIG_DROPBEAR_DBCLIENT=y
@@ -4933,6 +5019,7 @@ CONFIG_PACKAGE_rpcd-mod-iwinfo=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_rpcd-mod-rpcsys=y
 =======
 # CONFIG_PACKAGE_rpcd-mod-rpcsys is not set
@@ -4958,6 +5045,9 @@ CONFIG_PACKAGE_rpcd-mod-rpcsys=y
 =======
 CONFIG_PACKAGE_rpcd-mod-rpcsys=y
 >>>>>>> 7122b6b35b (add .config)
+=======
+# CONFIG_PACKAGE_rpcd-mod-rpcsys is not set
+>>>>>>> 6c4b73ab37 (add .config)
 CONFIG_PACKAGE_rpcd-mod-ucode=y
 # CONFIG_PACKAGE_selinux-policy is not set
 # CONFIG_PACKAGE_snapshot-tool is not set
@@ -8657,6 +8747,7 @@ CONFIG_GOLANG_BUILD_CACHE_DIR=""
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_libiwinfo-lua=y
 =======
 # CONFIG_PACKAGE_libiwinfo-lua is not set
@@ -8682,6 +8773,9 @@ CONFIG_PACKAGE_libiwinfo-lua=y
 =======
 CONFIG_PACKAGE_libiwinfo-lua=y
 >>>>>>> 7122b6b35b (add .config)
+=======
+# CONFIG_PACKAGE_libiwinfo-lua is not set
+>>>>>>> 6c4b73ab37 (add .config)
 # CONFIG_PACKAGE_linotify is not set
 # CONFIG_PACKAGE_lpeg is not set
 # CONFIG_PACKAGE_lsqlite3 is not set
@@ -8689,6 +8783,7 @@ CONFIG_PACKAGE_libiwinfo-lua=y
 CONFIG_PACKAGE_lua=y
 # CONFIG_PACKAGE_lua-argparse is not set
 # CONFIG_PACKAGE_lua-bencode is not set
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -8716,6 +8811,9 @@ CONFIG_PACKAGE_lua-bit32=y
 =======
 CONFIG_PACKAGE_lua-bit32=y
 >>>>>>> 7122b6b35b (add .config)
+=======
+# CONFIG_PACKAGE_lua-bit32 is not set
+>>>>>>> 6c4b73ab37 (add .config)
 # CONFIG_PACKAGE_lua-cjson is not set
 # CONFIG_PACKAGE_lua-cjson-lua5.3 is not set
 <<<<<<< HEAD
@@ -8798,6 +8896,7 @@ CONFIG_LUA_ECO_MBEDTLS=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_luabitop=y
 =======
 # CONFIG_PACKAGE_luabitop is not set
@@ -8823,11 +8922,15 @@ CONFIG_PACKAGE_luabitop=y
 =======
 CONFIG_PACKAGE_luabitop=y
 >>>>>>> 7122b6b35b (add .config)
+=======
+# CONFIG_PACKAGE_luabitop is not set
+>>>>>>> 6c4b73ab37 (add .config)
 # CONFIG_PACKAGE_luac is not set
 # CONFIG_PACKAGE_luac5.3 is not set
 # CONFIG_PACKAGE_luac5.4 is not set
 # CONFIG_PACKAGE_luaexpat is not set
 # CONFIG_PACKAGE_luafilesystem is not set
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -8861,6 +8964,9 @@ CONFIG_PACKAGE_luajit=y
 =======
 CONFIG_PACKAGE_luajit=y
 >>>>>>> 7122b6b35b (add .config)
+=======
+# CONFIG_PACKAGE_luajit is not set
+>>>>>>> 6c4b73ab37 (add .config)
 CONFIG_HAS_LUAJIT_ARCH=y
 # CONFIG_PACKAGE_luajit2 is not set
 # CONFIG_PACKAGE_lualanes is not set
@@ -8869,6 +8975,7 @@ CONFIG_HAS_LUAJIT_ARCH=y
 # CONFIG_PACKAGE_luarocks is not set
 # CONFIG_PACKAGE_luasec is not set
 # CONFIG_PACKAGE_luasoap is not set
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -8902,6 +9009,9 @@ CONFIG_PACKAGE_luasocket=y
 =======
 CONFIG_PACKAGE_luasocket=y
 >>>>>>> 7122b6b35b (add .config)
+=======
+# CONFIG_PACKAGE_luasocket is not set
+>>>>>>> 6c4b73ab37 (add .config)
 # CONFIG_PACKAGE_luasocket5.3 is not set
 # CONFIG_PACKAGE_luasql-mysql is not set
 # CONFIG_PACKAGE_luasql-pgsql is not set
@@ -10305,6 +10415,7 @@ CONFIG_PACKAGE_libbz2=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_liblzma=y
 =======
 # CONFIG_PACKAGE_liblzma is not set
@@ -10330,6 +10441,9 @@ CONFIG_PACKAGE_liblzma=y
 =======
 CONFIG_PACKAGE_liblzma=y
 >>>>>>> 7122b6b35b (add .config)
+=======
+# CONFIG_PACKAGE_liblzma is not set
+>>>>>>> 6c4b73ab37 (add .config)
 # CONFIG_PACKAGE_libunrar is not set
 # CONFIG_PACKAGE_libzip-gnutls is not set
 # CONFIG_PACKAGE_libzip-mbedtls is not set
@@ -10347,6 +10461,7 @@ CONFIG_PACKAGE_liblzma=y
 # CONFIG_PACKAGE_libodbcinst is not set
 # CONFIG_PACKAGE_libpq is not set
 # CONFIG_PACKAGE_libpqxx is not set
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -10428,6 +10543,9 @@ CONFIG_SQLITE3_RTREE=y
 # end of Configuration
 
 >>>>>>> 7122b6b35b (add .config)
+=======
+# CONFIG_PACKAGE_libsqlite3 is not set
+>>>>>>> 6c4b73ab37 (add .config)
 # CONFIG_PACKAGE_pgsqlodbc is not set
 # CONFIG_PACKAGE_psqlodbca is not set
 # CONFIG_PACKAGE_psqlodbcw is not set
@@ -10447,6 +10565,7 @@ CONFIG_SQLITE3_RTREE=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_libacl=y
 CONFIG_PACKAGE_libattr=y
 =======
@@ -10460,6 +10579,8 @@ CONFIG_PACKAGE_libattr=y
 >>>>>>> 832e8b7f4f (add .config)
 =======
 >>>>>>> c7ec1b29d0 (update .config for improved performance)
+=======
+>>>>>>> 36545d4637 (add .config)
 # CONFIG_PACKAGE_libacl is not set
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -10519,6 +10640,9 @@ CONFIG_PACKAGE_libattr=y
 =======
 =======
 CONFIG_PACKAGE_libacl=y
+=======
+# CONFIG_PACKAGE_libacl is not set
+>>>>>>> 6c4b73ab37 (add .config)
 CONFIG_PACKAGE_libattr=y
 >>>>>>> 3a56b1670d (update .config for improved performance)
 >>>>>>> c7ec1b29d0 (update .config for improved performance)
@@ -11938,6 +12062,7 @@ CONFIG_PACKAGE_glib2=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_gperftools-runtime=y
 =======
 CONFIG_PACKAGE_getdns=y
@@ -11982,6 +12107,9 @@ CONFIG_PACKAGE_gperftools-runtime=y
 =======
 CONFIG_PACKAGE_gperftools-runtime=y
 >>>>>>> 7122b6b35b (add .config)
+=======
+# CONFIG_PACKAGE_gperftools-runtime is not set
+>>>>>>> 6c4b73ab37 (add .config)
 # CONFIG_PACKAGE_hidapi is not set
 # CONFIG_PACKAGE_ibrcommon is not set
 # CONFIG_PACKAGE_ibrdtn is not set
@@ -12029,6 +12157,7 @@ CONFIG_PACKAGE_libbpf=y
 # CONFIG_PACKAGE_libbsd is not set
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_libcap=y
 # CONFIG_PACKAGE_libcap-bin is not set
 =======
@@ -12038,6 +12167,9 @@ CONFIG_PACKAGE_libcap=y
 CONFIG_PACKAGE_libcap=y
 # CONFIG_PACKAGE_libcap-bin is not set
 >>>>>>> 3a56b1670d (update .config for improved performance)
+=======
+# CONFIG_PACKAGE_libcap is not set
+>>>>>>> 6c4b73ab37 (add .config)
 # CONFIG_PACKAGE_libcap-ng is not set
 # CONFIG_PACKAGE_libcares is not set
 CONFIG_PACKAGE_libcbor=y
@@ -12113,6 +12245,7 @@ CONFIG_LIBCURL_UNIX_SOCKETS=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_libdaq3=y
 =======
 # CONFIG_PACKAGE_libdaq3 is not set
@@ -12138,6 +12271,9 @@ CONFIG_PACKAGE_libdaq3=y
 =======
 CONFIG_PACKAGE_libdaq3=y
 >>>>>>> 7122b6b35b (add .config)
+=======
+# CONFIG_PACKAGE_libdaq3 is not set
+>>>>>>> 6c4b73ab37 (add .config)
 # CONFIG_PACKAGE_libdb47 is not set
 # CONFIG_PACKAGE_libdb47xx is not set
 # CONFIG_PACKAGE_libdbi is not set
@@ -12147,6 +12283,7 @@ CONFIG_PACKAGE_libdaq3=y
 # CONFIG_PACKAGE_libdevmapper-selinux is not set
 # CONFIG_PACKAGE_libdht is not set
 # CONFIG_PACKAGE_libdmapsharing is not set
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12170,6 +12307,9 @@ CONFIG_PACKAGE_libdw=y
 >>>>>>> 22b1a68274 (add .config)
 =======
 CONFIG_PACKAGE_libdnet=y
+=======
+# CONFIG_PACKAGE_libdnet is not set
+>>>>>>> 6c4b73ab37 (add .config)
 # CONFIG_PACKAGE_libdouble-conversion is not set
 # CONFIG_PACKAGE_libdvbcsa is not set
 <<<<<<< HEAD
@@ -12350,6 +12490,7 @@ CONFIG_PACKAGE_libgcrypt=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_libgd=y
 # CONFIG_LIBGD_TIFF is not set
 # CONFIG_LIBGD_FREETYPE is not set
@@ -12369,6 +12510,9 @@ CONFIG_PACKAGE_libgd=y
 # CONFIG_LIBGD_TIFF is not set
 # CONFIG_LIBGD_FREETYPE is not set
 >>>>>>> c8721daa0d (add .config)
+=======
+# CONFIG_PACKAGE_libgd is not set
+>>>>>>> 6c4b73ab37 (add .config)
 # CONFIG_PACKAGE_libgd-full is not set
 <<<<<<< HEAD
 CONFIG_PACKAGE_libgdbm=y
@@ -12436,6 +12580,7 @@ CONFIG_PACKAGE_libgpgme=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_libhwloc=y
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12469,6 +12614,9 @@ CONFIG_PACKAGE_libhwloc=y
 =======
 CONFIG_PACKAGE_libhwloc=y
 >>>>>>> a487289ae3 (add .config)
+=======
+# CONFIG_PACKAGE_libhwloc is not set
+>>>>>>> 6c4b73ab37 (add .config)
 CONFIG_PACKAGE_libi2c=y
 >>>>>>> 497d21d9b3 (update .config for improved performance)
 <<<<<<< HEAD
@@ -12548,6 +12696,7 @@ CONFIG_PACKAGE_libiwinfo=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_libjpeg-turbo=y
 =======
 # CONFIG_PACKAGE_libjpeg-turbo is not set
@@ -12576,6 +12725,9 @@ CONFIG_PACKAGE_libkmod=y
 >>>>>>> 22b1a68274 (add .config)
 =======
 CONFIG_PACKAGE_libjpeg-turbo=y
+=======
+# CONFIG_PACKAGE_libjpeg-turbo is not set
+>>>>>>> 6c4b73ab37 (add .config)
 CONFIG_PACKAGE_libjson-c=y
 # CONFIG_PACKAGE_libjwt is not set
 # CONFIG_PACKAGE_libkeyutils is not set
@@ -13077,6 +13229,7 @@ CONFIG_PACKAGE_libpcap=y
 =======
 CONFIG_PACKAGE_libpci=y
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> b30872b5aa (add .config)
 CONFIG_PACKAGE_libpciaccess=y
 =======
@@ -13113,6 +13266,9 @@ CONFIG_PACKAGE_libpci=y
 # CONFIG_PACKAGE_libpci is not set
 CONFIG_PACKAGE_libpciaccess=y
 >>>>>>> 7122b6b35b (add .config)
+=======
+# CONFIG_PACKAGE_libpciaccess is not set
+>>>>>>> 6c4b73ab37 (add .config)
 CONFIG_PACKAGE_libpcre2=y
 # CONFIG_PCRE2_JIT_ENABLED is not set
 # CONFIG_PACKAGE_libpcre2-16 is not set
@@ -13121,6 +13277,7 @@ CONFIG_PACKAGE_libpcre2=y
 # CONFIG_PACKAGE_libpfring is not set
 # CONFIG_PACKAGE_libpkcs11-spy is not set
 # CONFIG_PACKAGE_libpkgconf is not set
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -13154,6 +13311,9 @@ CONFIG_PACKAGE_libpng=y
 =======
 CONFIG_PACKAGE_libpng=y
 >>>>>>> 7122b6b35b (add .config)
+=======
+# CONFIG_PACKAGE_libpng is not set
+>>>>>>> 6c4b73ab37 (add .config)
 # CONFIG_PACKAGE_libpopt is not set
 # CONFIG_PACKAGE_libpri is not set
 CONFIG_PACKAGE_libprotobuf-c=y
@@ -13256,6 +13416,7 @@ CONFIG_PACKAGE_librrd1=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_libseccomp=y
 <<<<<<< HEAD
 =======
@@ -13276,6 +13437,8 @@ CONFIG_PACKAGE_libseccomp=y
 =======
 =======
 >>>>>>> 8730997172 (add .config)
+=======
+>>>>>>> 36545d4637 (add .config)
 CONFIG_PACKAGE_libseccomp=y
 =======
 =======
@@ -13292,7 +13455,13 @@ CONFIG_PACKAGE_libseccomp=y
 =======
 CONFIG_PACKAGE_libseccomp=y
 >>>>>>> 0d51337342 (add .config)
+<<<<<<< HEAD
 >>>>>>> 8730997172 (add .config)
+=======
+=======
+# CONFIG_PACKAGE_libseccomp is not set
+>>>>>>> 6c4b73ab37 (add .config)
+>>>>>>> 36545d4637 (add .config)
 # CONFIG_PACKAGE_libselinux is not set
 # CONFIG_PACKAGE_libsemanage is not set
 CONFIG_PACKAGE_libsensors=y
@@ -13470,6 +13639,7 @@ CONFIG_PACKAGE_libuci=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_libuci-lua=y
 =======
 # CONFIG_PACKAGE_libuci-lua is not set
@@ -13495,6 +13665,9 @@ CONFIG_PACKAGE_libuci-lua=y
 =======
 CONFIG_PACKAGE_libuci-lua=y
 >>>>>>> 7122b6b35b (add .config)
+=======
+# CONFIG_PACKAGE_libuci-lua is not set
+>>>>>>> 6c4b73ab37 (add .config)
 # CONFIG_PACKAGE_libuci2 is not set
 CONFIG_PACKAGE_libuclient=y
 CONFIG_PACKAGE_libucode=y
@@ -13505,6 +13678,7 @@ CONFIG_PACKAGE_libudev-zero=y
 # CONFIG_PACKAGE_libuecc is not set
 # CONFIG_PACKAGE_libugpio is not set
 # CONFIG_PACKAGE_libunistring is not set
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -13538,6 +13712,9 @@ CONFIG_PACKAGE_libunwind=y
 =======
 CONFIG_PACKAGE_libunwind=y
 >>>>>>> 7122b6b35b (add .config)
+=======
+# CONFIG_PACKAGE_libunwind is not set
+>>>>>>> 6c4b73ab37 (add .config)
 # CONFIG_PACKAGE_libupnp is not set
 # CONFIG_PACKAGE_libupnpp is not set
 # CONFIG_PACKAGE_liburcu is not set
@@ -13621,6 +13798,7 @@ CONFIG_PACKAGE_libuuid=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 497d21d9b3 (update .config for improved performance)
 =======
@@ -13658,6 +13836,9 @@ CONFIG_PACKAGE_libwebp=y
 =======
 CONFIG_PACKAGE_libwebp=y
 >>>>>>> 7122b6b35b (add .config)
+=======
+# CONFIG_PACKAGE_libwebp is not set
+>>>>>>> 6c4b73ab37 (add .config)
 # CONFIG_PACKAGE_libwebsockets-full is not set
 # CONFIG_PACKAGE_libwebsockets-mbedtls is not set
 # CONFIG_PACKAGE_libwebsockets-openssl is not set
@@ -13886,12 +14067,15 @@ CONFIG_PACKAGE_rpcd-mod-rrdns=y
 # CONFIG_PACKAGE_sbc is not set
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_scmp_sys_resolver is not set
 =======
 >>>>>>> b4faf21b37 (add .config)
 =======
 # CONFIG_PACKAGE_scmp_sys_resolver is not set
 >>>>>>> 0d51337342 (add .config)
+=======
+>>>>>>> 6c4b73ab37 (add .config)
 # CONFIG_PACKAGE_serdisplib is not set
 # CONFIG_PACKAGE_srt is not set
 # CONFIG_PACKAGE_taglib is not set
@@ -14085,6 +14269,7 @@ CONFIG_LUCI_CSSTIDY=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_luci-compat=y
 =======
 # CONFIG_PACKAGE_luci-compat is not set
@@ -14113,6 +14298,9 @@ CONFIG_PACKAGE_luci-compat=y
 =======
 # CONFIG_PACKAGE_luci-compat is not set
 >>>>>>> ae92c3ffc7 (add .config)
+=======
+CONFIG_PACKAGE_luci-compat=y
+>>>>>>> 6c4b73ab37 (add .config)
 CONFIG_PACKAGE_luci-lua-runtime=y
 CONFIG_PACKAGE_luci-mod-admin-full=y
 # CONFIG_PACKAGE_luci-mod-battstatus is not set
@@ -14128,6 +14316,7 @@ CONFIG_PACKAGE_luci-mod-network=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_luci-mod-rpc=y
 =======
 # CONFIG_PACKAGE_luci-mod-rpc is not set
@@ -14156,6 +14345,9 @@ CONFIG_PACKAGE_luci-mod-rpc=y
 =======
 # CONFIG_PACKAGE_luci-mod-rpc is not set
 >>>>>>> ae92c3ffc7 (add .config)
+=======
+CONFIG_PACKAGE_luci-mod-rpc=y
+>>>>>>> 6c4b73ab37 (add .config)
 CONFIG_PACKAGE_luci-mod-status=y
 CONFIG_PACKAGE_luci-mod-system=y
 # end of 2. Modules
@@ -14173,6 +14365,7 @@ CONFIG_PACKAGE_luci-mod-system=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_luci-app-acme=y
 =======
 # CONFIG_PACKAGE_luci-app-acme is not set
@@ -14201,6 +14394,9 @@ CONFIG_PACKAGE_luci-app-acme=y
 =======
 # CONFIG_PACKAGE_luci-app-acme is not set
 >>>>>>> ae92c3ffc7 (add .config)
+=======
+CONFIG_PACKAGE_luci-app-acme=y
+>>>>>>> 6c4b73ab37 (add .config)
 # CONFIG_PACKAGE_luci-app-adblock is not set
 # CONFIG_PACKAGE_luci-app-adblock-fast is not set
 # CONFIG_PACKAGE_luci-app-advanced-reboot is not set
@@ -14308,12 +14504,15 @@ CONFIG_PACKAGE_luci-app-firewall=y
 # CONFIG_PACKAGE_luci-app-irqbalance is not set
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_luci-app-keepalived is not set
 =======
 >>>>>>> b4faf21b37 (add .config)
 =======
 # CONFIG_PACKAGE_luci-app-keepalived is not set
 >>>>>>> 3a56b1670d (update .config for improved performance)
+=======
+>>>>>>> 6c4b73ab37 (add .config)
 # CONFIG_PACKAGE_luci-app-ksmbd is not set
 # CONFIG_PACKAGE_luci-app-ledtrig-rssi is not set
 # CONFIG_PACKAGE_luci-app-ledtrig-switch is not set
@@ -14574,8 +14773,8 @@ CONFIG_PACKAGE_luci-theme-argon=y
 >>>>>>> bbad1cbb94 (add .config)
 CONFIG_PACKAGE_luci-theme-bootstrap=y
 CONFIG_PACKAGE_luci-theme-material=y
-CONFIG_PACKAGE_luci-theme-openwrt=y
-CONFIG_PACKAGE_luci-theme-openwrt-2020=y
+# CONFIG_PACKAGE_luci-theme-openwrt is not set
+# CONFIG_PACKAGE_luci-theme-openwrt-2020 is not set
 # end of 4. Themes
 
 #
@@ -14726,6 +14925,7 @@ CONFIG_PACKAGE_luci-lib-ip=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_luci-lib-ipkg=y
 =======
 # CONFIG_PACKAGE_luci-lib-ipkg is not set
@@ -14742,6 +14942,9 @@ CONFIG_PACKAGE_luci-lib-json=y
 >>>>>>> 22b1a68274 (add .config)
 =======
 CONFIG_PACKAGE_luci-lib-ipkg=y
+=======
+# CONFIG_PACKAGE_luci-lib-ipkg is not set
+>>>>>>> 6c4b73ab37 (add .config)
 # CONFIG_PACKAGE_luci-lib-iptparser is not set
 CONFIG_PACKAGE_luci-lib-json=y
 >>>>>>> d9bf330100 (add .config)
@@ -14783,6 +14986,7 @@ CONFIG_PACKAGE_luci-lib-uqr=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d9bf330100 (add .config)
 =======
@@ -14791,6 +14995,8 @@ CONFIG_PACKAGE_luci-lib-uqr=y
 >>>>>>> 052ad0b245 (add .config)
 =======
 >>>>>>> 7122b6b35b (add .config)
+=======
+>>>>>>> 6c4b73ab37 (add .config)
 # CONFIG_PACKAGE_luci-i18n-acme-ar is not set
 # CONFIG_PACKAGE_luci-i18n-acme-bg is not set
 # CONFIG_PACKAGE_luci-i18n-acme-bn is not set
@@ -14803,6 +15009,7 @@ CONFIG_PACKAGE_luci-lib-uqr=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_luci-i18n-acme-fa is not set
 =======
 >>>>>>> 052ad0b245 (add .config)
@@ -14811,6 +15018,9 @@ CONFIG_PACKAGE_luci-lib-uqr=y
 =======
 # CONFIG_PACKAGE_luci-i18n-acme-fa is not set
 >>>>>>> bbad1cbb94 (add .config)
+=======
+# CONFIG_PACKAGE_luci-i18n-acme-fa is not set
+>>>>>>> 6c4b73ab37 (add .config)
 # CONFIG_PACKAGE_luci-i18n-acme-fi is not set
 # CONFIG_PACKAGE_luci-i18n-acme-fr is not set
 # CONFIG_PACKAGE_luci-i18n-acme-he is not set
@@ -14836,6 +15046,7 @@ CONFIG_PACKAGE_luci-lib-uqr=y
 # CONFIG_PACKAGE_luci-i18n-acme-vi is not set
 # CONFIG_PACKAGE_luci-i18n-acme-zh-cn is not set
 # CONFIG_PACKAGE_luci-i18n-acme-zh-tw is not set
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -14927,6 +15138,8 @@ CONFIG_PACKAGE_luci-lib-uqr=y
 >>>>>>> 7122b6b35b (add .config)
 =======
 >>>>>>> ae92c3ffc7 (add .config)
+=======
+>>>>>>> 6c4b73ab37 (add .config)
 # CONFIG_PACKAGE_luci-i18n-base-ar is not set
 # CONFIG_PACKAGE_luci-i18n-base-bg is not set
 # CONFIG_PACKAGE_luci-i18n-base-bn is not set
@@ -15241,6 +15454,7 @@ CONFIG_PACKAGE_luci-lib-uqr=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d9bf330100 (add .config)
 =======
@@ -15324,6 +15538,8 @@ CONFIG_PACKAGE_luci-lib-uqr=y
 # CONFIG_PACKAGE_luci-i18n-vnstat2-zh-cn is not set
 # CONFIG_PACKAGE_luci-i18n-vnstat2-zh-tw is not set
 >>>>>>> 7122b6b35b (add .config)
+=======
+>>>>>>> 6c4b73ab37 (add .config)
 # end of LuCI
 
 #
@@ -15972,6 +16188,7 @@ CONFIG_PACKAGE_nftables-json=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_snort3=y
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -15987,6 +16204,9 @@ CONFIG_PACKAGE_xtables-legacy=y
 =======
 CONFIG_PACKAGE_snort3=y
 >>>>>>> a487289ae3 (add .config)
+=======
+# CONFIG_PACKAGE_snort3 is not set
+>>>>>>> 6c4b73ab37 (add .config)
 CONFIG_PACKAGE_xtables-legacy=y
 >>>>>>> 22b1a68274 (add .config)
 <<<<<<< HEAD
@@ -16172,6 +16392,7 @@ CONFIG_PACKAGE_knot-resolver_dnstap=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 497d21d9b3 (update .config for improved performance)
 =======
@@ -16209,6 +16430,9 @@ CONFIG_PACKAGE_stubby=y
 =======
 # CONFIG_PACKAGE_stubby is not set
 >>>>>>> 7122b6b35b (add .config)
+=======
+CONFIG_PACKAGE_stubby=y
+>>>>>>> 6c4b73ab37 (add .config)
 # CONFIG_PACKAGE_tor-hs is not set
 # CONFIG_PACKAGE_torsocks is not set
 # CONFIG_PACKAGE_unbound-anchor is not set
@@ -17444,6 +17668,7 @@ CONFIG_PACKAGE_nginx-ssl-util=y
 CONFIG_PACKAGE_uhttpd=y
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_uhttpd-mod-lua=y
 =======
 # CONFIG_PACKAGE_uci-alwaysonline is not set
@@ -17481,6 +17706,9 @@ CONFIG_PACKAGE_uhttpd-mod-lua=y
 =======
 CONFIG_PACKAGE_uhttpd-mod-lua=y
 >>>>>>> 7122b6b35b (add .config)
+=======
+# CONFIG_PACKAGE_uhttpd-mod-lua is not set
+>>>>>>> 6c4b73ab37 (add .config)
 CONFIG_PACKAGE_uhttpd-mod-ubus=y
 # CONFIG_PACKAGE_uhttpd-mod-ucode is not set
 # CONFIG_PACKAGE_uwsgi is not set
@@ -17725,10 +17953,10 @@ CONFIG_PACKAGE_wpad-openssl=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 # CONFIG_PACKAGE_UDPspeeder is not set
-CONFIG_PACKAGE_aardvark-dns=y
+# CONFIG_PACKAGE_aardvark-dns is not set
 CONFIG_PACKAGE_acme=y
 CONFIG_PACKAGE_acme-acmesh=y
-CONFIG_PACKAGE_acme-acmesh-dnsapi=y
+# CONFIG_PACKAGE_acme-acmesh-dnsapi is not set
 CONFIG_PACKAGE_acme-common=y
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -17788,6 +18016,7 @@ CONFIG_PACKAGE_acme-common=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_adguardhome=y
 =======
 # CONFIG_PACKAGE_adguardhome is not set
@@ -17807,6 +18036,9 @@ CONFIG_PACKAGE_adguardhome=y
 =======
 CONFIG_PACKAGE_adguardhome=y
 >>>>>>> 8329bb3f48 (update .config)
+=======
+# CONFIG_PACKAGE_adguardhome is not set
+>>>>>>> 6c4b73ab37 (add .config)
 # CONFIG_PACKAGE_ahcpd is not set
 # CONFIG_PACKAGE_alfred is not set
 # CONFIG_PACKAGE_alist is not set
@@ -17830,6 +18062,7 @@ CONFIG_PACKAGE_adguardhome=y
 # CONFIG_PACKAGE_atlas-probe is not set
 # CONFIG_PACKAGE_atlas-sw-probe is not set
 # CONFIG_PACKAGE_atlas-sw-probe-rpc is not set
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -17863,6 +18096,9 @@ CONFIG_PACKAGE_banip=y
 =======
 CONFIG_PACKAGE_banip=y
 >>>>>>> 7122b6b35b (add .config)
+=======
+# CONFIG_PACKAGE_banip is not set
+>>>>>>> 6c4b73ab37 (add .config)
 # CONFIG_PACKAGE_batctl-default is not set
 # CONFIG_PACKAGE_batctl-full is not set
 # CONFIG_PACKAGE_batctl-tiny is not set
@@ -17885,6 +18121,7 @@ CONFIG_PACKAGE_banip=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_conserver-ipmi is not set
 CONFIG_PACKAGE_crowdsec=y
 <<<<<<< HEAD
@@ -17899,6 +18136,8 @@ CONFIG_PACKAGE_crowdsec=y
 =======
 =======
 >>>>>>> 8730997172 (add .config)
+=======
+>>>>>>> 36545d4637 (add .config)
 # CONFIG_PACKAGE_conserver-ipmi is not set
 CONFIG_PACKAGE_crowdsec=y
 <<<<<<< HEAD
@@ -17907,7 +18146,13 @@ CONFIG_PACKAGE_crowdsec=y
 # CONFIG_PACKAGE_crowdsec is not set
 <<<<<<< HEAD
 >>>>>>> b4faf21b37 (add .config)
+<<<<<<< HEAD
 >>>>>>> 832e8b7f4f (add .config)
+=======
+=======
+# CONFIG_PACKAGE_crowdsec is not set
+>>>>>>> 6c4b73ab37 (add .config)
+>>>>>>> 36545d4637 (add .config)
 # CONFIG_PACKAGE_crowdsec-firewall-bouncer is not set
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -17965,6 +18210,7 @@ CONFIG_PACKAGE_ethtool-full=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # CONFIG_PACKAGE_family-dns is not set
 >>>>>>> 45a411a384 (update .config for improved performance)
@@ -17973,6 +18219,8 @@ CONFIG_PACKAGE_ethtool-full=y
 =======
 =======
 >>>>>>> 543866fcb0 (add .config)
+=======
+>>>>>>> 36545d4637 (add .config)
 =======
 # CONFIG_PACKAGE_family-dns is not set
 >>>>>>> 3a56b1670d (update .config for improved performance)
@@ -18002,6 +18250,8 @@ CONFIG_PACKAGE_ethtool-full=y
 >>>>>>> b4faf21b37 (add .config)
 =======
 # CONFIG_PACKAGE_flent is not set
+=======
+>>>>>>> 6c4b73ab37 (add .config)
 # CONFIG_PACKAGE_foolsm is not set
 # CONFIG_PACKAGE_fping is not set
 # CONFIG_PACKAGE_fsh is not set
@@ -18053,6 +18303,7 @@ CONFIG_PACKAGE_ethtool-full=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_hping3=y
 =======
 # CONFIG_PACKAGE_hping3 is not set
@@ -18072,6 +18323,9 @@ CONFIG_PACKAGE_hping3=y
 =======
 CONFIG_PACKAGE_hping3=y
 >>>>>>> 7122b6b35b (add .config)
+=======
+# CONFIG_PACKAGE_hping3 is not set
+>>>>>>> 6c4b73ab37 (add .config)
 # CONFIG_PACKAGE_httping is not set
 # CONFIG_PACKAGE_httping-nossl is not set
 <<<<<<< HEAD
@@ -18136,6 +18390,7 @@ CONFIG_PACKAGE_iftop=y
 # CONFIG_PACKAGE_iperf3 is not set
 CONFIG_PACKAGE_iperf3-ssl=y
 # CONFIG_PACKAGE_ipip is not set
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -18214,6 +18469,10 @@ CONFIG_PACKAGE_ipset-dns=y
 >>>>>>> 3a56b1670d (update .config for improved performance)
 =======
 >>>>>>> bbad1cbb94 (add .config)
+=======
+CONFIG_PACKAGE_ipset=y
+# CONFIG_PACKAGE_ipset-dns is not set
+>>>>>>> 6c4b73ab37 (add .config)
 # CONFIG_PACKAGE_iptraf-ng is not set
 # CONFIG_PACKAGE_iputils-arping is not set
 # CONFIG_PACKAGE_iputils-clockdiff is not set
@@ -18227,12 +18486,15 @@ CONFIG_PACKAGE_iw-full=y
 # CONFIG_PACKAGE_keepalived is not set
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_keepalived-sync is not set
 =======
 >>>>>>> b4faf21b37 (add .config)
 =======
 # CONFIG_PACKAGE_keepalived-sync is not set
 >>>>>>> 3a56b1670d (update .config for improved performance)
+=======
+>>>>>>> 6c4b73ab37 (add .config)
 # CONFIG_PACKAGE_knxd is not set
 # CONFIG_PACKAGE_kplex is not set
 # CONFIG_PACKAGE_krb5-client is not set
@@ -18424,6 +18686,7 @@ CONFIG_PACKAGE_mii-tool=y
 # CONFIG_PACKAGE_net-tools-route is not set
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 0d51337342 (add .config)
 CONFIG_PACKAGE_netavark=y
@@ -18504,6 +18767,13 @@ CONFIG_NETIFYD_WITH_LOCAL_LIBGCRYPT=y
 =======
 >>>>>>> 7122b6b35b (add .config)
 # CONFIG_PACKAGE_netperf is not set
+=======
+# CONFIG_PACKAGE_netavark is not set
+# CONFIG_PACKAGE_netcat is not set
+# CONFIG_PACKAGE_netdiscover is not set
+# CONFIG_PACKAGE_netifyd is not set
+CONFIG_PACKAGE_netperf=y
+>>>>>>> 6c4b73ab37 (add .config)
 # CONFIG_PACKAGE_netsniff-ng is not set
 # CONFIG_PACKAGE_netstinky is not set
 # CONFIG_PACKAGE_nfdump is not set
@@ -18577,6 +18847,7 @@ CONFIG_PACKAGE_odhcpd_ipv6only_ext_cer_id=0
 # CONFIG_PACKAGE_pcapplusplus is not set
 # CONFIG_PACKAGE_pen is not set
 # CONFIG_PACKAGE_phantap is not set
+# CONFIG_PACKAGE_phytool is not set
 # CONFIG_PACKAGE_pimbd is not set
 # CONFIG_PACKAGE_pingcheck is not set
 <<<<<<< HEAD
@@ -18982,6 +19253,7 @@ CONFIG_PACKAGE_ulogd-mod-syslog=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_vnstat2=y
 CONFIG_PACKAGE_vnstati2=y
 <<<<<<< HEAD
@@ -19036,6 +19308,12 @@ CONFIG_PACKAGE_vnstati2=y
 >>>>>>> b4faf21b37 (add .config)
 =======
 >>>>>>> 3a56b1670d (update .config for improved performance)
+=======
+# CONFIG_PACKAGE_vnstat2 is not set
+# CONFIG_PACKAGE_vxlan is not set
+# CONFIG_PACKAGE_wakeonlan is not set
+# CONFIG_PACKAGE_wg-installer-client is not set
+>>>>>>> 6c4b73ab37 (add .config)
 # CONFIG_PACKAGE_wifi-presence is not set
 # CONFIG_PACKAGE_wpan-tools is not set
 # CONFIG_PACKAGE_wwan is not set
@@ -19456,8 +19734,12 @@ CONFIG_PACKAGE_vim-full=y
 # CONFIG_PACKAGE_vim-fuller is not set
 =======
 # CONFIG_PACKAGE_vim-full is not set
+<<<<<<< HEAD
 CONFIG_PACKAGE_vim-fuller=y
 >>>>>>> ae92c3ffc7 (add .config)
+=======
+# CONFIG_PACKAGE_vim-fuller is not set
+>>>>>>> 6c4b73ab37 (add .config)
 # CONFIG_PACKAGE_vim-help is not set
 # CONFIG_PACKAGE_vim-runtime is not set
 # CONFIG_PACKAGE_zile is not set
@@ -19678,7 +19960,7 @@ CONFIG_PACKAGE_bash=y
 # CONFIG_PACKAGE_klish is not set
 # CONFIG_PACKAGE_mksh is not set
 # CONFIG_PACKAGE_tcsh is not set
-CONFIG_PACKAGE_zsh=y
+# CONFIG_PACKAGE_zsh is not set
 # end of Shells
 
 #
@@ -19944,6 +20226,7 @@ CONFIG_PACKAGE_collectd-mod-cpufreq=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_collectd-mod-df=y
 =======
 # CONFIG_PACKAGE_collectd-mod-df is not set
@@ -19962,6 +20245,8 @@ CONFIG_PACKAGE_collectd-mod-df=y
 >>>>>>> 832e8b7f4f (add .config)
 =======
 >>>>>>> c7ec1b29d0 (update .config for improved performance)
+=======
+>>>>>>> 36545d4637 (add .config)
 # CONFIG_PACKAGE_collectd-mod-df is not set
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -20015,10 +20300,16 @@ CONFIG_PACKAGE_collectd-mod-disk=y
 CONFIG_PACKAGE_collectd-mod-dhcpleases=y
 CONFIG_PACKAGE_collectd-mod-disk=y
 >>>>>>> 7122b6b35b (add .config)
+=======
+# CONFIG_PACKAGE_collectd-mod-df is not set
+# CONFIG_PACKAGE_collectd-mod-dhcpleases is not set
+# CONFIG_PACKAGE_collectd-mod-disk is not set
+>>>>>>> 6c4b73ab37 (add .config)
 CONFIG_PACKAGE_collectd-mod-dns=y
 # CONFIG_PACKAGE_collectd-mod-email is not set
 # CONFIG_PACKAGE_collectd-mod-entropy is not set
 CONFIG_PACKAGE_collectd-mod-ethstat=y
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -20040,6 +20331,9 @@ CONFIG_PACKAGE_collectd-mod-exec=y
 =======
 # CONFIG_PACKAGE_collectd-mod-exec is not set
 >>>>>>> 7122b6b35b (add .config)
+=======
+CONFIG_PACKAGE_collectd-mod-exec=y
+>>>>>>> 6c4b73ab37 (add .config)
 # CONFIG_PACKAGE_collectd-mod-filecount is not set
 # CONFIG_PACKAGE_collectd-mod-fscache is not set
 CONFIG_PACKAGE_collectd-mod-interface=y
@@ -20546,11 +20840,15 @@ CONFIG_PACKAGE_coreutils-yes=y
 # CONFIG_PACKAGE_crconf is not set
 # CONFIG_PACKAGE_crelay is not set
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_crun is not set
 >>>>>>> b4faf21b37 (add .config)
 =======
 CONFIG_PACKAGE_crun=y
 >>>>>>> 0d51337342 (add .config)
+=======
+# CONFIG_PACKAGE_crun is not set
+>>>>>>> 6c4b73ab37 (add .config)
 # CONFIG_PACKAGE_csstidy is not set
 # CONFIG_PACKAGE_ct-bugcheck is not set
 # CONFIG_PACKAGE_ctop is not set
@@ -20563,6 +20861,7 @@ CONFIG_PACKAGE_crun=y
 # CONFIG_PACKAGE_digitemp-usb is not set
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_dmesg=y
 =======
 # CONFIG_PACKAGE_dmesg is not set
@@ -20570,6 +20869,9 @@ CONFIG_PACKAGE_dmesg=y
 =======
 CONFIG_PACKAGE_dmesg=y
 >>>>>>> 3a56b1670d (update .config for improved performance)
+=======
+# CONFIG_PACKAGE_dmesg is not set
+>>>>>>> 6c4b73ab37 (add .config)
 # CONFIG_PACKAGE_docker is not set
 # CONFIG_PACKAGE_docker-compose is not set
 # CONFIG_PACKAGE_dockerd is not set
@@ -20727,12 +21029,15 @@ CONFIG_PACKAGE_findutils-xargs=y
 # CONFIG_PACKAGE_flashrom-usb is not set
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_flent-tools is not set
 =======
 >>>>>>> b4faf21b37 (add .config)
 =======
 # CONFIG_PACKAGE_flent-tools is not set
 >>>>>>> 3a56b1670d (update .config for improved performance)
+=======
+>>>>>>> 6c4b73ab37 (add .config)
 # CONFIG_PACKAGE_flock is not set
 # CONFIG_PACKAGE_fritz-caldata is not set
 # CONFIG_PACKAGE_fritz-tffs is not set
@@ -20842,6 +21147,7 @@ CONFIG_PACKAGE_grep=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 CONFIG_PACKAGE_i2c-tools=y
+<<<<<<< HEAD
 CONFIG_PACKAGE_i2csfp=y
 =======
 # CONFIG_PACKAGE_i2c-tools is not set
@@ -20851,6 +21157,9 @@ CONFIG_PACKAGE_i2csfp=y
 CONFIG_PACKAGE_i2c-tools=y
 CONFIG_PACKAGE_i2csfp=y
 >>>>>>> 3a56b1670d (update .config for improved performance)
+=======
+# CONFIG_PACKAGE_i2csfp is not set
+>>>>>>> 6c4b73ab37 (add .config)
 # CONFIG_PACKAGE_iconv is not set
 # CONFIG_PACKAGE_iio-utils is not set
 # CONFIG_PACKAGE_inotifywait is not set
@@ -20884,6 +21193,7 @@ CONFIG_PACKAGE_irqbalance=y
 >>>>>>> ae92c3ffc7 (add .config)
 # CONFIG_PACKAGE_iwcap is not set
 CONFIG_PACKAGE_iwinfo=y
+<<<<<<< HEAD
 CONFIG_PACKAGE_jq=y
 =======
 CONFIG_PACKAGE_irqbalance=y
@@ -20904,6 +21214,9 @@ CONFIG_PACKAGE_iwinfo=y
 =======
 CONFIG_PACKAGE_jq=y
 >>>>>>> 3a56b1670d (update .config for improved performance)
+=======
+# CONFIG_PACKAGE_jq is not set
+>>>>>>> 6c4b73ab37 (add .config)
 CONFIG_PACKAGE_jshn=y
 # CONFIG_PACKAGE_kmod is not set
 # CONFIG_PACKAGE_lcd4linux-custom is not set
