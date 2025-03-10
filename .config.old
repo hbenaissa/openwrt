@@ -1419,7 +1419,7 @@ CONFIG_VERSION_CODE=""
 =======
 CONFIG_VERSIONOPT=y
 CONFIG_VERSION_DIST="mda-bananapi4"
-CONFIG_VERSION_NUMBER="6.6.66"
+CONFIG_VERSION_NUMBER="6.6.79"
 CONFIG_VERSION_CODE="0"
 >>>>>>> ae92c3ffc7 (add .config)
 CONFIG_VERSION_REPO="https://downloads.openwrt.org/snapshots"
@@ -8748,6 +8748,7 @@ CONFIG_GOLANG_BUILD_CACHE_DIR=""
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_libiwinfo-lua=y
 =======
 # CONFIG_PACKAGE_libiwinfo-lua is not set
@@ -8776,6 +8777,9 @@ CONFIG_PACKAGE_libiwinfo-lua=y
 =======
 # CONFIG_PACKAGE_libiwinfo-lua is not set
 >>>>>>> 6c4b73ab37 (add .config)
+=======
+CONFIG_PACKAGE_libiwinfo-lua=y
+>>>>>>> 6a4e21f90a (add .config)
 # CONFIG_PACKAGE_linotify is not set
 # CONFIG_PACKAGE_lpeg is not set
 # CONFIG_PACKAGE_lsqlite3 is not set
@@ -8783,6 +8787,7 @@ CONFIG_PACKAGE_libiwinfo-lua=y
 CONFIG_PACKAGE_lua=y
 # CONFIG_PACKAGE_lua-argparse is not set
 # CONFIG_PACKAGE_lua-bencode is not set
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -8814,6 +8819,9 @@ CONFIG_PACKAGE_lua-bit32=y
 =======
 # CONFIG_PACKAGE_lua-bit32 is not set
 >>>>>>> 6c4b73ab37 (add .config)
+=======
+CONFIG_PACKAGE_lua-bit32=y
+>>>>>>> 6a4e21f90a (add .config)
 # CONFIG_PACKAGE_lua-cjson is not set
 # CONFIG_PACKAGE_lua-cjson-lua5.3 is not set
 <<<<<<< HEAD
@@ -8897,6 +8905,7 @@ CONFIG_LUA_ECO_MBEDTLS=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_luabitop=y
 =======
 # CONFIG_PACKAGE_luabitop is not set
@@ -8925,6 +8934,9 @@ CONFIG_PACKAGE_luabitop=y
 =======
 # CONFIG_PACKAGE_luabitop is not set
 >>>>>>> 6c4b73ab37 (add .config)
+=======
+CONFIG_PACKAGE_luabitop=y
+>>>>>>> 6a4e21f90a (add .config)
 # CONFIG_PACKAGE_luac is not set
 # CONFIG_PACKAGE_luac5.3 is not set
 # CONFIG_PACKAGE_luac5.4 is not set
@@ -8984,6 +8996,7 @@ CONFIG_HAS_LUAJIT_ARCH=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_luasocket=y
 =======
 # CONFIG_PACKAGE_luasocket is not set
@@ -9012,6 +9025,9 @@ CONFIG_PACKAGE_luasocket=y
 =======
 # CONFIG_PACKAGE_luasocket is not set
 >>>>>>> 6c4b73ab37 (add .config)
+=======
+CONFIG_PACKAGE_luasocket=y
+>>>>>>> 6a4e21f90a (add .config)
 # CONFIG_PACKAGE_luasocket5.3 is not set
 # CONFIG_PACKAGE_luasql-mysql is not set
 # CONFIG_PACKAGE_luasql-pgsql is not set
@@ -10470,6 +10486,7 @@ CONFIG_PACKAGE_liblzma=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d9bf330100 (add .config)
 =======
@@ -10478,12 +10495,15 @@ CONFIG_PACKAGE_liblzma=y
 >>>>>>> 052ad0b245 (add .config)
 =======
 >>>>>>> 7122b6b35b (add .config)
+=======
+>>>>>>> 6a4e21f90a (add .config)
 CONFIG_PACKAGE_libsqlite3=y
 
 #
 # Configuration
 #
 # CONFIG_SQLITE3_BATCH_ATOMIC_WRITE is not set
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -10516,11 +10536,14 @@ CONFIG_SQLITE3_RTREE=y
 # CONFIG_PACKAGE_libsqlite3 is not set
 >>>>>>> 187cc246d7 (add .config)
 =======
+=======
+>>>>>>> 6a4e21f90a (add .config)
 # CONFIG_SQLITE3_COLUMN_METADATA is not set
 # CONFIG_SQLITE3_DYNAMIC_EXTENSIONS is not set
 # CONFIG_SQLITE3_FTS3 is not set
 # CONFIG_SQLITE3_FTS5 is not set
 # CONFIG_SQLITE3_RTREE is not set
+<<<<<<< HEAD
 =======
 >>>>>>> a487289ae3 (add .config)
 # CONFIG_SQLITE3_SESSION is not set
@@ -10546,6 +10569,11 @@ CONFIG_SQLITE3_RTREE=y
 =======
 # CONFIG_PACKAGE_libsqlite3 is not set
 >>>>>>> 6c4b73ab37 (add .config)
+=======
+# CONFIG_SQLITE3_SESSION is not set
+# end of Configuration
+
+>>>>>>> 6a4e21f90a (add .config)
 # CONFIG_PACKAGE_pgsqlodbc is not set
 # CONFIG_PACKAGE_psqlodbca is not set
 # CONFIG_PACKAGE_psqlodbcw is not set
@@ -10559,6 +10587,7 @@ CONFIG_SQLITE3_RTREE=y
 #
 # Filesystem
 #
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -10581,6 +10610,8 @@ CONFIG_PACKAGE_libattr=y
 >>>>>>> c7ec1b29d0 (update .config for improved performance)
 =======
 >>>>>>> 36545d4637 (add .config)
+=======
+>>>>>>> d2d9139baa (add .config)
 # CONFIG_PACKAGE_libacl is not set
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -10591,6 +10622,9 @@ CONFIG_PACKAGE_libattr=y
 =======
 CONFIG_PACKAGE_libacl=y
 >>>>>>> c8721daa0d (add .config)
+=======
+CONFIG_PACKAGE_libacl=y
+>>>>>>> 6a4e21f90a (add .config)
 CONFIG_PACKAGE_libattr=y
 >>>>>>> 22b1a68274 (add .config)
 <<<<<<< HEAD
@@ -12158,6 +12192,7 @@ CONFIG_PACKAGE_libbpf=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_libcap=y
 # CONFIG_PACKAGE_libcap-bin is not set
 =======
@@ -12170,6 +12205,10 @@ CONFIG_PACKAGE_libcap=y
 =======
 # CONFIG_PACKAGE_libcap is not set
 >>>>>>> 6c4b73ab37 (add .config)
+=======
+CONFIG_PACKAGE_libcap=y
+# CONFIG_PACKAGE_libcap-bin is not set
+>>>>>>> 6a4e21f90a (add .config)
 # CONFIG_PACKAGE_libcap-ng is not set
 # CONFIG_PACKAGE_libcares is not set
 CONFIG_PACKAGE_libcbor=y
@@ -12491,6 +12530,7 @@ CONFIG_PACKAGE_libgcrypt=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_libgd=y
 # CONFIG_LIBGD_TIFF is not set
 # CONFIG_LIBGD_FREETYPE is not set
@@ -12513,6 +12553,11 @@ CONFIG_PACKAGE_libgd=y
 =======
 # CONFIG_PACKAGE_libgd is not set
 >>>>>>> 6c4b73ab37 (add .config)
+=======
+CONFIG_PACKAGE_libgd=y
+# CONFIG_LIBGD_TIFF is not set
+# CONFIG_LIBGD_FREETYPE is not set
+>>>>>>> 6a4e21f90a (add .config)
 # CONFIG_PACKAGE_libgd-full is not set
 <<<<<<< HEAD
 CONFIG_PACKAGE_libgdbm=y
@@ -12697,6 +12742,7 @@ CONFIG_PACKAGE_libiwinfo=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_libjpeg-turbo=y
 =======
 # CONFIG_PACKAGE_libjpeg-turbo is not set
@@ -12737,6 +12783,9 @@ CONFIG_PACKAGE_libjson-c=y
 >>>>>>> d9bf330100 (add .config)
 =======
 # CONFIG_PACKAGE_libjpeg-turbo is not set
+=======
+CONFIG_PACKAGE_libjpeg-turbo=y
+>>>>>>> 6a4e21f90a (add .config)
 CONFIG_PACKAGE_libjson-c=y
 # CONFIG_PACKAGE_libjwt is not set
 # CONFIG_PACKAGE_libkeyutils is not set
@@ -13286,6 +13335,7 @@ CONFIG_PACKAGE_libpcre2=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_libpng=y
 =======
 # CONFIG_PACKAGE_libpng is not set
@@ -13314,6 +13364,9 @@ CONFIG_PACKAGE_libpng=y
 =======
 # CONFIG_PACKAGE_libpng is not set
 >>>>>>> 6c4b73ab37 (add .config)
+=======
+CONFIG_PACKAGE_libpng=y
+>>>>>>> 6a4e21f90a (add .config)
 # CONFIG_PACKAGE_libpopt is not set
 # CONFIG_PACKAGE_libpri is not set
 CONFIG_PACKAGE_libprotobuf-c=y
@@ -13640,6 +13693,7 @@ CONFIG_PACKAGE_libuci=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_libuci-lua=y
 =======
 # CONFIG_PACKAGE_libuci-lua is not set
@@ -13668,6 +13722,9 @@ CONFIG_PACKAGE_libuci-lua=y
 =======
 # CONFIG_PACKAGE_libuci-lua is not set
 >>>>>>> 6c4b73ab37 (add .config)
+=======
+CONFIG_PACKAGE_libuci-lua=y
+>>>>>>> 6a4e21f90a (add .config)
 # CONFIG_PACKAGE_libuci2 is not set
 CONFIG_PACKAGE_libuclient=y
 CONFIG_PACKAGE_libucode=y
@@ -13799,6 +13856,7 @@ CONFIG_PACKAGE_libuuid=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 497d21d9b3 (update .config for improved performance)
 =======
@@ -13839,6 +13897,9 @@ CONFIG_PACKAGE_libwebp=y
 =======
 # CONFIG_PACKAGE_libwebp is not set
 >>>>>>> 6c4b73ab37 (add .config)
+=======
+CONFIG_PACKAGE_libwebp=y
+>>>>>>> 6a4e21f90a (add .config)
 # CONFIG_PACKAGE_libwebsockets-full is not set
 # CONFIG_PACKAGE_libwebsockets-mbedtls is not set
 # CONFIG_PACKAGE_libwebsockets-openssl is not set
@@ -14505,6 +14566,7 @@ CONFIG_PACKAGE_luci-app-firewall=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_luci-app-keepalived is not set
 =======
 >>>>>>> b4faf21b37 (add .config)
@@ -14513,6 +14575,9 @@ CONFIG_PACKAGE_luci-app-firewall=y
 >>>>>>> 3a56b1670d (update .config for improved performance)
 =======
 >>>>>>> 6c4b73ab37 (add .config)
+=======
+# CONFIG_PACKAGE_luci-app-keepalived is not set
+>>>>>>> 6a4e21f90a (add .config)
 # CONFIG_PACKAGE_luci-app-ksmbd is not set
 # CONFIG_PACKAGE_luci-app-ledtrig-rssi is not set
 # CONFIG_PACKAGE_luci-app-ledtrig-switch is not set
@@ -15455,6 +15520,7 @@ CONFIG_PACKAGE_luci-lib-uqr=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d9bf330100 (add .config)
 =======
@@ -15463,6 +15529,8 @@ CONFIG_PACKAGE_luci-lib-uqr=y
 >>>>>>> 052ad0b245 (add .config)
 =======
 >>>>>>> 7122b6b35b (add .config)
+=======
+>>>>>>> 6a4e21f90a (add .config)
 # CONFIG_PACKAGE_luci-i18n-vnstat2-ar is not set
 # CONFIG_PACKAGE_luci-i18n-vnstat2-bg is not set
 # CONFIG_PACKAGE_luci-i18n-vnstat2-bn is not set
@@ -15476,6 +15544,7 @@ CONFIG_PACKAGE_luci-lib-uqr=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_luci-i18n-vnstat2-fil is not set
 =======
 >>>>>>> 052ad0b245 (add .config)
@@ -15484,6 +15553,9 @@ CONFIG_PACKAGE_luci-lib-uqr=y
 =======
 # CONFIG_PACKAGE_luci-i18n-vnstat2-fil is not set
 >>>>>>> bbad1cbb94 (add .config)
+=======
+# CONFIG_PACKAGE_luci-i18n-vnstat2-fil is not set
+>>>>>>> 6a4e21f90a (add .config)
 # CONFIG_PACKAGE_luci-i18n-vnstat2-fr is not set
 # CONFIG_PACKAGE_luci-i18n-vnstat2-he is not set
 # CONFIG_PACKAGE_luci-i18n-vnstat2-hi is not set
@@ -15506,6 +15578,7 @@ CONFIG_PACKAGE_luci-lib-uqr=y
 # CONFIG_PACKAGE_luci-i18n-vnstat2-tr is not set
 # CONFIG_PACKAGE_luci-i18n-vnstat2-uk is not set
 # CONFIG_PACKAGE_luci-i18n-vnstat2-vi is not set
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -15540,6 +15613,11 @@ CONFIG_PACKAGE_luci-lib-uqr=y
 >>>>>>> 7122b6b35b (add .config)
 =======
 >>>>>>> 6c4b73ab37 (add .config)
+=======
+# CONFIG_PACKAGE_luci-i18n-vnstat2-yua is not set
+# CONFIG_PACKAGE_luci-i18n-vnstat2-zh-cn is not set
+# CONFIG_PACKAGE_luci-i18n-vnstat2-zh-tw is not set
+>>>>>>> 6a4e21f90a (add .config)
 # end of LuCI
 
 #
@@ -17669,6 +17747,7 @@ CONFIG_PACKAGE_uhttpd=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_uhttpd-mod-lua=y
 =======
 # CONFIG_PACKAGE_uci-alwaysonline is not set
@@ -17709,6 +17788,9 @@ CONFIG_PACKAGE_uhttpd-mod-lua=y
 =======
 # CONFIG_PACKAGE_uhttpd-mod-lua is not set
 >>>>>>> 6c4b73ab37 (add .config)
+=======
+CONFIG_PACKAGE_uhttpd-mod-lua=y
+>>>>>>> 6a4e21f90a (add .config)
 CONFIG_PACKAGE_uhttpd-mod-ubus=y
 # CONFIG_PACKAGE_uhttpd-mod-ucode is not set
 # CONFIG_PACKAGE_uwsgi is not set
@@ -17956,7 +18038,7 @@ CONFIG_PACKAGE_wpad-openssl=y
 # CONFIG_PACKAGE_aardvark-dns is not set
 CONFIG_PACKAGE_acme=y
 CONFIG_PACKAGE_acme-acmesh=y
-# CONFIG_PACKAGE_acme-acmesh-dnsapi is not set
+CONFIG_PACKAGE_acme-acmesh-dnsapi=y
 CONFIG_PACKAGE_acme-common=y
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -18211,6 +18293,7 @@ CONFIG_PACKAGE_ethtool-full=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # CONFIG_PACKAGE_family-dns is not set
 >>>>>>> 45a411a384 (update .config for improved performance)
@@ -18221,6 +18304,8 @@ CONFIG_PACKAGE_ethtool-full=y
 >>>>>>> 543866fcb0 (add .config)
 =======
 >>>>>>> 36545d4637 (add .config)
+=======
+>>>>>>> d2d9139baa (add .config)
 =======
 # CONFIG_PACKAGE_family-dns is not set
 >>>>>>> 3a56b1670d (update .config for improved performance)
@@ -18252,6 +18337,9 @@ CONFIG_PACKAGE_ethtool-full=y
 # CONFIG_PACKAGE_flent is not set
 =======
 >>>>>>> 6c4b73ab37 (add .config)
+=======
+# CONFIG_PACKAGE_flent is not set
+>>>>>>> 6a4e21f90a (add .config)
 # CONFIG_PACKAGE_foolsm is not set
 # CONFIG_PACKAGE_fping is not set
 # CONFIG_PACKAGE_fsh is not set
@@ -18487,6 +18575,7 @@ CONFIG_PACKAGE_iw-full=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_keepalived-sync is not set
 =======
 >>>>>>> b4faf21b37 (add .config)
@@ -18495,6 +18584,9 @@ CONFIG_PACKAGE_iw-full=y
 >>>>>>> 3a56b1670d (update .config for improved performance)
 =======
 >>>>>>> 6c4b73ab37 (add .config)
+=======
+# CONFIG_PACKAGE_keepalived-sync is not set
+>>>>>>> 6a4e21f90a (add .config)
 # CONFIG_PACKAGE_knxd is not set
 # CONFIG_PACKAGE_kplex is not set
 # CONFIG_PACKAGE_krb5-client is not set
@@ -19254,6 +19346,7 @@ CONFIG_PACKAGE_ulogd-mod-syslog=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_vnstat2=y
 CONFIG_PACKAGE_vnstati2=y
 <<<<<<< HEAD
@@ -19314,6 +19407,14 @@ CONFIG_PACKAGE_vnstati2=y
 # CONFIG_PACKAGE_wakeonlan is not set
 # CONFIG_PACKAGE_wg-installer-client is not set
 >>>>>>> 6c4b73ab37 (add .config)
+=======
+CONFIG_PACKAGE_vnstat2=y
+CONFIG_PACKAGE_vnstati2=y
+# CONFIG_PACKAGE_vxlan is not set
+# CONFIG_PACKAGE_wakeonlan is not set
+# CONFIG_PACKAGE_wg-installer-client is not set
+# CONFIG_PACKAGE_wg-installer-server is not set
+>>>>>>> 6a4e21f90a (add .config)
 # CONFIG_PACKAGE_wifi-presence is not set
 # CONFIG_PACKAGE_wpan-tools is not set
 # CONFIG_PACKAGE_wwan is not set
@@ -21030,6 +21131,7 @@ CONFIG_PACKAGE_findutils-xargs=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_flent-tools is not set
 =======
 >>>>>>> b4faf21b37 (add .config)
@@ -21038,6 +21140,9 @@ CONFIG_PACKAGE_findutils-xargs=y
 >>>>>>> 3a56b1670d (update .config for improved performance)
 =======
 >>>>>>> 6c4b73ab37 (add .config)
+=======
+# CONFIG_PACKAGE_flent-tools is not set
+>>>>>>> 6a4e21f90a (add .config)
 # CONFIG_PACKAGE_flock is not set
 # CONFIG_PACKAGE_fritz-caldata is not set
 # CONFIG_PACKAGE_fritz-tffs is not set
