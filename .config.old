@@ -576,7 +576,7 @@ CONFIG_TARGET_INIT_CMD="/sbin/init"
 CONFIG_TARGET_INIT_SUPPRESS_STDERR=y
 CONFIG_VERSIONOPT=y
 CONFIG_VERSION_DIST="mda-bananapi4"
-CONFIG_VERSION_NUMBER="6.6.66"
+CONFIG_VERSION_NUMBER="6.6.79"
 CONFIG_VERSION_CODE="0"
 CONFIG_VERSION_REPO="https://downloads.openwrt.org/snapshots"
 CONFIG_VERSION_HOME_URL=""
@@ -4180,7 +4180,7 @@ CONFIG_GOLANG_BUILD_CACHE_DIR=""
 # CONFIG_PACKAGE_dkjson is not set
 # CONFIG_PACKAGE_json4lua is not set
 # CONFIG_PACKAGE_ldbus is not set
-# CONFIG_PACKAGE_libiwinfo-lua is not set
+CONFIG_PACKAGE_libiwinfo-lua=y
 # CONFIG_PACKAGE_linotify is not set
 # CONFIG_PACKAGE_lpeg is not set
 # CONFIG_PACKAGE_lsqlite3 is not set
@@ -4188,7 +4188,7 @@ CONFIG_GOLANG_BUILD_CACHE_DIR=""
 CONFIG_PACKAGE_lua=y
 # CONFIG_PACKAGE_lua-argparse is not set
 # CONFIG_PACKAGE_lua-bencode is not set
-# CONFIG_PACKAGE_lua-bit32 is not set
+CONFIG_PACKAGE_lua-bit32=y
 # CONFIG_PACKAGE_lua-cjson is not set
 # CONFIG_PACKAGE_lua-cjson-lua5.3 is not set
 # CONFIG_PACKAGE_lua-copas is not set
@@ -4239,7 +4239,7 @@ CONFIG_LUA_ECO_MBEDTLS=y
 # CONFIG_PACKAGE_lua-xavante is not set
 # CONFIG_PACKAGE_lua5.3 is not set
 # CONFIG_PACKAGE_lua5.4 is not set
-# CONFIG_PACKAGE_luabitop is not set
+CONFIG_PACKAGE_luabitop=y
 # CONFIG_PACKAGE_luac is not set
 # CONFIG_PACKAGE_luac5.3 is not set
 # CONFIG_PACKAGE_luac5.4 is not set
@@ -4254,7 +4254,7 @@ CONFIG_HAS_LUAJIT_ARCH=y
 # CONFIG_PACKAGE_luarocks is not set
 # CONFIG_PACKAGE_luasec is not set
 # CONFIG_PACKAGE_luasoap is not set
-# CONFIG_PACKAGE_luasocket is not set
+CONFIG_PACKAGE_luasocket=y
 # CONFIG_PACKAGE_luasocket5.3 is not set
 # CONFIG_PACKAGE_luasql-mysql is not set
 # CONFIG_PACKAGE_luasql-pgsql is not set
@@ -4798,7 +4798,20 @@ CONFIG_PACKAGE_libbz2=y
 # CONFIG_PACKAGE_libodbcinst is not set
 # CONFIG_PACKAGE_libpq is not set
 # CONFIG_PACKAGE_libpqxx is not set
-# CONFIG_PACKAGE_libsqlite3 is not set
+CONFIG_PACKAGE_libsqlite3=y
+
+#
+# Configuration
+#
+# CONFIG_SQLITE3_BATCH_ATOMIC_WRITE is not set
+# CONFIG_SQLITE3_COLUMN_METADATA is not set
+# CONFIG_SQLITE3_DYNAMIC_EXTENSIONS is not set
+# CONFIG_SQLITE3_FTS3 is not set
+# CONFIG_SQLITE3_FTS5 is not set
+# CONFIG_SQLITE3_RTREE is not set
+# CONFIG_SQLITE3_SESSION is not set
+# end of Configuration
+
 # CONFIG_PACKAGE_pgsqlodbc is not set
 # CONFIG_PACKAGE_psqlodbca is not set
 # CONFIG_PACKAGE_psqlodbcw is not set
@@ -4812,7 +4825,7 @@ CONFIG_PACKAGE_libbz2=y
 #
 # Filesystem
 #
-# CONFIG_PACKAGE_libacl is not set
+CONFIG_PACKAGE_libacl=y
 CONFIG_PACKAGE_libattr=y
 # CONFIG_PACKAGE_libfuse is not set
 # CONFIG_PACKAGE_libfuse3 is not set
@@ -5632,7 +5645,8 @@ CONFIG_PACKAGE_libblkid=y
 CONFIG_PACKAGE_libblobmsg-json=y
 CONFIG_PACKAGE_libbpf=y
 # CONFIG_PACKAGE_libbsd is not set
-# CONFIG_PACKAGE_libcap is not set
+CONFIG_PACKAGE_libcap=y
+# CONFIG_PACKAGE_libcap-bin is not set
 # CONFIG_PACKAGE_libcap-ng is not set
 # CONFIG_PACKAGE_libcares is not set
 CONFIG_PACKAGE_libcbor=y
@@ -5745,7 +5759,9 @@ CONFIG_PACKAGE_libfido2=y
 # CONFIG_PACKAGE_libftdi1 is not set
 # CONFIG_PACKAGE_libgabe is not set
 CONFIG_PACKAGE_libgcrypt=y
-# CONFIG_PACKAGE_libgd is not set
+CONFIG_PACKAGE_libgd=y
+# CONFIG_LIBGD_TIFF is not set
+# CONFIG_LIBGD_FREETYPE is not set
 # CONFIG_PACKAGE_libgd-full is not set
 # CONFIG_PACKAGE_libgdbm is not set
 # CONFIG_PACKAGE_libgee is not set
@@ -5785,7 +5801,7 @@ CONFIG_PACKAGE_libi2c=y
 CONFIG_PACKAGE_libiwinfo=y
 # CONFIG_PACKAGE_libjaylink is not set
 # CONFIG_PACKAGE_libjcat is not set
-# CONFIG_PACKAGE_libjpeg-turbo is not set
+CONFIG_PACKAGE_libjpeg-turbo=y
 CONFIG_PACKAGE_libjson-c=y
 # CONFIG_PACKAGE_libjwt is not set
 # CONFIG_PACKAGE_libkeyutils is not set
@@ -5904,7 +5920,7 @@ CONFIG_PACKAGE_libpcre2=y
 # CONFIG_PACKAGE_libpfring is not set
 # CONFIG_PACKAGE_libpkcs11-spy is not set
 # CONFIG_PACKAGE_libpkgconf is not set
-# CONFIG_PACKAGE_libpng is not set
+CONFIG_PACKAGE_libpng=y
 # CONFIG_PACKAGE_libpopt is not set
 # CONFIG_PACKAGE_libpri is not set
 CONFIG_PACKAGE_libprotobuf-c=y
@@ -5985,7 +6001,7 @@ CONFIG_PACKAGE_libubox=y
 CONFIG_PACKAGE_libubus=y
 CONFIG_PACKAGE_libubus-lua=y
 CONFIG_PACKAGE_libuci=y
-# CONFIG_PACKAGE_libuci-lua is not set
+CONFIG_PACKAGE_libuci-lua=y
 # CONFIG_PACKAGE_libuci2 is not set
 CONFIG_PACKAGE_libuclient=y
 CONFIG_PACKAGE_libucode=y
@@ -6015,7 +6031,7 @@ CONFIG_PACKAGE_libuuid=y
 # CONFIG_PACKAGE_libvorbisidec is not set
 # CONFIG_PACKAGE_libvpx is not set
 # CONFIG_PACKAGE_libwacom is not set
-# CONFIG_PACKAGE_libwebp is not set
+CONFIG_PACKAGE_libwebp=y
 # CONFIG_PACKAGE_libwebsockets-full is not set
 # CONFIG_PACKAGE_libwebsockets-mbedtls is not set
 # CONFIG_PACKAGE_libwebsockets-openssl is not set
@@ -6217,6 +6233,7 @@ CONFIG_PACKAGE_luci-app-firewall=y
 # CONFIG_PACKAGE_luci-app-hnet is not set
 # CONFIG_PACKAGE_luci-app-https-dns-proxy is not set
 # CONFIG_PACKAGE_luci-app-irqbalance is not set
+# CONFIG_PACKAGE_luci-app-keepalived is not set
 # CONFIG_PACKAGE_luci-app-ksmbd is not set
 # CONFIG_PACKAGE_luci-app-ledtrig-rssi is not set
 # CONFIG_PACKAGE_luci-app-ledtrig-switch is not set
@@ -6552,6 +6569,42 @@ CONFIG_PACKAGE_luci-lib-uqr=y
 # CONFIG_PACKAGE_luci-i18n-statistics-yua is not set
 # CONFIG_PACKAGE_luci-i18n-statistics-zh-cn is not set
 # CONFIG_PACKAGE_luci-i18n-statistics-zh-tw is not set
+# CONFIG_PACKAGE_luci-i18n-vnstat2-ar is not set
+# CONFIG_PACKAGE_luci-i18n-vnstat2-bg is not set
+# CONFIG_PACKAGE_luci-i18n-vnstat2-bn is not set
+# CONFIG_PACKAGE_luci-i18n-vnstat2-ca is not set
+# CONFIG_PACKAGE_luci-i18n-vnstat2-cs is not set
+# CONFIG_PACKAGE_luci-i18n-vnstat2-da is not set
+# CONFIG_PACKAGE_luci-i18n-vnstat2-de is not set
+# CONFIG_PACKAGE_luci-i18n-vnstat2-el is not set
+# CONFIG_PACKAGE_luci-i18n-vnstat2-es is not set
+# CONFIG_PACKAGE_luci-i18n-vnstat2-fi is not set
+# CONFIG_PACKAGE_luci-i18n-vnstat2-fil is not set
+# CONFIG_PACKAGE_luci-i18n-vnstat2-fr is not set
+# CONFIG_PACKAGE_luci-i18n-vnstat2-he is not set
+# CONFIG_PACKAGE_luci-i18n-vnstat2-hi is not set
+# CONFIG_PACKAGE_luci-i18n-vnstat2-hu is not set
+# CONFIG_PACKAGE_luci-i18n-vnstat2-it is not set
+# CONFIG_PACKAGE_luci-i18n-vnstat2-ja is not set
+# CONFIG_PACKAGE_luci-i18n-vnstat2-ko is not set
+# CONFIG_PACKAGE_luci-i18n-vnstat2-lt is not set
+# CONFIG_PACKAGE_luci-i18n-vnstat2-mr is not set
+# CONFIG_PACKAGE_luci-i18n-vnstat2-ms is not set
+# CONFIG_PACKAGE_luci-i18n-vnstat2-nl is not set
+# CONFIG_PACKAGE_luci-i18n-vnstat2-no is not set
+# CONFIG_PACKAGE_luci-i18n-vnstat2-pl is not set
+# CONFIG_PACKAGE_luci-i18n-vnstat2-pt is not set
+# CONFIG_PACKAGE_luci-i18n-vnstat2-pt-br is not set
+# CONFIG_PACKAGE_luci-i18n-vnstat2-ro is not set
+# CONFIG_PACKAGE_luci-i18n-vnstat2-ru is not set
+# CONFIG_PACKAGE_luci-i18n-vnstat2-sk is not set
+# CONFIG_PACKAGE_luci-i18n-vnstat2-sv is not set
+# CONFIG_PACKAGE_luci-i18n-vnstat2-tr is not set
+# CONFIG_PACKAGE_luci-i18n-vnstat2-uk is not set
+# CONFIG_PACKAGE_luci-i18n-vnstat2-vi is not set
+# CONFIG_PACKAGE_luci-i18n-vnstat2-yua is not set
+# CONFIG_PACKAGE_luci-i18n-vnstat2-zh-cn is not set
+# CONFIG_PACKAGE_luci-i18n-vnstat2-zh-tw is not set
 # end of LuCI
 
 #
@@ -7351,7 +7404,7 @@ CONFIG_PACKAGE_cgi-io=y
 # CONFIG_PACKAGE_squid is not set
 # CONFIG_PACKAGE_tinyproxy is not set
 CONFIG_PACKAGE_uhttpd=y
-# CONFIG_PACKAGE_uhttpd-mod-lua is not set
+CONFIG_PACKAGE_uhttpd-mod-lua=y
 CONFIG_PACKAGE_uhttpd-mod-ubus=y
 # CONFIG_PACKAGE_uhttpd-mod-ucode is not set
 # CONFIG_PACKAGE_uwsgi is not set
@@ -7445,7 +7498,7 @@ CONFIG_PACKAGE_wpad-openssl=y
 # CONFIG_PACKAGE_aardvark-dns is not set
 CONFIG_PACKAGE_acme=y
 CONFIG_PACKAGE_acme-acmesh=y
-# CONFIG_PACKAGE_acme-acmesh-dnsapi is not set
+CONFIG_PACKAGE_acme-acmesh-dnsapi=y
 CONFIG_PACKAGE_acme-common=y
 # CONFIG_PACKAGE_adblock is not set
 # CONFIG_PACKAGE_adblock-fast is not set
@@ -7502,6 +7555,7 @@ CONFIG_PACKAGE_ethtool-full=y
 # CONFIG_PACKAGE_fail2ban is not set
 # CONFIG_PACKAGE_fakeidentd is not set
 # CONFIG_PACKAGE_fakepop is not set
+# CONFIG_PACKAGE_flent is not set
 # CONFIG_PACKAGE_foolsm is not set
 # CONFIG_PACKAGE_fping is not set
 # CONFIG_PACKAGE_fsh is not set
@@ -7552,6 +7606,7 @@ CONFIG_PACKAGE_ipset=y
 CONFIG_PACKAGE_iw-full=y
 # CONFIG_PACKAGE_jool-tools-netfilter is not set
 # CONFIG_PACKAGE_keepalived is not set
+# CONFIG_PACKAGE_keepalived-sync is not set
 # CONFIG_PACKAGE_knxd is not set
 # CONFIG_PACKAGE_kplex is not set
 # CONFIG_PACKAGE_krb5-client is not set
@@ -7728,10 +7783,12 @@ CONFIG_PACKAGE_uclient-fetch=y
 # CONFIG_PACKAGE_v2ray-core is not set
 # CONFIG_PACKAGE_vallumd is not set
 # CONFIG_PACKAGE_vnstat is not set
-# CONFIG_PACKAGE_vnstat2 is not set
+CONFIG_PACKAGE_vnstat2=y
+CONFIG_PACKAGE_vnstati2=y
 # CONFIG_PACKAGE_vxlan is not set
 # CONFIG_PACKAGE_wakeonlan is not set
 # CONFIG_PACKAGE_wg-installer-client is not set
+# CONFIG_PACKAGE_wg-installer-server is not set
 # CONFIG_PACKAGE_wifi-presence is not set
 # CONFIG_PACKAGE_wpan-tools is not set
 # CONFIG_PACKAGE_wwan is not set
@@ -8422,6 +8479,7 @@ CONFIG_PACKAGE_findutils-xargs=y
 # CONFIG_PACKAGE_flashrom-pci is not set
 # CONFIG_PACKAGE_flashrom-spi is not set
 # CONFIG_PACKAGE_flashrom-usb is not set
+# CONFIG_PACKAGE_flent-tools is not set
 # CONFIG_PACKAGE_flock is not set
 # CONFIG_PACKAGE_fritz-caldata is not set
 # CONFIG_PACKAGE_fritz-tffs is not set
