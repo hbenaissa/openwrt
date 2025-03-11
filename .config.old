@@ -349,19 +349,30 @@ CONFIG_TARGET_ROOTFS_INITRAMFS_SEPARATE=y
 #
 # Root filesystem images
 #
-# CONFIG_TARGET_ROOTFS_EXT4FS is not set
+CONFIG_TARGET_ROOTFS_EXT4FS=y
+CONFIG_TARGET_EXT4_RESERVED_PCT=0
+CONFIG_TARGET_EXT4_BLOCKSIZE_4K=y
+# CONFIG_TARGET_EXT4_BLOCKSIZE_2K is not set
+# CONFIG_TARGET_EXT4_BLOCKSIZE_1K is not set
+CONFIG_TARGET_EXT4_BLOCKSIZE=4096
+CONFIG_TARGET_EXT4_JOURNAL=y
 CONFIG_TARGET_ROOTFS_SQUASHFS=y
 CONFIG_TARGET_SQUASHFS_BLOCK_SIZE=256
 CONFIG_TARGET_UBIFS_FREE_SPACE_FIXUP=y
 CONFIG_TARGET_UBIFS_JOURNAL_SIZE=""
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_TARGET_IMAGES_GZIP=y
 =======
 >>>>>>> 6d6cc85399 (add .config)
+=======
+CONFIG_TARGET_IMAGES_GZIP=y
+>>>>>>> 4353cd5b91 (add .config)
 
 #
 # Image Options
 #
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -377,6 +388,10 @@ CONFIG_TARGET_ROOTFS_PARTSIZE=2448
 CONFIG_TARGET_ROOTFS_PARTSIZE=448
 CONFIG_TARGET_ROOTFS_PERSIST_VAR=y
 >>>>>>> b30872b5aa (add .config)
+=======
+CONFIG_TARGET_ROOTFS_PARTSIZE=2448
+# CONFIG_TARGET_ROOTFS_PERSIST_VAR is not set
+>>>>>>> a487289ae3 (add .config)
 # end of Target Images
 
 # CONFIG_EXPERIMENTAL is not set
@@ -433,6 +448,7 @@ CONFIG_KERNEL_DEBUG_FS=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_KERNEL_PSI is not set
 =======
 CONFIG_KERNEL_PSI=y
@@ -443,6 +459,9 @@ CONFIG_KERNEL_PSI=y
 =======
 CONFIG_KERNEL_PSI=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_KERNEL_PSI is not set
+>>>>>>> a487289ae3 (add .config)
 CONFIG_KERNEL_KALLSYMS=y
 # CONFIG_KERNEL_FTRACE is not set
 CONFIG_KERNEL_DEBUG_KERNEL=y
@@ -453,6 +472,7 @@ CONFIG_KERNEL_FRAME_WARN=2048
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_KERNEL_DYNAMIC_DEBUG is not set
 =======
 CONFIG_KERNEL_DYNAMIC_DEBUG=y
@@ -463,6 +483,9 @@ CONFIG_KERNEL_DYNAMIC_DEBUG=y
 =======
 CONFIG_KERNEL_DYNAMIC_DEBUG=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_KERNEL_DYNAMIC_DEBUG is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_KERNEL_KPROBES is not set
 # CONFIG_KERNEL_BPF_EVENTS is not set
 CONFIG_KERNEL_AIO=y
@@ -552,6 +575,7 @@ CONFIG_KERNEL_IPV6_SEG6_LWTUNNEL=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_KERNEL_NET_L3_MASTER_DEV=y
 =======
 # CONFIG_KERNEL_NET_L3_MASTER_DEV is not set
@@ -562,6 +586,9 @@ CONFIG_KERNEL_NET_L3_MASTER_DEV=y
 =======
 # CONFIG_KERNEL_NET_L3_MASTER_DEV is not set
 >>>>>>> b30872b5aa (add .config)
+=======
+CONFIG_KERNEL_NET_L3_MASTER_DEV=y
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_KERNEL_XDP_SOCKETS is not set
 CONFIG_KERNEL_PAGE_POOL=y
 # CONFIG_KERNEL_PAGE_POOL_STATS is not set
@@ -624,7 +651,7 @@ CONFIG_KERNEL_WERROR=y
 # CONFIG_USE_GC_SECTIONS is not set
 # CONFIG_USE_LTO is not set
 CONFIG_MOLD=y
-CONFIG_USE_MOLD=y
+# CONFIG_USE_MOLD is not set
 CONFIG_IPV6=y
 
 #
@@ -633,6 +660,7 @@ CONFIG_IPV6=y
 # CONFIG_NO_STRIP is not set
 # CONFIG_USE_STRIP is not set
 CONFIG_USE_SSTRIP=y
+CONFIG_SSTRIP_DISCARD_TRAILING_ZEROES=y
 # CONFIG_USE_MKLIBS is not set
 
 #
@@ -704,7 +732,8 @@ CONFIG_BPF_TOOLCHAIN_HOST_PATH="/usr/local/opt/llvm"
 =======
 CONFIG_TARGET_OPTIMIZATION="-O3 -pipe -mcpu=cortex-a73+crc+crypto+rdma"
 # CONFIG_BPF_TOOLCHAIN_NONE is not set
-# CONFIG_BPF_TOOLCHAIN_HOST is not set
+CONFIG_BPF_TOOLCHAIN_HOST=y
+# CONFIG_BPF_TOOLCHAIN_BUILD_LLVM is not set
 CONFIG_BPF_TOOLCHAIN_BUILD_LLVM=y
 >>>>>>> 22b1a68274 (add .config)
 <<<<<<< HEAD
@@ -813,6 +842,7 @@ CONFIG_TARGET_SUFFIX="musl"
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_MAKE_TOOLCHAIN is not set
 # CONFIG_IMAGEOPT is not set
 =======
@@ -829,6 +859,10 @@ CONFIG_IMAGEOPT=y
 # CONFIG_MAKE_TOOLCHAIN is not set
 CONFIG_IMAGEOPT=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_MAKE_TOOLCHAIN is not set
+# CONFIG_IMAGEOPT is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_TARGET_DEFAULT_LAN_IP_FROM_PREINIT is not set
 # CONFIG_PREINITOPT is not set
 CONFIG_TARGET_PREINIT_SUPPRESS_STDERR=y
@@ -845,6 +879,7 @@ CONFIG_TARGET_INIT_PATH="/usr/sbin:/usr/bin:/sbin:/bin"
 CONFIG_TARGET_INIT_ENV=""
 CONFIG_TARGET_INIT_CMD="/sbin/init"
 CONFIG_TARGET_INIT_SUPPRESS_STDERR=y
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -881,6 +916,9 @@ CONFIG_VERSION_CODE_FILENAMES=y
 >>>>>>> d9bf330100 (add .config)
 =======
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_VERSIONOPT is not set
+>>>>>>> a487289ae3 (add .config)
 CONFIG_PER_FEED_REPO=y
 CONFIG_FEED_packages=y
 CONFIG_FEED_luci=y
@@ -891,6 +929,7 @@ CONFIG_FEED_video=y
 #
 # Base system
 #
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -908,13 +947,18 @@ CONFIG_PACKAGE_apk-mbedtls=y
 # CONFIG_PACKAGE_apk-mbedtls is not set
 CONFIG_PACKAGE_apk-openssl=y
 >>>>>>> b30872b5aa (add .config)
+=======
+CONFIG_PACKAGE_apk-mbedtls=y
+# CONFIG_PACKAGE_apk-openssl is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_attendedsysupgrade-common is not set
 CONFIG_PACKAGE_base-files=y
-CONFIG_PACKAGE_block-mount=y
-CONFIG_PACKAGE_blockd=y
+# CONFIG_PACKAGE_block-mount is not set
+# CONFIG_PACKAGE_blockd is not set
 # CONFIG_PACKAGE_bridge is not set
-CONFIG_PACKAGE_bridger=y
+# CONFIG_PACKAGE_bridger is not set
 CONFIG_PACKAGE_busybox=y
+<<<<<<< HEAD
 <<<<<<< HEAD
 # CONFIG_BUSYBOX_CUSTOM is not set
 =======
@@ -940,6 +984,9 @@ CONFIG_BUSYBOX_CUSTOM=y
 =======
 CONFIG_BUSYBOX_CUSTOM=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_BUSYBOX_CUSTOM is not set
+>>>>>>> a487289ae3 (add .config)
 CONFIG_BUSYBOX_DEFAULT_HAVE_DOT_CONFIG=y
 # CONFIG_BUSYBOX_DEFAULT_DESKTOP is not set
 # CONFIG_BUSYBOX_DEFAULT_EXTRA_COMPAT is not set
@@ -2024,6 +2071,7 @@ CONFIG_BUSYBOX_DEFAULT_FEATURE_SYSLOGD_READ_BUFFER_SIZE=0
 # CONFIG_BUSYBOX_DEFAULT_FEATURE_IPC_SYSLOG is not set
 CONFIG_BUSYBOX_DEFAULT_FEATURE_IPC_SYSLOG_BUFFER_SIZE=0
 # CONFIG_BUSYBOX_DEFAULT_FEATURE_KMSG_SYSLOG is not set
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3837,6 +3885,11 @@ CONFIG_PACKAGE_ca-certificates=y
 =======
 # CONFIG_PACKAGE_ca-certificates is not set
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PACKAGE_busybox-selinux is not set
+CONFIG_PACKAGE_ca-bundle=y
+CONFIG_PACKAGE_ca-certificates=y
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_dnsmasq is not set
 # CONFIG_PACKAGE_dnsmasq-dhcpv6 is not set
 CONFIG_PACKAGE_dnsmasq-full=y
@@ -3879,6 +3932,7 @@ CONFIG_PACKAGE_dnsmasq_full_tftp=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_dropbear is not set
 =======
 CONFIG_PACKAGE_dropbear=y
@@ -3904,6 +3958,9 @@ CONFIG_DROPBEAR_SCP=y
 # end of Configuration
 
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PACKAGE_dropbear is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_ead is not set
 =======
 CONFIG_PACKAGE_dropbear=y
@@ -3969,6 +4026,7 @@ CONFIG_PACKAGE_procd=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PROCD_SHOW_BOOT is not set
 =======
 CONFIG_PROCD_SHOW_BOOT=y
@@ -3979,6 +4037,9 @@ CONFIG_PROCD_SHOW_BOOT=y
 =======
 CONFIG_PROCD_SHOW_BOOT=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PROCD_SHOW_BOOT is not set
+>>>>>>> a487289ae3 (add .config)
 # end of Configuration
 
 CONFIG_PACKAGE_procd-seccomp=y
@@ -3994,6 +4055,7 @@ CONFIG_PACKAGE_rpcd-mod-iwinfo=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_rpcd-mod-rpcsys=y
 =======
 # CONFIG_PACKAGE_rpcd-mod-rpcsys is not set
@@ -4004,6 +4066,9 @@ CONFIG_PACKAGE_rpcd-mod-rpcsys=y
 =======
 # CONFIG_PACKAGE_rpcd-mod-rpcsys is not set
 >>>>>>> 187cc246d7 (add .config)
+=======
+CONFIG_PACKAGE_rpcd-mod-rpcsys=y
+>>>>>>> a487289ae3 (add .config)
 CONFIG_PACKAGE_rpcd-mod-ucode=y
 # CONFIG_PACKAGE_selinux-policy is not set
 # CONFIG_PACKAGE_snapshot-tool is not set
@@ -4029,6 +4094,7 @@ CONFIG_PACKAGE_wifi-scripts=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 497d21d9b3 (update .config for improved performance)
 =======
@@ -4044,6 +4110,9 @@ CONFIG_PACKAGE_wireless-tools=y
 =======
 CONFIG_PACKAGE_wireless-tools=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PACKAGE_wireless-tools is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_zram-swap is not set
 # CONFIG_PACKAGE_zyxel-bootconfig is not set
 # end of Base system
@@ -4106,6 +4175,7 @@ CONFIG_NETJSON_MONITORING_IWINFO=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_btop is not set
 =======
 CONFIG_PACKAGE_btop=y
@@ -4116,6 +4186,9 @@ CONFIG_PACKAGE_btop=y
 =======
 CONFIG_PACKAGE_btop=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PACKAGE_btop is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_debian-archive-keyring is not set
 # CONFIG_PACKAGE_debootstrap is not set
 # CONFIG_PACKAGE_fluent-bit is not set
@@ -4157,10 +4230,14 @@ CONFIG_HTOP_LMSENSORS=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_netatop is not set
 =======
 CONFIG_PACKAGE_netatop=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PACKAGE_netatop is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_netdata is not set
 =======
 CONFIG_PACKAGE_netatop=y
@@ -4229,6 +4306,7 @@ CONFIG_PACKAGE_u-boot-mt7988_bananapi_bpi-r4-snand=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_diffutils is not set
 =======
 CONFIG_PACKAGE_diffutils=y
@@ -4239,6 +4317,9 @@ CONFIG_PACKAGE_diffutils=y
 =======
 CONFIG_PACKAGE_diffutils=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PACKAGE_diffutils is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_flex is not set
 # CONFIG_PACKAGE_gcc is not set
 # CONFIG_PACKAGE_gdb is not set
@@ -4252,6 +4333,7 @@ CONFIG_PACKAGE_diffutils=y
 # CONFIG_PACKAGE_lttng-tools is not set
 # CONFIG_PACKAGE_m4 is not set
 # CONFIG_PACKAGE_make is not set
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -4272,11 +4354,15 @@ CONFIG_PACKAGE_mt76-test=y
 =======
 CONFIG_PACKAGE_mt76-test=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PACKAGE_mt76-test is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_objdump is not set
 # CONFIG_PACKAGE_patch is not set
 # CONFIG_PACKAGE_pkg-config is not set
 # CONFIG_PACKAGE_pkgconf is not set
 # CONFIG_PACKAGE_tmon is not set
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -4294,6 +4380,10 @@ CONFIG_PACKAGE_trace-cmd-extra=y
 CONFIG_PACKAGE_trace-cmd=y
 CONFIG_PACKAGE_trace-cmd-extra=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PACKAGE_trace-cmd is not set
+# CONFIG_PACKAGE_trace-cmd-extra is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_valgrind is not set
 # end of Development
 
@@ -4624,6 +4714,7 @@ CONFIG_PACKAGE_wireless-regdb=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_kmod-nvme is not set
 # CONFIG_PACKAGE_kmod-scsi-cdrom is not set
 # CONFIG_PACKAGE_kmod-scsi-core is not set
@@ -4642,6 +4733,11 @@ CONFIG_PACKAGE_kmod-nvme=y
 # CONFIG_PACKAGE_kmod-scsi-cdrom is not set
 CONFIG_PACKAGE_kmod-scsi-core=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PACKAGE_kmod-nvme is not set
+# CONFIG_PACKAGE_kmod-scsi-cdrom is not set
+# CONFIG_PACKAGE_kmod-scsi-core is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_kmod-scsi-generic is not set
 # CONFIG_PACKAGE_kmod-scsi-tape is not set
 # end of Block Devices
@@ -4670,6 +4766,7 @@ CONFIG_PACKAGE_kmod-scsi-core=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_kmod-crypto-acompress=y
 =======
 >>>>>>> 22b1a68274 (add .config)
@@ -4678,6 +4775,9 @@ CONFIG_PACKAGE_kmod-crypto-acompress=y
 >>>>>>> d9bf330100 (add .config)
 =======
 >>>>>>> b30872b5aa (add .config)
+=======
+CONFIG_PACKAGE_kmod-crypto-acompress=y
+>>>>>>> a487289ae3 (add .config)
 CONFIG_PACKAGE_kmod-crypto-aead=y
 # CONFIG_PACKAGE_kmod-crypto-arc4 is not set
 CONFIG_PACKAGE_kmod-crypto-authenc=y
@@ -4685,6 +4785,7 @@ CONFIG_PACKAGE_kmod-crypto-authenc=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_kmod-crypto-cbc=y
 =======
 # CONFIG_PACKAGE_kmod-crypto-cbc is not set
@@ -4695,6 +4796,9 @@ CONFIG_PACKAGE_kmod-crypto-cbc=y
 =======
 # CONFIG_PACKAGE_kmod-crypto-cbc is not set
 >>>>>>> b30872b5aa (add .config)
+=======
+CONFIG_PACKAGE_kmod-crypto-cbc=y
+>>>>>>> a487289ae3 (add .config)
 CONFIG_PACKAGE_kmod-crypto-ccm=y
 # CONFIG_PACKAGE_kmod-crypto-chacha20poly1305 is not set
 CONFIG_PACKAGE_kmod-crypto-cmac=y
@@ -4704,6 +4808,7 @@ CONFIG_PACKAGE_kmod-crypto-ctr=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_kmod-crypto-deflate=y
 CONFIG_PACKAGE_kmod-crypto-des=y
 # CONFIG_PACKAGE_kmod-crypto-ecb is not set
@@ -4730,6 +4835,13 @@ CONFIG_PACKAGE_kmod-crypto-des=y
 # CONFIG_PACKAGE_kmod-crypto-ecdh is not set
 # CONFIG_PACKAGE_kmod-crypto-echainiv is not set
 >>>>>>> b30872b5aa (add .config)
+=======
+CONFIG_PACKAGE_kmod-crypto-deflate=y
+CONFIG_PACKAGE_kmod-crypto-des=y
+# CONFIG_PACKAGE_kmod-crypto-ecb is not set
+# CONFIG_PACKAGE_kmod-crypto-ecdh is not set
+CONFIG_PACKAGE_kmod-crypto-echainiv=y
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_kmod-crypto-engine is not set
 # CONFIG_PACKAGE_kmod-crypto-essiv is not set
 # CONFIG_PACKAGE_kmod-crypto-fcrypt is not set
@@ -4746,6 +4858,7 @@ CONFIG_PACKAGE_kmod-crypto-hmac=y
 # CONFIG_PACKAGE_kmod-crypto-hw-padlock is not set
 CONFIG_PACKAGE_kmod-crypto-hw-safexcel=y
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_kmod-crypto-kpp=y
 =======
 # CONFIG_PACKAGE_kmod-crypto-hw-hifn-795x is not set
@@ -4763,6 +4876,9 @@ CONFIG_PACKAGE_kmod-crypto-kpp=y
 =======
 # CONFIG_PACKAGE_kmod-crypto-kpp is not set
 >>>>>>> b30872b5aa (add .config)
+=======
+CONFIG_PACKAGE_kmod-crypto-kpp=y
+>>>>>>> a487289ae3 (add .config)
 CONFIG_PACKAGE_kmod-crypto-lib-chacha20=y
 CONFIG_PACKAGE_kmod-crypto-lib-chacha20poly1305=y
 CONFIG_PACKAGE_kmod-crypto-lib-curve25519=y
@@ -4797,6 +4913,7 @@ CONFIG_PACKAGE_kmod-cryptodev=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_kmod-fs-autofs4 is not set
 =======
 CONFIG_PACKAGE_kmod-fs-autofs4=y
@@ -4807,6 +4924,9 @@ CONFIG_PACKAGE_kmod-fs-autofs4=y
 =======
 CONFIG_PACKAGE_kmod-fs-autofs4=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PACKAGE_kmod-fs-autofs4 is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_kmod-fs-btrfs is not set
 # CONFIG_PACKAGE_kmod-fs-cifs is not set
 # CONFIG_PACKAGE_kmod-fs-configfs is not set
@@ -4816,6 +4936,7 @@ CONFIG_PACKAGE_kmod-fs-autofs4=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_kmod-fs-ext4 is not set
 =======
 CONFIG_PACKAGE_kmod-fs-ext4=y
@@ -4826,6 +4947,9 @@ CONFIG_PACKAGE_kmod-fs-ext4=y
 =======
 CONFIG_PACKAGE_kmod-fs-ext4=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PACKAGE_kmod-fs-ext4 is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_kmod-fs-f2fs is not set
 # CONFIG_PACKAGE_kmod-fs-fscache is not set
 # CONFIG_PACKAGE_kmod-fs-hfs is not set
@@ -4853,6 +4977,7 @@ CONFIG_PACKAGE_kmod-fs-ext4=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_kmod-pstore is not set
 =======
 CONFIG_PACKAGE_kmod-pstore=y
@@ -4863,6 +4988,9 @@ CONFIG_PACKAGE_kmod-pstore=y
 =======
 CONFIG_PACKAGE_kmod-pstore=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PACKAGE_kmod-pstore is not set
+>>>>>>> a487289ae3 (add .config)
 # end of Filesystems
 
 #
@@ -5039,6 +5167,7 @@ CONFIG_PACKAGE_kmod-lib-crc-ccitt=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_kmod-lib-crc16 is not set
 =======
 CONFIG_PACKAGE_kmod-lib-crc16=y
@@ -5049,6 +5178,9 @@ CONFIG_PACKAGE_kmod-lib-crc16=y
 =======
 CONFIG_PACKAGE_kmod-lib-crc16=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PACKAGE_kmod-lib-crc16 is not set
+>>>>>>> a487289ae3 (add .config)
 CONFIG_PACKAGE_kmod-lib-crc32c=y
 # CONFIG_PACKAGE_kmod-lib-crc7 is not set
 # CONFIG_PACKAGE_kmod-lib-crc8 is not set
@@ -5383,6 +5515,7 @@ CONFIG_PACKAGE_kmod-nf-ipt6=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_kmod-nf-ipvs=y
 # CONFIG_PACKAGE_kmod-nf-ipvs-ftp is not set
 # CONFIG_PACKAGE_kmod-nf-ipvs-sip is not set
@@ -5397,6 +5530,11 @@ CONFIG_PACKAGE_kmod-nf-ipvs=y
 =======
 # CONFIG_PACKAGE_kmod-nf-ipvs is not set
 >>>>>>> b30872b5aa (add .config)
+=======
+CONFIG_PACKAGE_kmod-nf-ipvs=y
+# CONFIG_PACKAGE_kmod-nf-ipvs-ftp is not set
+# CONFIG_PACKAGE_kmod-nf-ipvs-sip is not set
+>>>>>>> a487289ae3 (add .config)
 CONFIG_PACKAGE_kmod-nf-log=y
 CONFIG_PACKAGE_kmod-nf-log6=y
 CONFIG_PACKAGE_kmod-nf-nat=y
@@ -5435,6 +5573,7 @@ CONFIG_PACKAGE_kmod-nft-socket=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_kmod-nft-tproxy is not set
 =======
 CONFIG_PACKAGE_kmod-nft-tproxy=y
@@ -5445,6 +5584,9 @@ CONFIG_PACKAGE_kmod-nft-tproxy=y
 =======
 CONFIG_PACKAGE_kmod-nft-tproxy=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PACKAGE_kmod-nft-tproxy is not set
+>>>>>>> a487289ae3 (add .config)
 CONFIG_PACKAGE_kmod-nft-xfrm=y
 # end of Netfilter Extensions
 
@@ -5514,6 +5656,7 @@ CONFIG_PACKAGE_kmod-nft-xfrm=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_kmod-ifb is not set
 =======
 CONFIG_PACKAGE_kmod-ifb=y
@@ -5524,6 +5667,9 @@ CONFIG_PACKAGE_kmod-ifb=y
 =======
 CONFIG_PACKAGE_kmod-ifb=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PACKAGE_kmod-ifb is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_kmod-igb is not set
 # CONFIG_PACKAGE_kmod-igc is not set
 # CONFIG_PACKAGE_kmod-ipvlan is not set
@@ -5618,6 +5764,7 @@ CONFIG_PACKAGE_kmod-sfp=y
 <<<<<<< HEAD
 # CONFIG_PACKAGE_kmod-geneve is not set
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_kmod-gre is not set
 # CONFIG_PACKAGE_kmod-gre6 is not set
 <<<<<<< HEAD
@@ -5632,11 +5779,16 @@ CONFIG_PACKAGE_kmod-gre6=y
 # CONFIG_PACKAGE_kmod-gre is not set
 # CONFIG_PACKAGE_kmod-gre6 is not set
 >>>>>>> b55b48469a (add .config)
+=======
+# CONFIG_PACKAGE_kmod-gre is not set
+# CONFIG_PACKAGE_kmod-gre6 is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_kmod-inet-diag is not set
 # CONFIG_PACKAGE_kmod-inet-mptcp-diag is not set
 # CONFIG_PACKAGE_kmod-ip-vti is not set
 # CONFIG_PACKAGE_kmod-ip6-tunnel is not set
 # CONFIG_PACKAGE_kmod-ip6-vti is not set
+<<<<<<< HEAD
 =======
 CONFIG_PACKAGE_kmod-gre=y
 CONFIG_PACKAGE_kmod-gre6=y
@@ -5644,9 +5796,13 @@ CONFIG_PACKAGE_kmod-inet-diag=y
 CONFIG_PACKAGE_kmod-inet-mptcp-diag=y
 CONFIG_PACKAGE_kmod-ip6-tunnel=y
 >>>>>>> b30872b5aa (add .config)
+=======
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_kmod-ipip is not set
-# CONFIG_PACKAGE_kmod-ipsec is not set
-CONFIG_PACKAGE_kmod-iptunnel=y
+CONFIG_PACKAGE_kmod-ipsec=y
+CONFIG_PACKAGE_kmod-ipsec4=y
+CONFIG_PACKAGE_kmod-ipsec6=y
+CONFIG_PACKAGE_kmod-iptunnel4=y
 CONFIG_PACKAGE_kmod-iptunnel6=y
 =======
 CONFIG_PACKAGE_kmod-inet-diag=y
@@ -5676,6 +5832,7 @@ CONFIG_PACKAGE_kmod-iptunnel6=y
 # CONFIG_PACKAGE_kmod-l2tp-ip is not set
 # CONFIG_PACKAGE_kmod-macremapper is not set
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_kmod-macsec is not set
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -5690,11 +5847,16 @@ CONFIG_PACKAGE_kmod-mdio-netlink=y
 CONFIG_PACKAGE_kmod-macsec=y
 CONFIG_PACKAGE_kmod-mdio-netlink=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PACKAGE_kmod-macsec is not set
+# CONFIG_PACKAGE_kmod-mdio-netlink is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_kmod-misdn is not set
 # CONFIG_PACKAGE_kmod-mpls is not set
 # CONFIG_PACKAGE_kmod-nat46 is not set
 # CONFIG_PACKAGE_kmod-netconsole is not set
 # CONFIG_PACKAGE_kmod-netem is not set
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -5708,6 +5870,9 @@ CONFIG_PACKAGE_kmod-netlink-diag=y
 =======
 CONFIG_PACKAGE_kmod-netlink-diag=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PACKAGE_kmod-netlink-diag is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_kmod-nlmon is not set
 # CONFIG_PACKAGE_kmod-nsh is not set
 # CONFIG_PACKAGE_kmod-openvswitch is not set
@@ -5734,10 +5899,14 @@ CONFIG_PACKAGE_kmod-pppox=y
 # CONFIG_PACKAGE_kmod-qrtr-mhi is not set
 # CONFIG_PACKAGE_kmod-qrtr-tun is not set
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_kmod-sched is not set
 # CONFIG_PACKAGE_kmod-sched-act-ipt is not set
 # CONFIG_PACKAGE_kmod-sched-act-police is not set
 # CONFIG_PACKAGE_kmod-sched-act-sample is not set
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 # CONFIG_PACKAGE_kmod-sched-act-vlan is not set
@@ -5780,24 +5949,34 @@ CONFIG_PACKAGE_kmod-sched-drr=y
 CONFIG_PACKAGE_kmod-sched-flower=y
 CONFIG_PACKAGE_kmod-sched-fq-pie=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PACKAGE_kmod-sched-act-vlan is not set
+# CONFIG_PACKAGE_kmod-sched-bpf is not set
+# CONFIG_PACKAGE_kmod-sched-cake is not set
+# CONFIG_PACKAGE_kmod-sched-connmark is not set
+CONFIG_PACKAGE_kmod-sched-core=y
+# CONFIG_PACKAGE_kmod-sched-ctinfo is not set
+# CONFIG_PACKAGE_kmod-sched-drr is not set
+# CONFIG_PACKAGE_kmod-sched-flower is not set
+# CONFIG_PACKAGE_kmod-sched-fq-pie is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_kmod-sched-ipset is not set
-CONFIG_PACKAGE_kmod-sched-mqprio=y
-CONFIG_PACKAGE_kmod-sched-mqprio-common=y
-CONFIG_PACKAGE_kmod-sched-pie=y
-CONFIG_PACKAGE_kmod-sched-prio=y
-CONFIG_PACKAGE_kmod-sched-red=y
-CONFIG_PACKAGE_kmod-sched-skbprio=y
+# CONFIG_PACKAGE_kmod-sched-mqprio is not set
+# CONFIG_PACKAGE_kmod-sched-pie is not set
+# CONFIG_PACKAGE_kmod-sched-prio is not set
+# CONFIG_PACKAGE_kmod-sched-red is not set
+# CONFIG_PACKAGE_kmod-sched-skbprio is not set
 # CONFIG_PACKAGE_kmod-sctp is not set
 # CONFIG_PACKAGE_kmod-sctp-diag is not set
 # CONFIG_PACKAGE_kmod-sit is not set
 CONFIG_PACKAGE_kmod-slhc=y
 # CONFIG_PACKAGE_kmod-slip is not set
-CONFIG_PACKAGE_kmod-tcp-bbr=y
-CONFIG_PACKAGE_kmod-tcp-hybla=y
-CONFIG_PACKAGE_kmod-tcp-scalable=y
-CONFIG_PACKAGE_kmod-tls=y
+# CONFIG_PACKAGE_kmod-tcp-bbr is not set
+# CONFIG_PACKAGE_kmod-tcp-hybla is not set
+# CONFIG_PACKAGE_kmod-tcp-scalable is not set
+# CONFIG_PACKAGE_kmod-tls is not set
 # CONFIG_PACKAGE_kmod-trelay is not set
-CONFIG_PACKAGE_kmod-tun=y
+# CONFIG_PACKAGE_kmod-tun is not set
 CONFIG_PACKAGE_kmod-udptunnel4=y
 CONFIG_PACKAGE_kmod-udptunnel6=y
 <<<<<<< HEAD
@@ -5820,6 +5999,7 @@ CONFIG_PACKAGE_kmod-veth=y
 =======
 CONFIG_PACKAGE_kmod-veth=y
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> ec08223eb2 (add .config)
 >>>>>>> 7d3dd02997 (add .config)
 # CONFIG_PACKAGE_kmod-vrf is not set
@@ -5837,6 +6017,12 @@ CONFIG_PACKAGE_kmod-wireguard=y
 CONFIG_PACKAGE_kmod-vxlan=y
 CONFIG_PACKAGE_kmod-wireguard=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PACKAGE_kmod-vrf is not set
+# CONFIG_PACKAGE_kmod-vxlan is not set
+CONFIG_PACKAGE_kmod-wireguard=y
+# CONFIG_PACKAGE_kmod-xfrm-interface is not set
+>>>>>>> a487289ae3 (add .config)
 # end of Network Support
 
 #
@@ -5858,8 +6044,8 @@ CONFIG_PACKAGE_kmod-eeprom-at24=y
 # CONFIG_PACKAGE_kmod-keys-trusted is not set
 # CONFIG_PACKAGE_kmod-lkdtm is not set
 # CONFIG_PACKAGE_kmod-lp is not set
-CONFIG_PACKAGE_kmod-mhi-bus=y
-CONFIG_PACKAGE_kmod-mhi-pci-generic=y
+# CONFIG_PACKAGE_kmod-mhi-bus is not set
+# CONFIG_PACKAGE_kmod-mhi-pci-generic is not set
 # CONFIG_PACKAGE_kmod-mmc is not set
 # CONFIG_PACKAGE_kmod-mtd-rw is not set
 # CONFIG_PACKAGE_kmod-mtdoops is not set
@@ -5873,6 +6059,7 @@ CONFIG_PACKAGE_kmod-mhi-pci-generic=y
 # CONFIG_PACKAGE_kmod-pps-gpio is not set
 # CONFIG_PACKAGE_kmod-pps-ldisc is not set
 # CONFIG_PACKAGE_kmod-ptp is not set
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -5894,6 +6081,11 @@ CONFIG_PACKAGE_kmod-ramoops=y
 CONFIG_PACKAGE_kmod-random-core=y
 CONFIG_PACKAGE_kmod-reed-solomon=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PACKAGE_kmod-ramoops is not set
+# CONFIG_PACKAGE_kmod-random-core is not set
+# CONFIG_PACKAGE_kmod-reed-solomon is not set
+>>>>>>> a487289ae3 (add .config)
 CONFIG_PACKAGE_kmod-regmap-core=y
 CONFIG_PACKAGE_kmod-regmap-i2c=y
 # CONFIG_PACKAGE_kmod-sdhci is not set
@@ -5964,6 +6156,7 @@ CONFIG_PACKAGE_kmod-usb-core=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 CONFIG_PACKAGE_kmod-usb-ehci=y
 >>>>>>> 22b1a68274 (add .config)
@@ -5972,6 +6165,8 @@ CONFIG_PACKAGE_kmod-usb-ehci=y
 =======
 CONFIG_PACKAGE_kmod-usb-ehci=y
 >>>>>>> b30872b5aa (add .config)
+=======
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_kmod-usb-hid is not set
 # CONFIG_PACKAGE_kmod-usb-hid-cp2112 is not set
 # CONFIG_PACKAGE_kmod-usb-hid-mcp2221 is not set
@@ -6032,6 +6227,7 @@ CONFIG_PACKAGE_kmod-usb-ehci=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_kmod-usb-storage is not set
 # CONFIG_PACKAGE_kmod-usb-storage-extras is not set
 =======
@@ -6046,10 +6242,15 @@ CONFIG_PACKAGE_kmod-usb-storage-extras=y
 CONFIG_PACKAGE_kmod-usb-storage=y
 CONFIG_PACKAGE_kmod-usb-storage-extras=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PACKAGE_kmod-usb-storage is not set
+# CONFIG_PACKAGE_kmod-usb-storage-extras is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_kmod-usb-storage-uas is not set
 # CONFIG_PACKAGE_kmod-usb-test is not set
 # CONFIG_PACKAGE_kmod-usb-uhci is not set
 # CONFIG_PACKAGE_kmod-usb-wdm is not set
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -6067,9 +6268,14 @@ CONFIG_PACKAGE_kmod-usb-xhci-mtk=y
 >>>>>>> ec08223eb2 (add .config)
 =======
 >>>>>>> b30872b5aa (add .config)
+=======
+CONFIG_PACKAGE_kmod-usb-xhci-hcd=y
+CONFIG_PACKAGE_kmod-usb-xhci-mtk=y
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_kmod-usb-yealink is not set
-CONFIG_PACKAGE_kmod-usb2=y
+# CONFIG_PACKAGE_kmod-usb2 is not set
 # CONFIG_PACKAGE_kmod-usb2-pci is not set
+<<<<<<< HEAD
 <<<<<<< HEAD
 CONFIG_PACKAGE_kmod-usb3=y
 =======
@@ -6089,6 +6295,9 @@ CONFIG_PACKAGE_kmod-usb3=y
 =======
 # CONFIG_PACKAGE_kmod-usb3 is not set
 >>>>>>> b30872b5aa (add .config)
+=======
+CONFIG_PACKAGE_kmod-usb3=y
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_kmod-usbip is not set
 # CONFIG_PACKAGE_kmod-usbip-client is not set
 # CONFIG_PACKAGE_kmod-usbip-server is not set
@@ -6430,6 +6639,7 @@ CONFIG_PACKAGE_luabitop=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_luajit=y
 =======
 # CONFIG_PACKAGE_luajit is not set
@@ -6440,6 +6650,9 @@ CONFIG_PACKAGE_luajit=y
 =======
 # CONFIG_PACKAGE_luajit is not set
 >>>>>>> 187cc246d7 (add .config)
+=======
+CONFIG_PACKAGE_luajit=y
+>>>>>>> a487289ae3 (add .config)
 CONFIG_HAS_LUAJIT_ARCH=y
 # CONFIG_PACKAGE_luajit2 is not set
 # CONFIG_PACKAGE_lualanes is not set
@@ -6700,6 +6913,7 @@ CONFIG_PACKAGE_perlbase-xsloader=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_libpython3=y
 =======
 # CONFIG_PACKAGE_libpython3 is not set
@@ -6710,6 +6924,9 @@ CONFIG_PACKAGE_libpython3=y
 =======
 # CONFIG_PACKAGE_libpython3 is not set
 >>>>>>> b30872b5aa (add .config)
+=======
+CONFIG_PACKAGE_libpython3=y
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_micropython-lib is not set
 # CONFIG_PACKAGE_micropython-lib-src is not set
 # CONFIG_PACKAGE_micropython-lib-unix is not set
@@ -6717,7 +6934,7 @@ CONFIG_PACKAGE_libpython3=y
 # CONFIG_PACKAGE_micropython-mbedtls is not set
 # CONFIG_PACKAGE_micropython-nossl is not set
 # CONFIG_PACKAGE_pipx is not set
-# CONFIG_PACKAGE_python3 is not set
+CONFIG_PACKAGE_python3=y
 # CONFIG_PACKAGE_python3-aio-mqtt-mod is not set
 # CONFIG_PACKAGE_python3-aiohttp is not set
 # CONFIG_PACKAGE_python3-aiohttp-cors is not set
@@ -6730,7 +6947,8 @@ CONFIG_PACKAGE_libpython3=y
 # CONFIG_PACKAGE_python3-astral is not set
 # CONFIG_PACKAGE_python3-async-generator is not set
 # CONFIG_PACKAGE_python3-async-timeout is not set
-# CONFIG_PACKAGE_python3-asyncio is not set
+CONFIG_PACKAGE_python3-asyncio=y
+# CONFIG_PACKAGE_python3-asyncio-src is not set
 # CONFIG_PACKAGE_python3-atomicwrites is not set
 # CONFIG_PACKAGE_python3-attrs is not set
 # CONFIG_PACKAGE_python3-augeas is not set
@@ -6738,6 +6956,7 @@ CONFIG_PACKAGE_libpython3=y
 # CONFIG_PACKAGE_python3-awesomeversion is not set
 # CONFIG_PACKAGE_python3-awscli is not set
 # CONFIG_PACKAGE_python3-babel is not set
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -6753,6 +6972,10 @@ CONFIG_PACKAGE_python3-base=y
 =======
 # CONFIG_PACKAGE_python3-base is not set
 >>>>>>> b30872b5aa (add .config)
+=======
+CONFIG_PACKAGE_python3-base=y
+# CONFIG_PACKAGE_python3-base-src is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_python3-bcrypt is not set
 # CONFIG_PACKAGE_python3-bidict is not set
 # CONFIG_PACKAGE_python3-ble2mqtt is not set
@@ -6765,13 +6988,16 @@ CONFIG_PACKAGE_python3-base=y
 # CONFIG_PACKAGE_python3-cachetools is not set
 # CONFIG_PACKAGE_python3-certifi is not set
 # CONFIG_PACKAGE_python3-cffi is not set
-# CONFIG_PACKAGE_python3-cgi is not set
-# CONFIG_PACKAGE_python3-cgitb is not set
+CONFIG_PACKAGE_python3-cgi=y
+# CONFIG_PACKAGE_python3-cgi-src is not set
+CONFIG_PACKAGE_python3-cgitb=y
+# CONFIG_PACKAGE_python3-cgitb-src is not set
 # CONFIG_PACKAGE_python3-chardet is not set
 # CONFIG_PACKAGE_python3-charset-normalizer is not set
 # CONFIG_PACKAGE_python3-ciso8601 is not set
 # CONFIG_PACKAGE_python3-click is not set
 # CONFIG_PACKAGE_python3-click-log is not set
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -6787,6 +7013,10 @@ CONFIG_PACKAGE_python3-codecs=y
 =======
 # CONFIG_PACKAGE_python3-codecs is not set
 >>>>>>> b30872b5aa (add .config)
+=======
+CONFIG_PACKAGE_python3-codecs=y
+# CONFIG_PACKAGE_python3-codecs-src is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_python3-colorama is not set
 # CONFIG_PACKAGE_python3-constantly is not set
 # CONFIG_PACKAGE_python3-contextlib2 is not set
@@ -6794,17 +7024,21 @@ CONFIG_PACKAGE_python3-codecs=y
 # CONFIG_PACKAGE_python3-cryptodome is not set
 # CONFIG_PACKAGE_python3-cryptodomex is not set
 # CONFIG_PACKAGE_python3-cryptography is not set
-# CONFIG_PACKAGE_python3-ctypes is not set
+CONFIG_PACKAGE_python3-ctypes=y
+# CONFIG_PACKAGE_python3-ctypes-src is not set
 # CONFIG_PACKAGE_python3-curl is not set
 # CONFIG_PACKAGE_python3-dateutil is not set
-# CONFIG_PACKAGE_python3-dbm is not set
+CONFIG_PACKAGE_python3-dbm=y
+# CONFIG_PACKAGE_python3-dbm-src is not set
 # CONFIG_PACKAGE_python3-dbus-fast is not set
-# CONFIG_PACKAGE_python3-decimal is not set
+CONFIG_PACKAGE_python3-decimal=y
+# CONFIG_PACKAGE_python3-decimal-src is not set
 # CONFIG_PACKAGE_python3-decorator is not set
 # CONFIG_PACKAGE_python3-defusedxml is not set
 # CONFIG_PACKAGE_python3-dev is not set
 # CONFIG_PACKAGE_python3-distro is not set
-# CONFIG_PACKAGE_python3-distutils is not set
+CONFIG_PACKAGE_python3-distutils=y
+# CONFIG_PACKAGE_python3-distutils-src is not set
 # CONFIG_PACKAGE_python3-django is not set
 # CONFIG_PACKAGE_python3-django-cors-headers is not set
 # CONFIG_PACKAGE_python3-django-restframework is not set
@@ -6818,6 +7052,7 @@ CONFIG_PACKAGE_python3-codecs=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_python3-email=y
 # CONFIG_PACKAGE_python3-email-src is not set
 =======
@@ -6830,6 +7065,10 @@ CONFIG_PACKAGE_python3-email=y
 =======
 # CONFIG_PACKAGE_python3-email is not set
 >>>>>>> b30872b5aa (add .config)
+=======
+CONFIG_PACKAGE_python3-email=y
+# CONFIG_PACKAGE_python3-email-src is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_python3-engineio is not set
 # CONFIG_PACKAGE_python3-et_xmlfile is not set
 # CONFIG_PACKAGE_python3-evdev is not set
@@ -6872,6 +7111,7 @@ CONFIG_PACKAGE_python3-email=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_python3-light=y
 =======
 # CONFIG_PACKAGE_python3-light is not set
@@ -6882,6 +7122,9 @@ CONFIG_PACKAGE_python3-light=y
 =======
 # CONFIG_PACKAGE_python3-light is not set
 >>>>>>> b30872b5aa (add .config)
+=======
+CONFIG_PACKAGE_python3-light=y
+>>>>>>> a487289ae3 (add .config)
 
 #
 # Configuration
@@ -6892,6 +7135,7 @@ CONFIG_PACKAGE_python3-light=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_python3-light-src is not set
 CONFIG_PACKAGE_python3-logging=y
 # CONFIG_PACKAGE_python3-logging-src is not set
@@ -6906,17 +7150,25 @@ CONFIG_PACKAGE_python3-logging=y
 =======
 # CONFIG_PACKAGE_python3-logging is not set
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PACKAGE_python3-light-src is not set
+CONFIG_PACKAGE_python3-logging=y
+# CONFIG_PACKAGE_python3-logging-src is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_python3-lru-dict is not set
 # CONFIG_PACKAGE_python3-lxml is not set
-# CONFIG_PACKAGE_python3-lzma is not set
+CONFIG_PACKAGE_python3-lzma=y
+# CONFIG_PACKAGE_python3-lzma-src is not set
 # CONFIG_PACKAGE_python3-markdown is not set
 # CONFIG_PACKAGE_python3-markupsafe is not set
 # CONFIG_PACKAGE_python3-maxminddb is not set
 # CONFIG_PACKAGE_python3-more-itertools is not set
 # CONFIG_PACKAGE_python3-msgpack is not set
 # CONFIG_PACKAGE_python3-multidict is not set
-# CONFIG_PACKAGE_python3-multiprocessing is not set
-# CONFIG_PACKAGE_python3-ncurses is not set
+CONFIG_PACKAGE_python3-multiprocessing=y
+# CONFIG_PACKAGE_python3-multiprocessing-src is not set
+CONFIG_PACKAGE_python3-ncurses=y
+# CONFIG_PACKAGE_python3-ncurses-src is not set
 # CONFIG_PACKAGE_python3-netdisco is not set
 # CONFIG_PACKAGE_python3-netifaces is not set
 # CONFIG_PACKAGE_python3-networkx is not set
@@ -6933,6 +7185,7 @@ CONFIG_PACKAGE_python3-logging=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_python3-openssl=y
 # CONFIG_PACKAGE_python3-openssl-src is not set
 =======
@@ -6945,6 +7198,10 @@ CONFIG_PACKAGE_python3-openssl=y
 =======
 # CONFIG_PACKAGE_python3-openssl is not set
 >>>>>>> b30872b5aa (add .config)
+=======
+CONFIG_PACKAGE_python3-openssl=y
+# CONFIG_PACKAGE_python3-openssl-src is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_python3-orjson is not set
 # CONFIG_PACKAGE_python3-outcome is not set
 # CONFIG_PACKAGE_python3-packages is not set
@@ -6958,6 +7215,7 @@ CONFIG_PACKAGE_python3-openssl=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_python3-pkg-resources=y
 # CONFIG_PACKAGE_python3-pkg-resources-src is not set
 =======
@@ -6970,6 +7228,10 @@ CONFIG_PACKAGE_python3-pkg-resources=y
 =======
 # CONFIG_PACKAGE_python3-pkg-resources is not set
 >>>>>>> b30872b5aa (add .config)
+=======
+CONFIG_PACKAGE_python3-pkg-resources=y
+# CONFIG_PACKAGE_python3-pkg-resources-src is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_python3-platformdirs is not set
 # CONFIG_PACKAGE_python3-pluggy is not set
 # CONFIG_PACKAGE_python3-ply is not set
@@ -6981,6 +7243,7 @@ CONFIG_PACKAGE_python3-pkg-resources=y
 # CONFIG_PACKAGE_python3-pycares is not set
 # CONFIG_PACKAGE_python3-pycparser is not set
 # CONFIG_PACKAGE_python3-pycrate is not set
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -6998,6 +7261,15 @@ CONFIG_PACKAGE_python3-pydoc=y
 =======
 <<<<<<< HEAD
 >>>>>>> 8343251bee (add .config)
+=======
+# CONFIG_PACKAGE_python3-pydoc is not set
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+CONFIG_PACKAGE_python3-pydoc=y
+# CONFIG_PACKAGE_python3-pydoc-src is not set
+>>>>>>> a487289ae3 (add .config)
+>>>>>>> 4353cd5b91 (add .config)
 # CONFIG_PACKAGE_python3-pyelftools is not set
 =======
 >>>>>>> 22b1a68274 (add .config)
@@ -7048,7 +7320,8 @@ CONFIG_PACKAGE_python3-pydoc=y
 # CONFIG_PACKAGE_python3-pytest-forked is not set
 # CONFIG_PACKAGE_python3-pytest-xdist is not set
 # CONFIG_PACKAGE_python3-pytz is not set
-# CONFIG_PACKAGE_python3-readline is not set
+CONFIG_PACKAGE_python3-readline=y
+# CONFIG_PACKAGE_python3-readline-src is not set
 # CONFIG_PACKAGE_python3-referencing is not set
 # CONFIG_PACKAGE_python3-requests is not set
 # CONFIG_PACKAGE_python3-rpds-py is not set
@@ -7075,6 +7348,7 @@ CONFIG_PACKAGE_python3-pydoc=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_python3-speedtest-cli=y
 # CONFIG_PACKAGE_python3-speedtest-cli-src is not set
 =======
@@ -7087,8 +7361,13 @@ CONFIG_PACKAGE_python3-speedtest-cli=y
 =======
 # CONFIG_PACKAGE_python3-speedtest-cli is not set
 >>>>>>> b30872b5aa (add .config)
+=======
+CONFIG_PACKAGE_python3-speedtest-cli=y
+# CONFIG_PACKAGE_python3-speedtest-cli-src is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_python3-sqlalchemy is not set
-# CONFIG_PACKAGE_python3-sqlite3 is not set
+CONFIG_PACKAGE_python3-sqlite3=y
+# CONFIG_PACKAGE_python3-sqlite3-src is not set
 # CONFIG_PACKAGE_python3-sqlparse is not set
 # CONFIG_PACKAGE_python3-stem is not set
 <<<<<<< HEAD
@@ -7119,6 +7398,7 @@ CONFIG_PACKAGE_python3-speedtest-cli=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_python3-unittest=y
 # CONFIG_PACKAGE_python3-unittest-src is not set
 =======
@@ -7132,6 +7412,8 @@ CONFIG_PACKAGE_python3-unittest=y
 =======
 =======
 >>>>>>> 6d6cc85399 (add .config)
+=======
+>>>>>>> 4353cd5b91 (add .config)
 # CONFIG_PACKAGE_python3-unittest is not set
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -7153,9 +7435,16 @@ CONFIG_PACKAGE_python3-urllib=y
 # CONFIG_PACKAGE_python3-unittest is not set
 # CONFIG_PACKAGE_python3-urllib is not set
 >>>>>>> b30872b5aa (add .config)
+=======
+CONFIG_PACKAGE_python3-unittest=y
+# CONFIG_PACKAGE_python3-unittest-src is not set
+CONFIG_PACKAGE_python3-urllib=y
+# CONFIG_PACKAGE_python3-urllib-src is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_python3-urllib3 is not set
 # CONFIG_PACKAGE_python3-userpath is not set
-# CONFIG_PACKAGE_python3-uuid is not set
+CONFIG_PACKAGE_python3-uuid=y
+# CONFIG_PACKAGE_python3-uuid-src is not set
 # CONFIG_PACKAGE_python3-venv is not set
 # CONFIG_PACKAGE_python3-vobject is not set
 # CONFIG_PACKAGE_python3-voluptuous is not set
@@ -7164,6 +7453,7 @@ CONFIG_PACKAGE_python3-urllib=y
 # CONFIG_PACKAGE_python3-websocket-client is not set
 # CONFIG_PACKAGE_python3-websockets is not set
 # CONFIG_PACKAGE_python3-werkzeug is not set
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -7179,6 +7469,10 @@ CONFIG_PACKAGE_python3-xml=y
 =======
 # CONFIG_PACKAGE_python3-xml is not set
 >>>>>>> b30872b5aa (add .config)
+=======
+CONFIG_PACKAGE_python3-xml=y
+# CONFIG_PACKAGE_python3-xml-src is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_python3-xmltodict is not set
 # CONFIG_PACKAGE_python3-yaml is not set
 # CONFIG_PACKAGE_python3-yarl is not set
@@ -7249,6 +7543,7 @@ CONFIG_PACKAGE_libbz2=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_liblzma=y
 =======
 # CONFIG_PACKAGE_liblzma is not set
@@ -7259,6 +7554,9 @@ CONFIG_PACKAGE_liblzma=y
 =======
 # CONFIG_PACKAGE_liblzma is not set
 >>>>>>> 187cc246d7 (add .config)
+=======
+CONFIG_PACKAGE_liblzma=y
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_libunrar is not set
 # CONFIG_PACKAGE_libzip-gnutls is not set
 # CONFIG_PACKAGE_libzip-mbedtls is not set
@@ -7291,12 +7589,16 @@ CONFIG_PACKAGE_libsqlite3=y
 #
 # CONFIG_SQLITE3_BATCH_ATOMIC_WRITE is not set
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a487289ae3 (add .config)
 CONFIG_SQLITE3_COLUMN_METADATA=y
 CONFIG_SQLITE3_DYNAMIC_EXTENSIONS=y
 CONFIG_SQLITE3_FTS3=y
 CONFIG_SQLITE3_FTS4=y
 CONFIG_SQLITE3_FTS5=y
 CONFIG_SQLITE3_RTREE=y
+<<<<<<< HEAD
 # CONFIG_SQLITE3_SESSION is not set
 # end of Configuration
 
@@ -7315,6 +7617,8 @@ CONFIG_SQLITE3_RTREE=y
 # CONFIG_SQLITE3_FTS3 is not set
 # CONFIG_SQLITE3_FTS5 is not set
 # CONFIG_SQLITE3_RTREE is not set
+=======
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_SQLITE3_SESSION is not set
 # end of Configuration
 
@@ -7818,6 +8122,7 @@ CONFIG_PACKAGE_libxtables=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_libyaml is not set
 =======
 CONFIG_PACKAGE_libyaml=y
@@ -7828,6 +8133,9 @@ CONFIG_PACKAGE_libyaml=y
 =======
 CONFIG_PACKAGE_libyaml=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PACKAGE_libyaml is not set
+>>>>>>> a487289ae3 (add .config)
 # end of Languages
 
 #
@@ -7858,14 +8166,22 @@ CONFIG_PACKAGE_libyaml=y
 # CONFIG_PACKAGE_libdcwproto is not set
 # CONFIG_PACKAGE_libdcwsocket is not set
 # CONFIG_PACKAGE_libsctp is not set
-# CONFIG_PACKAGE_libslirp is not set
+CONFIG_PACKAGE_libslirp=y
 # CONFIG_PACKAGE_libuhttpd-mbedtls is not set
 # CONFIG_PACKAGE_libuhttpd-nossl is not set
 # CONFIG_PACKAGE_libuhttpd-openssl is not set
 # CONFIG_PACKAGE_libuhttpd-wolfssl is not set
 # CONFIG_PACKAGE_libulfius-gnutls is not set
 # CONFIG_PACKAGE_libulfius-nossl is not set
-# CONFIG_PACKAGE_libunbound is not set
+CONFIG_PACKAGE_libunbound=y
+# CONFIG_PACKAGE_libunbound_dnscrypt is not set
+CONFIG_PACKAGE_libunbound_ipset=y
+CONFIG_PACKAGE_libunbound_libevent=y
+CONFIG_PACKAGE_libunbound_libpthread=y
+# CONFIG_PACKAGE_libunbound_nghttp2 is not set
+# CONFIG_PACKAGE_libunbound_pythonmodule is not set
+# CONFIG_PACKAGE_libunbound_subnet is not set
+# CONFIG_PACKAGE_libunbound_dnstap is not set
 # CONFIG_PACKAGE_libuwsc-mbedtls is not set
 # CONFIG_PACKAGE_libuwsc-nossl is not set
 # CONFIG_PACKAGE_libuwsc-openssl is not set
@@ -7904,7 +8220,24 @@ CONFIG_PACKAGE_libyaml=y
 >>>>>>> 2056cea222 (update .config)
 # SSL
 #
-# CONFIG_PACKAGE_libgnutls is not set
+CONFIG_PACKAGE_libgnutls=y
+
+#
+# Configuration
+#
+CONFIG_GNUTLS_DTLS_SRTP=y
+CONFIG_GNUTLS_ALPN=y
+CONFIG_GNUTLS_OCSP=y
+# CONFIG_GNUTLS_CRYPTODEV is not set
+CONFIG_GNUTLS_HEARTBEAT=y
+# CONFIG_GNUTLS_SRP is not set
+CONFIG_GNUTLS_PSK=y
+CONFIG_GNUTLS_ANON=y
+# CONFIG_GNUTLS_TPM is not set
+# CONFIG_GNUTLS_PKCS11 is not set
+# CONFIG_GNUTLS_EXT_LIBTASN1 is not set
+# end of Configuration
+
 # CONFIG_PACKAGE_libgnutls-dane is not set
 CONFIG_PACKAGE_libmbedtls=y
 
@@ -7945,6 +8278,7 @@ CONFIG_MBEDTLS_KEY_EXCHANGE_ECDHE_PSK_ENABLED=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_MBEDTLS_KEY_EXCHANGE_RSA_PSK_ENABLED is not set
 # CONFIG_MBEDTLS_KEY_EXCHANGE_RSA_ENABLED is not set
 # CONFIG_MBEDTLS_KEY_EXCHANGE_DHE_RSA_ENABLED is not set
@@ -7963,6 +8297,11 @@ CONFIG_MBEDTLS_KEY_EXCHANGE_RSA_PSK_ENABLED=y
 CONFIG_MBEDTLS_KEY_EXCHANGE_RSA_ENABLED=y
 CONFIG_MBEDTLS_KEY_EXCHANGE_DHE_RSA_ENABLED=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_MBEDTLS_KEY_EXCHANGE_RSA_PSK_ENABLED is not set
+# CONFIG_MBEDTLS_KEY_EXCHANGE_RSA_ENABLED is not set
+# CONFIG_MBEDTLS_KEY_EXCHANGE_DHE_RSA_ENABLED is not set
+>>>>>>> a487289ae3 (add .config)
 CONFIG_MBEDTLS_KEY_EXCHANGE_ECDHE_RSA_ENABLED=y
 CONFIG_MBEDTLS_KEY_EXCHANGE_ECDHE_ECDSA_ENABLED=y
 # CONFIG_MBEDTLS_KEY_EXCHANGE_ECDH_ECDSA_ENABLED is not set
@@ -8014,6 +8353,7 @@ CONFIG_MBEDTLS_ENTROPY_FORCE_SHA256=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_MBEDTLS_SSL_RENEGOTIATION is not set
 =======
 CONFIG_MBEDTLS_SSL_RENEGOTIATION=y
@@ -8024,6 +8364,9 @@ CONFIG_MBEDTLS_SSL_RENEGOTIATION=y
 =======
 CONFIG_MBEDTLS_SSL_RENEGOTIATION=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_MBEDTLS_SSL_RENEGOTIATION is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_libnss is not set
 CONFIG_PACKAGE_libopenssl=y
 
@@ -8033,6 +8376,7 @@ CONFIG_PACKAGE_libopenssl=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_OPENSSL_OPTIMIZE_SPEED is not set
 # CONFIG_OPENSSL_SMALL_FOOTPRINT is not set
 =======
@@ -8045,6 +8389,10 @@ CONFIG_OPENSSL_OPTIMIZE_SPEED=y
 =======
 CONFIG_OPENSSL_OPTIMIZE_SPEED=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_OPENSSL_OPTIMIZE_SPEED is not set
+# CONFIG_OPENSSL_SMALL_FOOTPRINT is not set
+>>>>>>> a487289ae3 (add .config)
 CONFIG_OPENSSL_WITH_ASM=y
 CONFIG_OPENSSL_WITH_DEPRECATED=y
 # CONFIG_OPENSSL_NO_DEPRECATED is not set
@@ -8081,6 +8429,7 @@ CONFIG_OPENSSL_WITH_WHIRLPOOL=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_OPENSSL_WITH_COMPRESSION is not set
 # CONFIG_OPENSSL_WITH_RFC3779 is not set
 =======
@@ -8095,12 +8444,17 @@ CONFIG_OPENSSL_WITH_RFC3779=y
 CONFIG_OPENSSL_WITH_COMPRESSION=y
 CONFIG_OPENSSL_WITH_RFC3779=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_OPENSSL_WITH_COMPRESSION is not set
+# CONFIG_OPENSSL_WITH_RFC3779 is not set
+>>>>>>> a487289ae3 (add .config)
 
 #
 # Engine/Hardware Support
 #
 CONFIG_OPENSSL_ENGINE=y
 # CONFIG_OPENSSL_ENGINE_BUILTIN is not set
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -8126,6 +8480,10 @@ CONFIG_PACKAGE_libopenssl-afalg=y
 >>>>>>> d9bf330100 (add .config)
 =======
 >>>>>>> b30872b5aa (add .config)
+=======
+CONFIG_PACKAGE_libopenssl-afalg=y
+# CONFIG_PACKAGE_libopenssl-afalg_sync is not set
+>>>>>>> a487289ae3 (add .config)
 CONFIG_PACKAGE_libopenssl-conf=y
 CONFIG_PACKAGE_libopenssl-devcrypto=y
 # CONFIG_PACKAGE_libopenssl-gost_engine is not set
@@ -8328,6 +8686,7 @@ CONFIG_HAVE_MESA=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_getdns is not set
 =======
 CONFIG_PACKAGE_getdns=y
@@ -8341,6 +8700,9 @@ CONFIG_GETDNS_ENABLE_STUB_ONLY=y
 # end of Configuration
 
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PACKAGE_getdns is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_giflib is not set
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -8357,6 +8719,7 @@ CONFIG_PACKAGE_glib2=y
 >>>>>>> 11dc9639ce (add .config)
 # CONFIG_PACKAGE_google-authenticator-libpam is not set
 # CONFIG_PACKAGE_gperftools-headers is not set
+<<<<<<< HEAD
 <<<<<<< HEAD
 CONFIG_PACKAGE_gperftools-runtime=y
 =======
@@ -8387,6 +8750,9 @@ CONFIG_PACKAGE_gperftools-runtime=y
 =======
 # CONFIG_PACKAGE_gperftools-runtime is not set
 >>>>>>> 187cc246d7 (add .config)
+=======
+CONFIG_PACKAGE_gperftools-runtime=y
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_hidapi is not set
 # CONFIG_PACKAGE_ibrcommon is not set
 # CONFIG_PACKAGE_ibrdtn is not set
@@ -8407,7 +8773,7 @@ CONFIG_PACKAGE_jansson=y
 # CONFIG_PACKAGE_libarchive is not set
 # CONFIG_PACKAGE_libarchive-noopenssl is not set
 # CONFIG_PACKAGE_libasm is not set
-# CONFIG_PACKAGE_libassuan is not set
+CONFIG_PACKAGE_libassuan=y
 # CONFIG_PACKAGE_libatasmart is not set
 # CONFIG_PACKAGE_libaudit is not set
 # CONFIG_PACKAGE_libauparse is not set
@@ -8485,6 +8851,7 @@ CONFIG_LIBCURL_UNIX_SOCKETS=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_libdaq3=y
 =======
 # CONFIG_PACKAGE_libdaq3 is not set
@@ -8495,6 +8862,9 @@ CONFIG_PACKAGE_libdaq3=y
 =======
 # CONFIG_PACKAGE_libdaq3 is not set
 >>>>>>> 187cc246d7 (add .config)
+=======
+CONFIG_PACKAGE_libdaq3=y
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_libdb47 is not set
 # CONFIG_PACKAGE_libdb47xx is not set
 # CONFIG_PACKAGE_libdbi is not set
@@ -8504,6 +8874,7 @@ CONFIG_PACKAGE_libdaq3=y
 # CONFIG_PACKAGE_libdevmapper-selinux is not set
 # CONFIG_PACKAGE_libdht is not set
 # CONFIG_PACKAGE_libdmapsharing is not set
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -8529,6 +8900,12 @@ CONFIG_PACKAGE_libdnet=y
 =======
 CONFIG_PACKAGE_libdw=y
 >>>>>>> b30872b5aa (add .config)
+=======
+CONFIG_PACKAGE_libdnet=y
+# CONFIG_PACKAGE_libdouble-conversion is not set
+# CONFIG_PACKAGE_libdvbcsa is not set
+# CONFIG_PACKAGE_libdw is not set
+>>>>>>> a487289ae3 (add .config)
 CONFIG_PACKAGE_libe2p=y
 # CONFIG_PACKAGE_libecdsautil is not set
 # CONFIG_PACKAGE_libedit is not set
@@ -8537,7 +8914,7 @@ CONFIG_PACKAGE_libelf=y
 # CONFIG_PACKAGE_libestr is not set
 # CONFIG_PACKAGE_libev is not set
 CONFIG_PACKAGE_libevdev=y
-# CONFIG_PACKAGE_libevent2 is not set
+CONFIG_PACKAGE_libevent2=y
 # CONFIG_PACKAGE_libevent2-core is not set
 # CONFIG_PACKAGE_libevent2-extra is not set
 # CONFIG_PACKAGE_libevent2-openssl is not set
@@ -8551,6 +8928,7 @@ CONFIG_PACKAGE_libf2fs=y
 # CONFIG_PACKAGE_libf2fs-selinux is not set
 # CONFIG_PACKAGE_libfaad2 is not set
 # CONFIG_PACKAGE_libfastjson is not set
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -8568,6 +8946,9 @@ CONFIG_PACKAGE_libffi=y
 # CONFIG_PACKAGE_libffi is not set
 =======
 CONFIG_PACKAGE_libfdisk=y
+=======
+# CONFIG_PACKAGE_libfdisk is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_libfdt is not set
 CONFIG_PACKAGE_libffi=y
 >>>>>>> 22b1a68274 (add .config)
@@ -8623,7 +9004,7 @@ CONFIG_PACKAGE_libgd=y
 # CONFIG_LIBGD_FREETYPE is not set
 >>>>>>> c8721daa0d (add .config)
 # CONFIG_PACKAGE_libgd-full is not set
-# CONFIG_PACKAGE_libgdbm is not set
+CONFIG_PACKAGE_libgdbm=y
 # CONFIG_PACKAGE_libgee is not set
 # CONFIG_PACKAGE_libgensio is not set
 # CONFIG_PACKAGE_libgensiocpp is not set
@@ -8632,7 +9013,7 @@ CONFIG_PACKAGE_libgd=y
 # CONFIG_PACKAGE_libgio-openssl is not set
 CONFIG_PACKAGE_libgmp=y
 CONFIG_PACKAGE_libgpg-error=y
-# CONFIG_PACKAGE_libgpgme is not set
+CONFIG_PACKAGE_libgpgme=y
 # CONFIG_PACKAGE_libgpgmepp is not set
 # CONFIG_PACKAGE_libgphoto2 is not set
 # CONFIG_PACKAGE_libgpiod is not set
@@ -8643,6 +9024,7 @@ CONFIG_PACKAGE_libgpg-error=y
 # CONFIG_PACKAGE_libhavege is not set
 # CONFIG_PACKAGE_libhiredis is not set
 # CONFIG_PACKAGE_libhttp-parser is not set
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -8667,6 +9049,9 @@ CONFIG_PACKAGE_libhwloc=y
 =======
 # CONFIG_PACKAGE_libhwloc is not set
 >>>>>>> 187cc246d7 (add .config)
+=======
+CONFIG_PACKAGE_libhwloc=y
+>>>>>>> a487289ae3 (add .config)
 CONFIG_PACKAGE_libi2c=y
 >>>>>>> 497d21d9b3 (update .config for improved performance)
 >>>>>>> 45a411a384 (update .config for improved performance)
@@ -8684,6 +9069,7 @@ CONFIG_PACKAGE_libi2c=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_libiperf3=y
 =======
 # CONFIG_PACKAGE_libiperf3 is not set
@@ -8694,6 +9080,9 @@ CONFIG_PACKAGE_libiperf3=y
 =======
 # CONFIG_PACKAGE_libiperf3 is not set
 >>>>>>> b30872b5aa (add .config)
+=======
+CONFIG_PACKAGE_libiperf3=y
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_libiw is not set
 CONFIG_PACKAGE_libiwinfo=y
 # CONFIG_PACKAGE_libjaylink is not set
@@ -8725,6 +9114,7 @@ CONFIG_PACKAGE_libjpeg-turbo=y
 CONFIG_PACKAGE_libjson-c=y
 # CONFIG_PACKAGE_libjwt is not set
 # CONFIG_PACKAGE_libkeyutils is not set
+<<<<<<< HEAD
 CONFIG_PACKAGE_libkmod=y
 >>>>>>> 22b1a68274 (add .config)
 =======
@@ -8748,7 +9138,14 @@ CONFIG_PACKAGE_libksba=y
 CONFIG_PACKAGE_libkmod=y
 # CONFIG_PACKAGE_libksba is not set
 >>>>>>> b30872b5aa (add .config)
+<<<<<<< HEAD
 >>>>>>> 6d6cc85399 (add .config)
+=======
+=======
+# CONFIG_PACKAGE_libkmod is not set
+CONFIG_PACKAGE_libksba=y
+>>>>>>> a487289ae3 (add .config)
+>>>>>>> 4353cd5b91 (add .config)
 # CONFIG_PACKAGE_libldns is not set
 # CONFIG_PACKAGE_libleptonica is not set
 # CONFIG_PACKAGE_libloragw is not set
@@ -8767,8 +9164,11 @@ CONFIG_PACKAGE_liblucihttp-ucode=y
 <<<<<<< HEAD
 # CONFIG_PACKAGE_libmanette is not set
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_libmaxminddb=y
 =======
+=======
+>>>>>>> 4353cd5b91 (add .config)
 # CONFIG_PACKAGE_libmaxminddb is not set
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -8798,6 +9198,10 @@ CONFIG_PACKAGE_libmbim=y
 =======
 CONFIG_PACKAGE_libmbim=y
 >>>>>>> b30872b5aa (add .config)
+=======
+CONFIG_PACKAGE_libmaxminddb=y
+# CONFIG_PACKAGE_libmbim is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_libmcrypt is not set
 # CONFIG_PACKAGE_libmd is not set
 CONFIG_PACKAGE_libmicrohttpd-no-ssl=y
@@ -8812,6 +9216,7 @@ CONFIG_PACKAGE_libmnl=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_libmount is not set
 =======
 CONFIG_PACKAGE_libmount=y
@@ -8822,6 +9227,9 @@ CONFIG_PACKAGE_libmount=y
 =======
 CONFIG_PACKAGE_libmount=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PACKAGE_libmount is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_libmpc is not set
 # CONFIG_PACKAGE_libmpdclient is not set
 # CONFIG_PACKAGE_libmpeg2 is not set
@@ -8836,19 +9244,28 @@ CONFIG_PACKAGE_libncurses=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_libnetfilter-acct=y
 =======
 # CONFIG_PACKAGE_libnetfilter-acct is not set
 >>>>>>> b30872b5aa (add .config)
+=======
+CONFIG_PACKAGE_libnetfilter-acct=y
+>>>>>>> a487289ae3 (add .config)
 CONFIG_PACKAGE_libnetfilter-conntrack=y
 CONFIG_PACKAGE_libnetfilter-cthelper=y
 CONFIG_PACKAGE_libnetfilter-cttimeout=y
+<<<<<<< HEAD
 <<<<<<< HEAD
 CONFIG_PACKAGE_libnetfilter-log=y
 =======
 # CONFIG_PACKAGE_libnetfilter-log is not set
 >>>>>>> 6d6cc85399 (add .config)
+=======
+CONFIG_PACKAGE_libnetfilter-log=y
+>>>>>>> 4353cd5b91 (add .config)
 CONFIG_PACKAGE_libnetfilter-queue=y
+<<<<<<< HEAD
 <<<<<<< HEAD
 # CONFIG_PACKAGE_libnetsnmp is not set
 =======
@@ -8872,6 +9289,9 @@ CONFIG_PACKAGE_libnetfilter-queue=y
 =======
 CONFIG_PACKAGE_libnetsnmp=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PACKAGE_libnetsnmp is not set
+>>>>>>> a487289ae3 (add .config)
 CONFIG_PACKAGE_libnettle=y
 
 #
@@ -8894,7 +9314,7 @@ CONFIG_PACKAGE_libnghttp2=y
 # CONFIG_PACKAGE_libnl-route is not set
 CONFIG_PACKAGE_libnl-tiny=y
 # CONFIG_PACKAGE_libnopoll is not set
-# CONFIG_PACKAGE_libnpth is not set
+CONFIG_PACKAGE_libnpth=y
 # CONFIG_PACKAGE_libnpupnp is not set
 # CONFIG_PACKAGE_libnvme is not set
 # CONFIG_PACKAGE_liboath is not set
@@ -8946,6 +9366,7 @@ CONFIG_PACKAGE_liboping=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_libparted is not set
 =======
 CONFIG_PACKAGE_libparted=y
@@ -8956,6 +9377,9 @@ CONFIG_PACKAGE_libparted=y
 =======
 CONFIG_PACKAGE_libparted=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PACKAGE_libparted is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_libpbc is not set
 CONFIG_PACKAGE_libpcap=y
 
@@ -8966,6 +9390,7 @@ CONFIG_PACKAGE_libpcap=y
 # CONFIG_PCAP_HAS_NETFILTER is not set
 # end of Configuration
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -8986,6 +9411,10 @@ CONFIG_PACKAGE_libpciaccess=y
 =======
 # CONFIG_PACKAGE_libpciaccess is not set
 >>>>>>> 187cc246d7 (add .config)
+=======
+# CONFIG_PACKAGE_libpci is not set
+CONFIG_PACKAGE_libpciaccess=y
+>>>>>>> a487289ae3 (add .config)
 CONFIG_PACKAGE_libpcre2=y
 # CONFIG_PCRE2_JIT_ENABLED is not set
 # CONFIG_PACKAGE_libpcre2-16 is not set
@@ -9015,6 +9444,7 @@ CONFIG_PACKAGE_libpng=y
 # CONFIG_PACKAGE_libpri is not set
 CONFIG_PACKAGE_libprotobuf-c=y
 # CONFIG_PACKAGE_libpsl is not set
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9048,6 +9478,11 @@ CONFIG_PACKAGE_libqrtr-glib=y
 >>>>>>> d9bf330100 (add .config)
 =======
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PACKAGE_libqmi is not set
+# CONFIG_PACKAGE_libqrencode is not set
+# CONFIG_PACKAGE_libqrtr-glib is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_libradcli is not set
 # CONFIG_PACKAGE_libradiotap is not set
 CONFIG_PACKAGE_libreadline=y
@@ -9068,6 +9503,7 @@ CONFIG_PACKAGE_librrd1=y
 # CONFIG_PACKAGE_libsdl2 is not set
 # CONFIG_PACKAGE_libsdl2-mixer is not set
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_libseccomp=y
 <<<<<<< HEAD
 =======
@@ -9082,6 +9518,9 @@ CONFIG_PACKAGE_libseccomp=y
 =======
 # CONFIG_PACKAGE_libseccomp is not set
 >>>>>>> 0d1e4033c1 (add .config)
+=======
+CONFIG_PACKAGE_libseccomp=y
+>>>>>>> 4353cd5b91 (add .config)
 # CONFIG_PACKAGE_libselinux is not set
 # CONFIG_PACKAGE_libsemanage is not set
 CONFIG_PACKAGE_libsensors=y
@@ -9094,6 +9533,7 @@ CONFIG_PACKAGE_libsensors=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_libsmartcols is not set
 =======
 CONFIG_PACKAGE_libsmartcols=y
@@ -9104,6 +9544,9 @@ CONFIG_PACKAGE_libsmartcols=y
 =======
 CONFIG_PACKAGE_libsmartcols=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PACKAGE_libsmartcols is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_libsndfile is not set
 # CONFIG_PACKAGE_libsoc is not set
 # CONFIG_PACKAGE_libsocketcan is not set
@@ -9114,6 +9557,7 @@ CONFIG_PACKAGE_libsmartcols=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_libspeedtestcpp is not set
 =======
 CONFIG_PACKAGE_libspeedtestcpp=y
@@ -9124,6 +9568,9 @@ CONFIG_PACKAGE_libspeedtestcpp=y
 =======
 CONFIG_PACKAGE_libspeedtestcpp=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PACKAGE_libspeedtestcpp is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_libspeex is not set
 # CONFIG_PACKAGE_libspeexdsp is not set
 # CONFIG_PACKAGE_libspice-server is not set
@@ -9144,6 +9591,7 @@ CONFIG_PACKAGE_libtirpc=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_libtraceevent is not set
 # CONFIG_PACKAGE_libtraceevent-extra is not set
 # CONFIG_PACKAGE_libtracefs is not set
@@ -9162,6 +9610,11 @@ CONFIG_PACKAGE_libtraceevent=y
 CONFIG_PACKAGE_libtraceevent-extra=y
 CONFIG_PACKAGE_libtracefs=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PACKAGE_libtraceevent is not set
+# CONFIG_PACKAGE_libtraceevent-extra is not set
+# CONFIG_PACKAGE_libtracefs is not set
+>>>>>>> a487289ae3 (add .config)
 CONFIG_PACKAGE_libubox=y
 # CONFIG_PACKAGE_libubox-lua is not set
 CONFIG_PACKAGE_libubus=y
@@ -9197,6 +9650,7 @@ CONFIG_PACKAGE_libudev-zero=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_libunwind=y
 =======
 # CONFIG_PACKAGE_libunwind is not set
@@ -9207,10 +9661,14 @@ CONFIG_PACKAGE_libunwind=y
 =======
 # CONFIG_PACKAGE_libunwind is not set
 >>>>>>> 187cc246d7 (add .config)
+=======
+CONFIG_PACKAGE_libunwind=y
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_libupnp is not set
 # CONFIG_PACKAGE_libupnpp is not set
 # CONFIG_PACKAGE_liburcu is not set
 # CONFIG_PACKAGE_liburing is not set
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9232,6 +9690,11 @@ CONFIG_PACKAGE_libusb-1.0=y
 # CONFIG_PACKAGE_libusb-compat is not set
 # CONFIG_PACKAGE_libustream-mbedtls is not set
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PACKAGE_libusb-1.0 is not set
+# CONFIG_PACKAGE_libusb-compat is not set
+CONFIG_PACKAGE_libustream-mbedtls=m
+>>>>>>> a487289ae3 (add .config)
 CONFIG_PACKAGE_libustream-openssl=y
 # CONFIG_PACKAGE_libustream-wolfssl is not set
 # CONFIG_PACKAGE_libutp is not set
@@ -9288,6 +9751,7 @@ CONFIG_PACKAGE_libwebp=y
 <<<<<<< HEAD
 # CONFIG_PACKAGE_libxkbcommon is not set
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 45a411a384 (update .config for improved performance)
 =======
@@ -9297,6 +9761,9 @@ CONFIG_PACKAGE_libxml2=y
 =======
 # CONFIG_PACKAGE_libxml2 is not set
 >>>>>>> 6d6cc85399 (add .config)
+=======
+CONFIG_PACKAGE_libxml2=y
+>>>>>>> 4353cd5b91 (add .config)
 # CONFIG_PACKAGE_libxmlb is not set
 # CONFIG_PACKAGE_libxslt is not set
 # CONFIG_PACKAGE_libxxhash is not set
@@ -9332,6 +9799,7 @@ CONFIG_PACKAGE_libxml2=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_musl-fts is not set
 <<<<<<< HEAD
 =======
@@ -9351,7 +9819,13 @@ CONFIG_PACKAGE_musl-fts=y
 =======
 =======
 >>>>>>> ab3602ff98 (add .config)
+<<<<<<< HEAD
 >>>>>>> fbdf638412 (add .config)
+=======
+=======
+# CONFIG_PACKAGE_musl-fts is not set
+>>>>>>> a487289ae3 (add .config)
+>>>>>>> 4353cd5b91 (add .config)
 # CONFIG_PACKAGE_nspr is not set
 # CONFIG_PACKAGE_oath-pam is not set
 # CONFIG_PACKAGE_oniguruma is not set
@@ -9378,6 +9852,7 @@ CONFIG_PACKAGE_rpcd-mod-luci=y
 CONFIG_PACKAGE_rpcd-mod-rrdns=y
 # CONFIG_PACKAGE_rpcd-mod-wireguard is not set
 # CONFIG_PACKAGE_sbc is not set
+# CONFIG_PACKAGE_scmp_sys_resolver is not set
 # CONFIG_PACKAGE_serdisplib is not set
 # CONFIG_PACKAGE_srt is not set
 # CONFIG_PACKAGE_taglib is not set
@@ -9405,6 +9880,7 @@ CONFIG_PACKAGE_zlib=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_ZLIB_OPTIMIZE_SPEED is not set
 =======
 CONFIG_ZLIB_OPTIMIZE_SPEED=y
@@ -9415,6 +9891,9 @@ CONFIG_ZLIB_OPTIMIZE_SPEED=y
 =======
 CONFIG_ZLIB_OPTIMIZE_SPEED=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_ZLIB_OPTIMIZE_SPEED is not set
+>>>>>>> a487289ae3 (add .config)
 # end of Configuration
 
 # CONFIG_PACKAGE_zlog is not set
@@ -9430,6 +9909,7 @@ CONFIG_ZLIB_OPTIMIZE_SPEED=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_luci=y
 =======
 # CONFIG_PACKAGE_luci is not set
@@ -9440,6 +9920,9 @@ CONFIG_PACKAGE_luci=y
 =======
 # CONFIG_PACKAGE_luci is not set
 >>>>>>> b30872b5aa (add .config)
+=======
+CONFIG_PACKAGE_luci=y
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_luci-lib-docker is not set
 CONFIG_PACKAGE_luci-light=y
 # CONFIG_PACKAGE_luci-nginx is not set
@@ -9574,6 +10057,7 @@ CONFIG_PACKAGE_luci-app-acme=y
 # CONFIG_PACKAGE_luci-app-attendedsysupgrade is not set
 # CONFIG_PACKAGE_luci-app-babeld is not set
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_luci-app-banip=y
 =======
 CONFIG_PACKAGE_luci-app-argon-config=y
@@ -9591,6 +10075,9 @@ CONFIG_PACKAGE_luci-app-banip=y
 =======
 # CONFIG_PACKAGE_luci-app-banip is not set
 >>>>>>> b30872b5aa (add .config)
+=======
+CONFIG_PACKAGE_luci-app-banip=y
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_luci-app-bcp38 is not set
 # CONFIG_PACKAGE_luci-app-bmx7 is not set
 # CONFIG_PACKAGE_luci-app-cjdns is not set
@@ -9695,12 +10182,15 @@ CONFIG_PACKAGE_luci-app-package-manager=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_luci-app-statistics=y
 <<<<<<< HEAD
 =======
 # CONFIG_PACKAGE_luci-app-strongswan-swanctl is not set
 =======
 # CONFIG_PACKAGE_luci-app-sshtunnel is not set
+=======
+>>>>>>> a487289ae3 (add .config)
 CONFIG_PACKAGE_luci-app-statistics=y
 >>>>>>> 22b1a68274 (add .config)
 <<<<<<< HEAD
@@ -9797,6 +10287,7 @@ CONFIG_PACKAGE_luci-proto-ppp=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # CONFIG_PACKAGE_luci-proto-pppossh is not set
 >>>>>>> 22b1a68274 (add .config)
@@ -9805,6 +10296,8 @@ CONFIG_PACKAGE_luci-proto-ppp=y
 =======
 # CONFIG_PACKAGE_luci-proto-pppossh is not set
 >>>>>>> b30872b5aa (add .config)
+=======
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_luci-proto-qmi is not set
 # CONFIG_PACKAGE_luci-proto-relay is not set
 # CONFIG_PACKAGE_luci-proto-sstp is not set
@@ -9813,12 +10306,16 @@ CONFIG_PACKAGE_luci-proto-ppp=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d9bf330100 (add .config)
+=======
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_luci-proto-vti is not set
 # CONFIG_PACKAGE_luci-proto-vxlan is not set
 CONFIG_PACKAGE_luci-proto-wireguard=y
 # CONFIG_PACKAGE_luci-proto-xfrm is not set
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 # CONFIG_PACKAGE_luci-proto-vxlan is not set
@@ -9830,6 +10327,8 @@ CONFIG_PACKAGE_luci-proto-wireguard=y
 # CONFIG_PACKAGE_luci-proto-vxlan is not set
 CONFIG_PACKAGE_luci-proto-wireguard=y
 >>>>>>> b30872b5aa (add .config)
+=======
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_luci-proto-yggdrasil is not set
 # end of 5. Protocols
 
@@ -9844,10 +10343,14 @@ CONFIG_PACKAGE_luci-lib-ip=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_luci-lib-ipkg=y
 =======
 # CONFIG_PACKAGE_luci-lib-ipkg is not set
 >>>>>>> 187cc246d7 (add .config)
+=======
+CONFIG_PACKAGE_luci-lib-ipkg=y
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_luci-lib-iptparser is not set
 CONFIG_PACKAGE_luci-lib-json=y
 =======
@@ -9911,6 +10414,9 @@ CONFIG_PACKAGE_luci-lib-uqr=y
 # CONFIG_PACKAGE_luci-i18n-acme-zh-cn is not set
 # CONFIG_PACKAGE_luci-i18n-acme-zh-tw is not set
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_luci-i18n-banip-ar is not set
 # CONFIG_PACKAGE_luci-i18n-banip-bg is not set
 # CONFIG_PACKAGE_luci-i18n-banip-bn is not set
@@ -9947,6 +10453,7 @@ CONFIG_PACKAGE_luci-lib-uqr=y
 # CONFIG_PACKAGE_luci-i18n-banip-zh-cn is not set
 # CONFIG_PACKAGE_luci-i18n-banip-zh-tw is not set
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # CONFIG_PACKAGE_luci-i18n-argon-config-es is not set
 # CONFIG_PACKAGE_luci-i18n-argon-config-zh-cn is not set
@@ -9960,6 +10467,8 @@ CONFIG_PACKAGE_luci-lib-uqr=y
 >>>>>>> b30872b5aa (add .config)
 =======
 >>>>>>> 187cc246d7 (add .config)
+=======
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_luci-i18n-base-ar is not set
 # CONFIG_PACKAGE_luci-i18n-base-bg is not set
 # CONFIG_PACKAGE_luci-i18n-base-bn is not set
@@ -10592,6 +11101,7 @@ CONFIG_PACKAGE_iptables-mod-trace=y
 CONFIG_PACKAGE_iptables-mod-u32=y
 CONFIG_PACKAGE_iptables-nft=y
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_iptables-zz-legacy is not set
 =======
 CONFIG_PACKAGE_ip6tables-extra=y
@@ -10653,6 +11163,9 @@ CONFIG_PACKAGE_iptables-zz-legacy=y
 =======
 CONFIG_PACKAGE_iptables-zz-legacy=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PACKAGE_iptables-zz-legacy is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_iptaccount is not set
 # CONFIG_PACKAGE_iptasn is not set
 
@@ -10685,6 +11198,7 @@ CONFIG_PACKAGE_nftables-json=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_snort3=y
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -10697,6 +11211,9 @@ CONFIG_PACKAGE_xtables-legacy=y
 =======
 >>>>>>> 187cc246d7 (add .config)
 # CONFIG_PACKAGE_snort3 is not set
+=======
+CONFIG_PACKAGE_snort3=y
+>>>>>>> a487289ae3 (add .config)
 CONFIG_PACKAGE_xtables-legacy=y
 >>>>>>> 22b1a68274 (add .config)
 <<<<<<< HEAD
@@ -10827,6 +11344,7 @@ CONFIG_PACKAGE_knot-resolver_dnstap=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 497d21d9b3 (update .config for improved performance)
 =======
@@ -10842,6 +11360,9 @@ CONFIG_PACKAGE_stubby=y
 =======
 CONFIG_PACKAGE_stubby=y
 >>>>>>> 187cc246d7 (add .config)
+=======
+# CONFIG_PACKAGE_stubby is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_tor-hs is not set
 # CONFIG_PACKAGE_torsocks is not set
 # CONFIG_PACKAGE_unbound-anchor is not set
@@ -11022,6 +11543,7 @@ CONFIG_PACKAGE_ip-full=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_nstat is not set
 =======
 CONFIG_PACKAGE_nstat=y
@@ -11032,6 +11554,9 @@ CONFIG_PACKAGE_nstat=y
 =======
 CONFIG_PACKAGE_nstat=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PACKAGE_nstat is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_olsrd is not set
 # CONFIG_PACKAGE_pbr is not set
 # CONFIG_PACKAGE_prince is not set
@@ -11041,6 +11566,7 @@ CONFIG_PACKAGE_nstat=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_ss is not set
 =======
 CONFIG_PACKAGE_ss=y
@@ -11051,6 +11577,9 @@ CONFIG_PACKAGE_ss=y
 =======
 CONFIG_PACKAGE_ss=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PACKAGE_ss is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_sslh is not set
 # CONFIG_PACKAGE_tc-bpf is not set
 CONFIG_PACKAGE_tc-full=y
@@ -11099,6 +11628,7 @@ CONFIG_PACKAGE_openssh-keygen=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_openssh-moduli is not set
 =======
 CONFIG_PACKAGE_openssh-moduli=y
@@ -11109,6 +11639,9 @@ CONFIG_PACKAGE_openssh-moduli=y
 =======
 CONFIG_PACKAGE_openssh-moduli=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PACKAGE_openssh-moduli is not set
+>>>>>>> a487289ae3 (add .config)
 CONFIG_PACKAGE_openssh-server=y
 CONFIG_OPENSSH_LIBFIDO2=y
 # CONFIG_PACKAGE_openssh-server-pam is not set
@@ -11118,6 +11651,7 @@ CONFIG_PACKAGE_openssh-sftp-server=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # CONFIG_PACKAGE_sshtunnel is not set
 >>>>>>> 22b1a68274 (add .config)
@@ -11126,6 +11660,8 @@ CONFIG_PACKAGE_openssh-sftp-server=y
 =======
 # CONFIG_PACKAGE_sshtunnel is not set
 >>>>>>> b30872b5aa (add .config)
+=======
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_tmate is not set
 # end of SSH
 
@@ -11516,6 +12052,7 @@ CONFIG_PACKAGE_cgi-io=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_librespeed-go=y
 =======
 # CONFIG_PACKAGE_librespeed-go is not set
@@ -11526,25 +12063,72 @@ CONFIG_PACKAGE_librespeed-go=y
 =======
 # CONFIG_PACKAGE_librespeed-go is not set
 >>>>>>> b30872b5aa (add .config)
+=======
+CONFIG_PACKAGE_librespeed-go=y
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_lighttpd is not set
 # CONFIG_PACKAGE_microsocks is not set
 # CONFIG_PACKAGE_nginx-full is not set
 # CONFIG_PACKAGE_nginx-mod-brotli is not set
 # CONFIG_PACKAGE_nginx-mod-dav-ext is not set
 # CONFIG_PACKAGE_nginx-mod-geoip2 is not set
-# CONFIG_PACKAGE_nginx-mod-headers-more is not set
+CONFIG_PACKAGE_nginx-mod-headers-more=y
 # CONFIG_PACKAGE_nginx-mod-lua is not set
 # CONFIG_PACKAGE_nginx-mod-lua-resty-core is not set
 # CONFIG_PACKAGE_nginx-mod-lua-resty-lrucache is not set
 # CONFIG_PACKAGE_nginx-mod-luci is not set
-# CONFIG_PACKAGE_nginx-mod-naxsi is not set
+CONFIG_PACKAGE_nginx-mod-naxsi=y
 # CONFIG_PACKAGE_nginx-mod-njs is not set
 # CONFIG_PACKAGE_nginx-mod-rtmp is not set
-# CONFIG_PACKAGE_nginx-mod-stream is not set
+CONFIG_PACKAGE_nginx-mod-stream=y
 # CONFIG_PACKAGE_nginx-mod-ts is not set
 # CONFIG_PACKAGE_nginx-mod-ubus is not set
-# CONFIG_PACKAGE_nginx-ssl is not set
-# CONFIG_PACKAGE_nginx-ssl-util is not set
+CONFIG_PACKAGE_nginx-ssl=y
+
+#
+# Configuration
+#
+CONFIG_NGINX_DAV=y
+CONFIG_NGINX_FLV=y
+CONFIG_NGINX_STUB_STATUS=y
+CONFIG_NGINX_HTTP_CHARSET=y
+CONFIG_NGINX_HTTP_GZIP=y
+CONFIG_NGINX_HTTP_GZIP_STATIC=y
+CONFIG_NGINX_HTTP_SSI=y
+CONFIG_NGINX_HTTP_USERID=y
+CONFIG_NGINX_HTTP_ACCESS=y
+CONFIG_NGINX_HTTP_AUTH_BASIC=y
+CONFIG_NGINX_HTTP_AUTH_REQUEST=y
+CONFIG_NGINX_HTTP_AUTOINDEX=y
+CONFIG_NGINX_HTTP_GEO=y
+CONFIG_NGINX_HTTP_MAP=y
+CONFIG_NGINX_HTTP_SPLIT_CLIENTS=y
+CONFIG_NGINX_HTTP_REFERER=y
+CONFIG_NGINX_HTTP_REWRITE=y
+CONFIG_NGINX_HTTP_PROXY=y
+CONFIG_NGINX_HTTP_FASTCGI=y
+CONFIG_NGINX_HTTP_UWSGI=y
+CONFIG_NGINX_HTTP_SCGI=y
+CONFIG_NGINX_HTTP_MEMCACHED=y
+CONFIG_NGINX_HTTP_LIMIT_CONN=y
+CONFIG_NGINX_HTTP_LIMIT_REQ=y
+CONFIG_NGINX_HTTP_EMPTY_GIF=y
+CONFIG_NGINX_HTTP_BROWSER=y
+CONFIG_NGINX_HTTP_UPSTREAM_HASH=y
+CONFIG_NGINX_HTTP_UPSTREAM_IP_HASH=y
+CONFIG_NGINX_HTTP_UPSTREAM_LEAST_CONN=y
+CONFIG_NGINX_HTTP_UPSTREAM_KEEPALIVE=y
+CONFIG_NGINX_HTTP_CACHE=y
+CONFIG_NGINX_HTTP_V2=y
+CONFIG_NGINX_HTTP_QUIC=y
+CONFIG_NGINX_PCRE=y
+CONFIG_NGINX_HTTP_REAL_IP=y
+CONFIG_NGINX_HTTP_SECURE_LINK=y
+CONFIG_NGINX_HTTP_SUB=y
+CONFIG_NGINX_STREAM_REAL_IP=y
+# end of Configuration
+
+CONFIG_PACKAGE_nginx-ssl-util=y
 # CONFIG_PACKAGE_nginx-ssl-util-nopcre is not set
 # CONFIG_PACKAGE_privoxy is not set
 # CONFIG_PACKAGE_radicale is not set
@@ -11654,6 +12238,7 @@ CONFIG_PACKAGE_hostapd-common=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_hostapd-openssl=y
 =======
 # CONFIG_PACKAGE_hostapd-openssl is not set
@@ -11664,6 +12249,9 @@ CONFIG_PACKAGE_hostapd-openssl=y
 =======
 # CONFIG_PACKAGE_hostapd-openssl is not set
 >>>>>>> b30872b5aa (add .config)
+=======
+CONFIG_PACKAGE_hostapd-openssl=y
+>>>>>>> a487289ae3 (add .config)
 CONFIG_PACKAGE_hostapd-utils=y
 # CONFIG_PACKAGE_hostapd-wolfssl is not set
 # CONFIG_PACKAGE_hs20-client is not set
@@ -11672,6 +12260,7 @@ CONFIG_PACKAGE_hostapd-utils=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # CONFIG_PACKAGE_wpa-cli is not set
 >>>>>>> 22b1a68274 (add .config)
@@ -11680,6 +12269,8 @@ CONFIG_PACKAGE_hostapd-utils=y
 =======
 # CONFIG_PACKAGE_wpa-cli is not set
 >>>>>>> b30872b5aa (add .config)
+=======
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_wpa-supplicant is not set
 # CONFIG_WPA_RFKILL_SUPPORT is not set
 CONFIG_WPA_MSG_MIN_PRIORITY=3
@@ -11719,6 +12310,7 @@ CONFIG_PACKAGE_wpad-basic-mbedtls=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_wpad-openssl is not set
 =======
 # CONFIG_PACKAGE_wpad-openssl=y
@@ -11729,6 +12321,9 @@ CONFIG_PACKAGE_wpad-basic-mbedtls=y
 =======
 CONFIG_PACKAGE_wpad-openssl=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PACKAGE_wpad-openssl is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_wpad-wolfssl is not set
 # end of WirelessAPD
 
@@ -11778,6 +12373,7 @@ CONFIG_PACKAGE_acme-common=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_adguardhome=y
 =======
 # CONFIG_PACKAGE_adguardhome is not set
@@ -11788,6 +12384,9 @@ CONFIG_PACKAGE_adguardhome=y
 =======
 # CONFIG_PACKAGE_adguardhome is not set
 >>>>>>> 187cc246d7 (add .config)
+=======
+CONFIG_PACKAGE_adguardhome=y
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_ahcpd is not set
 # CONFIG_PACKAGE_alfred is not set
 # CONFIG_PACKAGE_alist is not set
@@ -11802,6 +12401,7 @@ CONFIG_PACKAGE_adguardhome=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_banip=y
 =======
 # CONFIG_PACKAGE_banip is not set
@@ -11812,6 +12412,9 @@ CONFIG_PACKAGE_banip=y
 =======
 # CONFIG_PACKAGE_banip is not set
 >>>>>>> 187cc246d7 (add .config)
+=======
+CONFIG_PACKAGE_banip=y
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_batctl-default is not set
 # CONFIG_PACKAGE_batctl-full is not set
 # CONFIG_PACKAGE_batctl-tiny is not set
@@ -11834,12 +12437,15 @@ CONFIG_PACKAGE_banip=y
 <<<<<<< HEAD
 # CONFIG_PACKAGE_conserver-ipmi is not set
 CONFIG_PACKAGE_crowdsec=y
+<<<<<<< HEAD
 =======
 =======
 # CONFIG_PACKAGE_conserver-ipmi is not set
 >>>>>>> fbdf638412 (add .config)
 # CONFIG_PACKAGE_crowdsec is not set
 >>>>>>> 0d1e4033c1 (add .config)
+=======
+>>>>>>> 4353cd5b91 (add .config)
 # CONFIG_PACKAGE_crowdsec-firewall-bouncer is not set
 <<<<<<< HEAD
 =======
@@ -11889,7 +12495,11 @@ CONFIG_PACKAGE_ethtool-full=y
 # CONFIG_PACKAGE_flent is not set
 # CONFIG_PACKAGE_foolsm is not set
 # CONFIG_PACKAGE_fping is not set
+<<<<<<< HEAD
 >>>>>>> 11dc9639ce (add .config)
+=======
+# CONFIG_PACKAGE_freeipmi-tools is not set
+>>>>>>> 4353cd5b91 (add .config)
 # CONFIG_PACKAGE_fsh is not set
 # CONFIG_PACKAGE_generate-ipv6-address is not set
 # CONFIG_PACKAGE_gensio-bin is not set
@@ -11919,6 +12529,7 @@ CONFIG_PACKAGE_ethtool-full=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_hping3=y
 =======
 # CONFIG_PACKAGE_hping3 is not set
@@ -11929,6 +12540,9 @@ CONFIG_PACKAGE_hping3=y
 =======
 # CONFIG_PACKAGE_hping3 is not set
 >>>>>>> 187cc246d7 (add .config)
+=======
+CONFIG_PACKAGE_hping3=y
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_httping is not set
 # CONFIG_PACKAGE_httping-nossl is not set
 # CONFIG_PACKAGE_https-dns-proxy is not set
@@ -11939,6 +12553,7 @@ CONFIG_PACKAGE_hping3=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_ifstat is not set
 # CONFIG_PACKAGE_iftop is not set
 =======
@@ -11946,11 +12561,16 @@ CONFIG_PACKAGE_ifstat=y
 CONFIG_IFSTAT_SNMP=y
 CONFIG_PACKAGE_iftop=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PACKAGE_ifstat is not set
+# CONFIG_PACKAGE_iftop is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_iiod is not set
 # CONFIG_PACKAGE_iperf is not set
-# CONFIG_PACKAGE_iperf3 is not set
-CONFIG_PACKAGE_iperf3-ssl=y
+CONFIG_PACKAGE_iperf3=y
+# CONFIG_PACKAGE_iperf3-ssl is not set
 # CONFIG_PACKAGE_ipip is not set
+<<<<<<< HEAD
 <<<<<<< HEAD
 # CONFIG_PACKAGE_ipset is not set
 CONFIG_PACKAGE_ipset-dns=y
@@ -11986,6 +12606,10 @@ CONFIG_PACKAGE_ipset-dns=y
 CONFIG_PACKAGE_ipset=y
 # CONFIG_PACKAGE_ipset-dns is not set
 >>>>>>> 187cc246d7 (add .config)
+=======
+# CONFIG_PACKAGE_ipset is not set
+CONFIG_PACKAGE_ipset-dns=y
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_iptraf-ng is not set
 # CONFIG_PACKAGE_iputils-arping is not set
 # CONFIG_PACKAGE_iputils-clockdiff is not set
@@ -12007,6 +12631,7 @@ CONFIG_PACKAGE_iw-full=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_libfreeipmi is not set
 # CONFIG_PACKAGE_libipmiconsole is not set
 # CONFIG_PACKAGE_libipmidetect is not set
@@ -12019,6 +12644,9 @@ CONFIG_PACKAGE_iw-full=y
 =======
 <<<<<<< HEAD
 >>>>>>> 6d6cc85399 (add .config)
+=======
+<<<<<<< HEAD
+>>>>>>> 4353cd5b91 (add .config)
 # CONFIG_PACKAGE_libipset is not set
 =======
 CONFIG_PACKAGE_libipset=y
@@ -12029,6 +12657,12 @@ CONFIG_PACKAGE_libipset=y
 =======
 CONFIG_PACKAGE_libipset=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PACKAGE_libfreeipmi is not set
+# CONFIG_PACKAGE_libipmiconsole is not set
+# CONFIG_PACKAGE_libipmidetect is not set
+# CONFIG_PACKAGE_libipset is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_libndp is not set
 # CONFIG_PACKAGE_linknx is not set
 # CONFIG_PACKAGE_lynx is not set
@@ -12040,6 +12674,7 @@ CONFIG_PACKAGE_libipset=y
 # CONFIG_PACKAGE_mausezahn is not set
 # CONFIG_PACKAGE_mbusd is not set
 # CONFIG_PACKAGE_memcached is not set
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12057,6 +12692,9 @@ CONFIG_PACKAGE_mii-tool=y
 =======
 CONFIG_PACKAGE_mii-tool=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PACKAGE_mii-tool is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_mikrotik-btest is not set
 # CONFIG_PACKAGE_mini_snmpd is not set
 # CONFIG_PACKAGE_minimalist-pcproxy is not set
@@ -12092,14 +12730,17 @@ CONFIG_PACKAGE_mii-tool=y
 # CONFIG_PACKAGE_net-mtools is not set
 # CONFIG_PACKAGE_net-tools-netstat is not set
 # CONFIG_PACKAGE_net-tools-route is not set
-# CONFIG_PACKAGE_netavark is not set
+CONFIG_PACKAGE_netavark=y
 # CONFIG_PACKAGE_netcat is not set
 # CONFIG_PACKAGE_netdiscover is not set
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d9bf330100 (add .config)
+=======
+>>>>>>> a487289ae3 (add .config)
 CONFIG_PACKAGE_netifyd=y
 
 #
@@ -12109,6 +12750,7 @@ CONFIG_NETIFYD_BUILD_SHARED_LIBRARY=y
 CONFIG_NETIFYD_WITH_LOCAL_LIBGCRYPT=y
 # end of Configuration
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 # CONFIG_PACKAGE_netifyd is not set
@@ -12136,6 +12778,13 @@ CONFIG_PACKAGE_nlbwmon=y
 =======
 CONFIG_PACKAGE_nlbwmon=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PACKAGE_netperf is not set
+# CONFIG_PACKAGE_netsniff-ng is not set
+# CONFIG_PACKAGE_netstinky is not set
+# CONFIG_PACKAGE_nfdump is not set
+# CONFIG_PACKAGE_nlbwmon is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_noping is not set
 # CONFIG_PACKAGE_nqptp is not set
 # CONFIG_PACKAGE_nut is not set
@@ -12196,6 +12845,7 @@ CONFIG_PACKAGE_ppp-mod-pppoe=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # CONFIG_PACKAGE_pppossh is not set
 >>>>>>> 22b1a68274 (add .config)
@@ -12204,6 +12854,8 @@ CONFIG_PACKAGE_ppp-mod-pppoe=y
 =======
 # CONFIG_PACKAGE_pppossh is not set
 >>>>>>> b30872b5aa (add .config)
+=======
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_pppstats is not set
 # CONFIG_PACKAGE_proto-bonding is not set
 # CONFIG_PACKAGE_proxychains-ng is not set
@@ -12233,6 +12885,7 @@ CONFIG_PACKAGE_ppp-mod-pppoe=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_slirp4netns=y
 =======
 # CONFIG_PACKAGE_slirp4netns is not set
@@ -12247,6 +12900,9 @@ CONFIG_PACKAGE_slirp4netns=y
 =======
 # CONFIG_PACKAGE_slirp4netns is not set
 >>>>>>> 6d6cc85399 (add .config)
+=======
+CONFIG_PACKAGE_slirp4netns=y
+>>>>>>> 4353cd5b91 (add .config)
 # CONFIG_PACKAGE_smbinfo is not set
 # CONFIG_PACKAGE_snmp-mibs is not set
 # CONFIG_PACKAGE_snmp-utils is not set
@@ -12263,8 +12919,9 @@ CONFIG_PACKAGE_socat=y
 # CONFIG_SOCAT_SSL is not set
 # CONFIG_PACKAGE_softflowd is not set
 # CONFIG_PACKAGE_soloscli is not set
-# CONFIG_PACKAGE_speedtest-go is not set
+CONFIG_PACKAGE_speedtest-go=y
 # CONFIG_PACKAGE_speedtest-netperf is not set
+<<<<<<< HEAD
 <<<<<<< HEAD
 # CONFIG_PACKAGE_speedtestcpp is not set
 =======
@@ -12286,6 +12943,9 @@ CONFIG_PACKAGE_speedtestcpp=y
 =======
 CONFIG_PACKAGE_speedtestcpp=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PACKAGE_speedtestcpp is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_spoofer is not set
 # CONFIG_PACKAGE_sscep is not set
 # CONFIG_PACKAGE_static-neighbor-reports is not set
@@ -12307,6 +12967,7 @@ CONFIG_PACKAGE_speedtestcpp=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_tcpdump is not set
 =======
 CONFIG_PACKAGE_tcpdump=y
@@ -12317,6 +12978,9 @@ CONFIG_PACKAGE_tcpdump=y
 =======
 CONFIG_PACKAGE_tcpdump=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PACKAGE_tcpdump is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_tcpdump-mini is not set
 # CONFIG_PACKAGE_telnet-bsd is not set
 # CONFIG_PACKAGE_tgt is not set
@@ -12338,8 +13002,11 @@ CONFIG_PACKAGE_uclient-fetch=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d9bf330100 (add .config)
+=======
+>>>>>>> a487289ae3 (add .config)
 CONFIG_PACKAGE_ulogd=y
 # CONFIG_PACKAGE_ulogd-mod-dbi is not set
 CONFIG_PACKAGE_ulogd-mod-extra=y
@@ -12354,6 +13021,7 @@ CONFIG_PACKAGE_ulogd-mod-nflog=y
 CONFIG_PACKAGE_ulogd-mod-syslog=y
 # CONFIG_PACKAGE_ulogd-mod-xml is not set
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # CONFIG_PACKAGE_ulogd is not set
 >>>>>>> 22b1a68274 (add .config)
@@ -12362,6 +13030,8 @@ CONFIG_PACKAGE_ulogd-mod-syslog=y
 =======
 # CONFIG_PACKAGE_ulogd is not set
 >>>>>>> b30872b5aa (add .config)
+=======
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_umdns is not set
 # CONFIG_PACKAGE_unet-cli is not set
 # CONFIG_PACKAGE_unetd is not set
@@ -12379,6 +13049,7 @@ CONFIG_PACKAGE_ulogd-mod-syslog=y
 <<<<<<< HEAD
 CONFIG_PACKAGE_vnstat2=y
 CONFIG_PACKAGE_vnstati2=y
+<<<<<<< HEAD
 <<<<<<< HEAD
 # CONFIG_PACKAGE_vti is not set
 =======
@@ -12398,6 +13069,9 @@ CONFIG_PACKAGE_vnstati2=y
 CONFIG_PACKAGE_vnstat2=y
 CONFIG_PACKAGE_vnstati2=y
 >>>>>>> c8721daa0d (add .config)
+=======
+# CONFIG_PACKAGE_vti is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_vxlan is not set
 # CONFIG_PACKAGE_wakeonlan is not set
 # CONFIG_PACKAGE_wg-installer-client is not set
@@ -12411,6 +13085,7 @@ CONFIG_PACKAGE_vnstati2=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_xfrm is not set
 =======
 >>>>>>> 22b1a68274 (add .config)
@@ -12419,6 +13094,9 @@ CONFIG_PACKAGE_vnstati2=y
 >>>>>>> d9bf330100 (add .config)
 =======
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PACKAGE_xfrm is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_xinetd is not set
 # CONFIG_PACKAGE_xray-core is not set
 # CONFIG_PACKAGE_ztdns is not set
@@ -12538,6 +13216,7 @@ CONFIG_PACKAGE_rrdtool1=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_cfdisk is not set
 # CONFIG_PACKAGE_cgdisk is not set
 # CONFIG_PACKAGE_eject is not set
@@ -12568,6 +13247,14 @@ CONFIG_PACKAGE_cgdisk=y
 CONFIG_PACKAGE_fdisk=y
 CONFIG_PACKAGE_findfs=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PACKAGE_cfdisk is not set
+# CONFIG_PACKAGE_cgdisk is not set
+# CONFIG_PACKAGE_eject is not set
+# CONFIG_PACKAGE_fatresize is not set
+# CONFIG_PACKAGE_fdisk is not set
+# CONFIG_PACKAGE_findfs is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_fio is not set
 # CONFIG_PACKAGE_fixparts is not set
 # CONFIG_PACKAGE_gdisk is not set
@@ -12576,6 +13263,7 @@ CONFIG_PACKAGE_findfs=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_lsblk is not set
 =======
 CONFIG_PACKAGE_lsblk=y
@@ -12586,6 +13274,9 @@ CONFIG_PACKAGE_lsblk=y
 =======
 CONFIG_PACKAGE_lsblk=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PACKAGE_lsblk is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_lvm2 is not set
 # CONFIG_PACKAGE_lvm2-selinux is not set
 # CONFIG_PACKAGE_mdadm is not set
@@ -12594,6 +13285,7 @@ CONFIG_PACKAGE_lsblk=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_parted is not set
 # CONFIG_PACKAGE_partx-utils is not set
 # CONFIG_PACKAGE_sfdisk is not set
@@ -12636,6 +13328,13 @@ CONFIG_PARTED_READLINE=y
 # CONFIG_PACKAGE_sgdisk is not set
 CONFIG_PACKAGE_uvol=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PACKAGE_parted is not set
+# CONFIG_PACKAGE_partx-utils is not set
+# CONFIG_PACKAGE_sfdisk is not set
+# CONFIG_PACKAGE_sgdisk is not set
+# CONFIG_PACKAGE_uvol is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_wipefs is not set
 # end of Disc
 
@@ -12651,7 +13350,7 @@ CONFIG_PACKAGE_uvol=y
 # CONFIG_PACKAGE_nano-full is not set
 # CONFIG_PACKAGE_nano-plus is not set
 # CONFIG_PACKAGE_vim is not set
-# CONFIG_PACKAGE_vim-full is not set
+CONFIG_PACKAGE_vim-full=y
 # CONFIG_PACKAGE_vim-fuller is not set
 # CONFIG_PACKAGE_vim-help is not set
 # CONFIG_PACKAGE_vim-runtime is not set
@@ -12666,9 +13365,10 @@ CONFIG_PACKAGE_uvol=y
 # CONFIG_PACKAGE_cryptsetup is not set
 # CONFIG_PACKAGE_cryptsetup-ssh is not set
 # CONFIG_PACKAGE_gnupg is not set
-# CONFIG_PACKAGE_gnupg2 is not set
-# CONFIG_PACKAGE_gnupg2-dirmngr is not set
-# CONFIG_PACKAGE_gnutls-utils is not set
+CONFIG_PACKAGE_gnupg2=y
+CONFIG_PACKAGE_gnupg2-dirmngr=y
+CONFIG_PACKAGE_gnupg2-utils=y
+CONFIG_PACKAGE_gnutls-utils=y
 # CONFIG_PACKAGE_gpgv is not set
 # CONFIG_PACKAGE_gpgv2 is not set
 # CONFIG_PACKAGE_integritysetup is not set
@@ -12701,6 +13401,7 @@ CONFIG_PACKAGE_e2fsprogs=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_f2fs-tools is not set
 =======
 CONFIG_PACKAGE_f2fs-tools=y
@@ -12711,6 +13412,9 @@ CONFIG_PACKAGE_f2fs-tools=y
 =======
 CONFIG_PACKAGE_f2fs-tools=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PACKAGE_f2fs-tools is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_f2fs-tools-selinux is not set
 CONFIG_PACKAGE_f2fsck=y
 # CONFIG_PACKAGE_f2fsck-selinux is not set
@@ -12734,6 +13438,7 @@ CONFIG_PACKAGE_mkf2fs=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_resize2fs is not set
 =======
 CONFIG_PACKAGE_resize2fs=y
@@ -12744,6 +13449,9 @@ CONFIG_PACKAGE_resize2fs=y
 =======
 CONFIG_PACKAGE_resize2fs=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PACKAGE_resize2fs is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_squashfs-tools-mksquashfs is not set
 # CONFIG_PACKAGE_squashfs-tools-unsquashfs is not set
 # CONFIG_PACKAGE_swap-utils is not set
@@ -12954,7 +13662,7 @@ CONFIG_PACKAGE_bash=y
 # CONFIG_PACKAGE_cache-domains-wolfssl is not set
 # CONFIG_PACKAGE_cal is not set
 # CONFIG_PACKAGE_canutils is not set
-# CONFIG_PACKAGE_catatonit is not set
+CONFIG_PACKAGE_catatonit=y
 # CONFIG_PACKAGE_cgroup-tools is not set
 # CONFIG_PACKAGE_cgroupfs-mount is not set
 # CONFIG_PACKAGE_checkpolicy is not set
@@ -12964,12 +13672,17 @@ CONFIG_PACKAGE_bash=y
 <<<<<<< HEAD
 # CONFIG_PACKAGE_cli is not set
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 45a411a384 (update .config for improved performance)
 # CONFIG_PACKAGE_cligen is not set
 # CONFIG_PACKAGE_clixon is not set
 =======
 >>>>>>> 6d6cc85399 (add .config)
+=======
+# CONFIG_PACKAGE_cligen is not set
+# CONFIG_PACKAGE_clixon is not set
+>>>>>>> 4353cd5b91 (add .config)
 # CONFIG_PACKAGE_clocate is not set
 # CONFIG_PACKAGE_cmdpad is not set
 # CONFIG_PACKAGE_cni is not set
@@ -13001,6 +13714,7 @@ CONFIG_PACKAGE_collectd-mod-cpufreq=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_PACKAGE_collectd-mod-df=y
 =======
 # CONFIG_PACKAGE_collectd-mod-df is not set
@@ -13013,6 +13727,8 @@ CONFIG_PACKAGE_collectd-mod-df=y
 =======
 =======
 >>>>>>> 0d1e4033c1 (add .config)
+=======
+>>>>>>> 4353cd5b91 (add .config)
 # CONFIG_PACKAGE_collectd-mod-df is not set
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -13035,6 +13751,11 @@ CONFIG_PACKAGE_collectd-mod-disk=y
 # CONFIG_PACKAGE_collectd-mod-dhcpleases is not set
 # CONFIG_PACKAGE_collectd-mod-disk is not set
 >>>>>>> 187cc246d7 (add .config)
+=======
+CONFIG_PACKAGE_collectd-mod-df=y
+CONFIG_PACKAGE_collectd-mod-dhcpleases=y
+CONFIG_PACKAGE_collectd-mod-disk=y
+>>>>>>> a487289ae3 (add .config)
 CONFIG_PACKAGE_collectd-mod-dns=y
 # CONFIG_PACKAGE_collectd-mod-email is not set
 # CONFIG_PACKAGE_collectd-mod-entropy is not set
@@ -13042,18 +13763,23 @@ CONFIG_PACKAGE_collectd-mod-ethstat=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_collectd-mod-exec is not set
 =======
 CONFIG_PACKAGE_collectd-mod-exec=y
 >>>>>>> 187cc246d7 (add .config)
+=======
+# CONFIG_PACKAGE_collectd-mod-exec is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_collectd-mod-filecount is not set
 # CONFIG_PACKAGE_collectd-mod-fscache is not set
 CONFIG_PACKAGE_collectd-mod-interface=y
 CONFIG_PACKAGE_collectd-mod-ipstatistics=y
-# CONFIG_PACKAGE_collectd-mod-iptables is not set
-CONFIG_PACKAGE_collectd-mod-irq=y
+CONFIG_PACKAGE_collectd-mod-iptables=y
+# CONFIG_PACKAGE_collectd-mod-irq is not set
 CONFIG_PACKAGE_collectd-mod-iwinfo=y
 CONFIG_PACKAGE_collectd-mod-load=y
+<<<<<<< HEAD
 <<<<<<< HEAD
 # CONFIG_PACKAGE_collectd-mod-logfile is not set
 =======
@@ -13078,6 +13804,9 @@ CONFIG_PACKAGE_collectd-mod-logfile=y
 =======
 CONFIG_PACKAGE_collectd-mod-logfile=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PACKAGE_collectd-mod-logfile is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_collectd-mod-lua is not set
 # CONFIG_PACKAGE_collectd-mod-match-empty-counter is not set
 # CONFIG_PACKAGE_collectd-mod-match-hashed is not set
@@ -13317,7 +14046,7 @@ CONFIG_PACKAGE_coreutils-yes=y
 # CONFIG_PACKAGE_cpusage is not set
 # CONFIG_PACKAGE_crconf is not set
 # CONFIG_PACKAGE_crelay is not set
-# CONFIG_PACKAGE_crun is not set
+CONFIG_PACKAGE_crun=y
 # CONFIG_PACKAGE_csstidy is not set
 # CONFIG_PACKAGE_ct-bugcheck is not set
 # CONFIG_PACKAGE_ctop is not set
@@ -13328,7 +14057,7 @@ CONFIG_PACKAGE_coreutils-yes=y
 # CONFIG_PACKAGE_dfu-util is not set
 # CONFIG_PACKAGE_digitemp is not set
 # CONFIG_PACKAGE_digitemp-usb is not set
-# CONFIG_PACKAGE_dmesg is not set
+CONFIG_PACKAGE_dmesg=y
 # CONFIG_PACKAGE_docker is not set
 # CONFIG_PACKAGE_docker-compose is not set
 # CONFIG_PACKAGE_dockerd is not set
@@ -13467,13 +14196,14 @@ CONFIG_PACKAGE_grep=y
 # CONFIG_PACKAGE_hwinfo is not set
 # CONFIG_PACKAGE_hwloc-utils is not set
 CONFIG_PACKAGE_i2c-tools=y
-# CONFIG_PACKAGE_i2csfp is not set
+CONFIG_PACKAGE_i2csfp=y
 # CONFIG_PACKAGE_iconv is not set
 # CONFIG_PACKAGE_iio-utils is not set
 # CONFIG_PACKAGE_inotifywait is not set
 # CONFIG_PACKAGE_inotifywatch is not set
 # CONFIG_PACKAGE_io is not set
 # CONFIG_PACKAGE_ipcs is not set
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -13487,9 +14217,12 @@ CONFIG_PACKAGE_irqbalance=y
 =======
 CONFIG_PACKAGE_irqbalance=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PACKAGE_irqbalance is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_iwcap is not set
 CONFIG_PACKAGE_iwinfo=y
-# CONFIG_PACKAGE_jq is not set
+CONFIG_PACKAGE_jq=y
 CONFIG_PACKAGE_jshn=y
 # CONFIG_PACKAGE_kmod is not set
 # CONFIG_PACKAGE_lcd4linux-custom is not set
@@ -13537,6 +14270,7 @@ CONFIG_PACKAGE_lm-sensors-detect=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_losetup is not set
 =======
 CONFIG_PACKAGE_losetup=y
@@ -13547,10 +14281,14 @@ CONFIG_PACKAGE_losetup=y
 =======
 CONFIG_PACKAGE_losetup=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PACKAGE_losetup is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_lpac is not set
 # CONFIG_PACKAGE_lrzsz is not set
 # CONFIG_PACKAGE_lscpu is not set
 # CONFIG_PACKAGE_lsd is not set
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -13568,6 +14306,10 @@ CONFIG_PACKAGE_lsof=y
 >>>>>>> b30872b5aa (add .config)
 CONFIG_PACKAGE_lslocks=y
 CONFIG_PACKAGE_lsns=y
+=======
+# CONFIG_PACKAGE_lslocks is not set
+# CONFIG_PACKAGE_lsns is not set
+>>>>>>> a487289ae3 (add .config)
 CONFIG_PACKAGE_lsof=y
 >>>>>>> 22b1a68274 (add .config)
 <<<<<<< HEAD
@@ -13598,6 +14340,7 @@ CONFIG_PACKAGE_lsof=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_mdio-tools is not set
 # CONFIG_PACKAGE_mhz is not set
 # CONFIG_PACKAGE_micrond is not set
@@ -13628,6 +14371,14 @@ CONFIG_PACKAGE_mdio-tools=y
 CONFIG_PACKAGE_mmc-utils=y
 CONFIG_PACKAGE_more=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PACKAGE_mdio-tools is not set
+# CONFIG_PACKAGE_mhz is not set
+# CONFIG_PACKAGE_micrond is not set
+# CONFIG_PACKAGE_miniflux is not set
+# CONFIG_PACKAGE_mmc-utils is not set
+# CONFIG_PACKAGE_more is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_moreutils is not set
 # CONFIG_PACKAGE_mount-utils is not set
 # CONFIG_PACKAGE_mpack is not set
@@ -13640,6 +14391,7 @@ CONFIG_PACKAGE_more=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_nand-utils is not set
 =======
 CONFIG_PACKAGE_nand-utils=y
@@ -13650,13 +14402,16 @@ CONFIG_PACKAGE_nand-utils=y
 =======
 CONFIG_PACKAGE_nand-utils=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PACKAGE_nand-utils is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_naywatch is not set
 # CONFIG_PACKAGE_nerdctl is not set
 # CONFIG_PACKAGE_netopeer2-cli is not set
 # CONFIG_PACKAGE_netopeer2-server is not set
 # CONFIG_PACKAGE_netwhere is not set
 # CONFIG_PACKAGE_nnn is not set
-# CONFIG_PACKAGE_nsenter is not set
+CONFIG_PACKAGE_nsenter=y
 # CONFIG_PACKAGE_nss-utils is not set
 # CONFIG_PACKAGE_nsutils is not set
 # CONFIG_PACKAGE_oath-toolkit is not set
@@ -13679,6 +14434,7 @@ CONFIG_PACKAGE_openssl-util=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_pciids is not set
 # CONFIG_PACKAGE_pciutils is not set
 =======
@@ -13693,6 +14449,10 @@ CONFIG_PACKAGE_pciutils=y
 CONFIG_PACKAGE_pciids=y
 CONFIG_PACKAGE_pciutils=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PACKAGE_pciids is not set
+# CONFIG_PACKAGE_pciutils is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_pcsc-tools is not set
 # CONFIG_PACKAGE_pcscd is not set
 <<<<<<< HEAD
@@ -13810,6 +14570,7 @@ CONFIG_PACKAGE_prometheus-statsd-exporter=y
 # CONFIG_PACKAGE_psmisc is not set
 # CONFIG_PACKAGE_pv is not set
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_qmi-utils is not set
 # CONFIG_PACKAGE_qrencode is not set
 =======
@@ -13870,6 +14631,10 @@ CONFIG_PACKAGE_qrencode=y
 CONFIG_PACKAGE_qmi-utils=y
 CONFIG_PACKAGE_qrencode=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PACKAGE_qmi-utils is not set
+# CONFIG_PACKAGE_qrencode is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_quectel-timesync is not set
 # CONFIG_PACKAGE_quota is not set
 # CONFIG_PACKAGE_ravpower-mcu is not set
@@ -13932,6 +14697,7 @@ CONFIG_PACKAGE_sedutil=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_strace is not set
 CONFIG_STRACE_NONE=y
 # CONFIG_STRACE_LIBDW is not set
@@ -13950,6 +14716,11 @@ CONFIG_PACKAGE_strace=y
 # CONFIG_STRACE_NONE is not set
 CONFIG_STRACE_LIBDW=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PACKAGE_strace is not set
+CONFIG_STRACE_NONE=y
+# CONFIG_STRACE_LIBDW is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_STRACE_LIBUNWIND is not set
 # CONFIG_PACKAGE_strelaysrv is not set
 # CONFIG_PACKAGE_stress is not set
@@ -13998,6 +14769,7 @@ CONFIG_PACKAGE_ucode-mod-lua=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_usbids is not set
 # CONFIG_PACKAGE_usbutils is not set
 =======
@@ -14012,8 +14784,12 @@ CONFIG_PACKAGE_usbutils=y
 CONFIG_PACKAGE_usbids=y
 CONFIG_PACKAGE_usbutils=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PACKAGE_usbids is not set
+# CONFIG_PACKAGE_usbutils is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_uuidd is not set
-# CONFIG_PACKAGE_uuidgen is not set
+CONFIG_PACKAGE_uuidgen=y
 # CONFIG_PACKAGE_uvcdynctrl is not set
 # CONFIG_PACKAGE_v4l-utils is not set
 # CONFIG_PACKAGE_view1090 is not set
@@ -14025,6 +14801,7 @@ CONFIG_PACKAGE_usbutils=y
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CONFIG_PACKAGE_whois is not set
 =======
 CONFIG_PACKAGE_whois=y
@@ -14035,6 +14812,9 @@ CONFIG_PACKAGE_whois=y
 =======
 CONFIG_PACKAGE_whois=y
 >>>>>>> b30872b5aa (add .config)
+=======
+# CONFIG_PACKAGE_whois is not set
+>>>>>>> a487289ae3 (add .config)
 # CONFIG_PACKAGE_wifitoggle is not set
 # CONFIG_PACKAGE_wipe is not set
 # CONFIG_PACKAGE_xdg-dbus-proxy is not set
