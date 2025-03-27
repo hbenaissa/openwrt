@@ -131,33 +131,33 @@
 		opp-shared;
 
 		opp00 {
-			opp-hz = /bits/ 64 <480000000>;
+			opp-hz = /bits/ 64 <400000000>;
 			opp-microvolt = <850000>;
 		};
 
 		opp01 {
-			opp-hz = /bits/ 64 <660000000>;
+			opp-hz = /bits/ 64 <600000000>;
 			opp-microvolt = <850000>;
 		};
 
 		opp02 {
-			opp-hz = /bits/ 64 <900000000>;
+			opp-hz = /bits/ 64 <800000000>;
 			opp-microvolt = <850000>;
 		};
 
 		opp03 {
-			opp-hz = /bits/ 64 <1080000000>;
+			opp-hz = /bits/ 64 <1500000000>;
 			opp-microvolt = <900000>;
 		};
 
 		opp04 {
-			opp-hz = /bits/ 64 <2100000000>;
-			opp-microvolt = <950000>;
+			opp-hz = /bits/ 64 <1800000000>;
+			opp-microvolt = <900000>;
 		};
 		
 		opp05 {
-			opp-hz = /bits/ 64 <2400000000>;
-			opp-microvolt = <1000000>;
+			opp-hz = /bits/ 64 <2200000000>;
+			opp-microvolt = <900000>;
 		};
 	};
 
