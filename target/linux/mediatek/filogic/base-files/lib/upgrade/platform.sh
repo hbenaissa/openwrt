@@ -225,8 +225,11 @@ platform_check_image() {
 	xiaomi,redmi-router-ax6000-ubootmod|\
 	xiaomi,mi-router-wr30u-ubootmod|\
 	zyxel,ex5601-t0-ubootmod)
-		fit_check_image "$1"
-		return $?
+		[ "$magic" != "d00dfeed" ] && {
+			echo "Invalid image type."
+			return 1
+		}
+		return 0
 		;;
 	nradio,c8-668gl)
 		# tar magic `ustar`
