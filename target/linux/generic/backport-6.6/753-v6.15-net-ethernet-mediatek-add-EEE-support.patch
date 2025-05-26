@@ -79,7 +79,7 @@ Signed-off-by: Qingfang Deng <dqfext@gmail.com>
 +	reg |= FIELD_PREP(MAC_EEE_WAKEUP_TIME_1000, 17) |
 +	       FIELD_PREP(MAC_EEE_WAKEUP_TIME_100, 36);
 +
-+	if (!txidle_thd_ms)
++	if (!eee->tx_lpi_enabled)
 +		/* Force LPI Mode without a delay */
 +		reg |= MAC_EEE_LPI_MODE;
 +
